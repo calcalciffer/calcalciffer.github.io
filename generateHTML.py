@@ -65,28 +65,77 @@ civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", "bbg_xml/BBG6.1_en_US.xml")
 
 doc = dominate.document(title='BBG 6.1 Static')
+with doc.head:
+    link(rel='stylesheet', href='assets/css/main.css')
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 
 # with doc.head:
 #     link(rel='stylesheet', href='style.css')
 #     script(type='text/javascript', src='script.js')
 
-with doc:
-    # with div(id='header').add(ol()):
-    #     for i in ['home', 'about', 'contact']:
-    #         li(a(i.title(), href='/%s.html' % i))
+with doc.body:
+    attr(cls='is-preload')
 
-    with div():
-        attr(cls='body')
-        for leader in civ_leaders_items:
-            h1(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
-            h3(locs_data[leader[3]])
-            p(locs_data[leader[4]])
-            h3(locs_data[leader[6]])
-            p(f'{locs_data[leader[7]]}')
-            for item in civ_leaders_items[leader]:
-                h3(f'{locs_data[item[4]]}')
-                p(f'{locs_data[item[5]]}')
-                # print('')
+menu_items = []
+with doc:
+    with div(id="wrapper"):
+        with div(id="main"):
+            with div(cls="inner"):
+                with header(id="header"):
+                    p('Live BBG Leader Descriptions')
+                    # a('5.2', href='leaders/5020.html')
+                    # a('5.3', href='leaders/5030.html')
+                    # a('5.4', href='leaders/5040.html')
+                    # a('5.5', href='leaders/5050.html')
+                    # a('5.6', href='leaders/5060.html')
+                    # a('5.7', href='leaders/5070.html')
+                    # a('5.8', href='leaders/5080.html')
+                    # a('6.0', href='leaders/6000.html')
+                    # a('6.1', href='leaders/6010.html')
+                with section(id="banner"):
+                    with div():
+                        attr(cls="content")
+                        for leader in civ_leaders_items:
+                            menu_items.append(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
+                            with div(id=locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
+                                with h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
+                                    img(src=f'images/leaders/{locs_data[leader[2]] + ' ' + locs_data[leader[5]]}.webp', style="vertical-align: middle;")
+                                # h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
+                                h3(locs_data[leader[3]])
+                                p(locs_data[leader[4]])
+                                h3(locs_data[leader[6]])
+                                p(f'{locs_data[leader[7]]}')
+                                for item in civ_leaders_items[leader]:
+                                    h3(f'{locs_data[item[4]]}')
+                                    p(f'{locs_data[item[5]]}')
+        with div(id="sidebar"):
+            with div():
+                attr(cls="inner")
+                with span(cls="image"):
+                    img(src="images/logo.png")
+                with p():
+                    strong('Civ VI With BBG')
+                    
+                with nav(id="menu"):
+                    with header():
+                        attr(cls='major')
+                        h2('Menu')
+                    with ul():
+                        for i in menu_items:
+                            li(a(i, href=f'#{i}'))
+                        # menulinks = {
+                        #     'Home':'index.html',
+                        #     'Leaders':'leaders.html',
+                        #     'City States':'citystates.html'
+                        # }
+                        # for i in menulinks:
+                            # li(a(i, href=menulinks[i]))
+    script(src="assets/js/jquery.min.js")
+    script(src="assets/js/browser.min.js")
+    script(src="assets/js/breakpoints.min.js")
+    script(src="assets/js/util.js")
+    script(src="assets/js/main.js")
 
 docStr = str(doc)
 docStr = docStr.replace('[NEWLINE]', '<br>')
