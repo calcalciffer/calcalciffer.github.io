@@ -2229,7 +2229,7 @@ button,
   /* list-style-type: none; */
   position: fixed;
   overflow: auto;
-  height: 100%;
+  height: 60%;
   width: 21em;
   margin-bottom: 0;
   padding: 0;
