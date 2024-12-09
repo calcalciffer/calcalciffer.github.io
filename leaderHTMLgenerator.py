@@ -76,10 +76,12 @@ civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
 bbg_versions = ['5.8', '6.0', '6.1']
 def add_header(curr_ver):
-    with div():
-        for v in bbg_versions:
-            a(v, href=f'leaders_{v}.html')
-    with div():
+    with div(cls='dropdown'):
+        button('BBG Version', cls='dropbtn')
+        with div(cls="dropdown-content"):
+            for v in bbg_versions:
+                a(f'BBG {v}', href=f'leaders_{v}.html')
+    with div(style="text-align:center"):
         p(f'BBG {curr_ver} Leader Descriptions')
     with div(style="text-align:right"):
         a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
