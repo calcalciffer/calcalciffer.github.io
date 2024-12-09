@@ -24,6 +24,7 @@ replacements = [
     '[ICON_FAITH]',
     '[ICON_FAVOR]',
     '[ICON_FOOD]',
+    '[ICON_INFLUENCEPERTURN]',
     '[ICON_GLORY_DARK_AGE]',
     '[ICON_GLORY_NORMAL_AGE]',
     '[ICON_GLORY_GOLDEN_AGE]',
@@ -49,8 +50,10 @@ replacements = [
     '[ICON_GREATWORK_WRITING]',
     '[ICON_GREATWORK_RELIGIOUS]',
     '[ICON_GREATWRITER]',
+    '[ICON_STAT_GRIEVANCE]',
     '[ICON_HOUSING]',
     '[ICON_MOVEMENT]',
+    # '[ICON_POPULATION]',
     '[ICON_POWER]',
     '[ICON_PRODUCTION]',
     '[ICON_PROMOTION]',
@@ -71,7 +74,7 @@ replacements = [
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
-bbg_versions = ['6.0', '6.1']
+bbg_versions = ['5.8', '6.0', '6.1']
 def add_header(curr_ver):
     with div():
         for v in bbg_versions:
@@ -156,6 +159,7 @@ def get_html_file(relative_path, bbg_version, lang):
         reg = re.compile(re.escape(replace), re.IGNORECASE)
         docStr = reg.sub(f'<img src="{relative_path}/images/{replace[1:-1]}.webp" height=16px/>', docStr)
     if docStr.find('[ICON_') != -1:
+        reg = re.compile(re.escape('[ICON_'), re.IGNORECASE)
         print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
 
     return docStr
