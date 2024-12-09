@@ -76,6 +76,8 @@ def add_header(curr_ver):
     with div():
         for v in bbg_versions:
             a(v, href=f'leaders_{v}.html')
+    with div():
+        p(f'BBG {curr_ver} Leader Descriptions')
     with div(style="text-align:right"):
         a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
