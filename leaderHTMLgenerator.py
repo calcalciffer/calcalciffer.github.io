@@ -132,14 +132,15 @@ def get_html_file(relative_path, bbg_version, lang):
                                 menu_items.append(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
                                 with div(id=locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
                                     with h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
-                                        img(src=f'{relative_path}/images/leaders/{en_US_locs_data[leader[2]] + ' ' + en_US_locs_data[leader[5]]}.webp', style="vertical-align: middle;")
+                                        img(src=f'{relative_path}/images/leaders/{en_US_locs_data[leader[2]] + ' ' + en_US_locs_data[leader[5]]}.webp', style="vertical-align: middle")
                                     # h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
                                     h3(locs_data[leader[3]])
                                     p(locs_data[leader[4]])
                                     h3(locs_data[leader[6]])
                                     p(f'{locs_data[leader[7]]}')
                                     for item in civ_leaders_items[leader]:
-                                        h3(f'{locs_data[item[4]]}')
+                                        with h3(f'{locs_data[item[4]]}'):
+                                            img(src=f'{relative_path}/images/items/{en_US_locs_data[item[4]]}.webp', style="vertical-align: middle; width:50px")
                                         p(f'{locs_data[item[5]]}')
                                     hr()
             with div(id="sidebar"):
