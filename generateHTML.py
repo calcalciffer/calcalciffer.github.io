@@ -109,6 +109,7 @@ with doc:
                                 for item in civ_leaders_items[leader]:
                                     h3(f'{locs_data[item[4]]}')
                                     p(f'{locs_data[item[5]]}')
+                                hr()
         with div(id="sidebar"):
             with div():
                 attr(cls="inner")
