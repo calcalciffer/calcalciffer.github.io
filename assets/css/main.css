@@ -2226,6 +2226,11 @@ button,
   font-weight: 400;
   letter-spacing: 0.075em;
   list-style: none;
+  /* list-style-type: none; */
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  width: 21em;
   margin-bottom: 0;
   padding: 0;
   text-transform: uppercase; }

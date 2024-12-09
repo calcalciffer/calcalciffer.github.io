@@ -142,7 +142,7 @@ def get_html_file(relative_path, bbg_version, lang):
                 with div():
                     attr(cls="inner")
                     add_sidebar_header(relative_path)
-                        
+
                     with nav(id="menu"):
                         with header():
                             attr(cls='major')
