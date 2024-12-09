@@ -86,6 +86,7 @@ def add_header(curr_ver):
     with div(style="text-align:right"):
         a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
+        br()
         # a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/jp.svg', height='16px'), href=f'../ja_JP/leaders_{curr_ver}.html')
