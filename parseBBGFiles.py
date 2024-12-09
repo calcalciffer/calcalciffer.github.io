@@ -47,7 +47,7 @@ def get_civs_tables(db_path):
             uniques.append(val[0] + val[1])
     
     for row in civLeaders:
-        crsr.execute(f"SELECT * FROM PlayerItems WHERE CivilizationType = '{row[0]}' AND LeaderType = '{row[1]}'")
+        crsr.execute(f"SELECT * FROM PlayerItems WHERE CivilizationType = '{row[0]}' AND LeaderType = '{row[1]}' AND Domain = 'Players:Expansion2_Players'")
         items = crsr.fetchall()
         unique_items = []
         unique_items_names = []
