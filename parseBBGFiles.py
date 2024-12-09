@@ -23,8 +23,9 @@ def get_locs_data(db_path, bbg_version, lang):
 
     b_unique = Bs_data.find_all('Replace')
     for x in b_unique:
-        # print(x['Tag'], x.Text.contents[0])
-        locs[x['Tag']] = x.Text.contents[0]
+        # print(x)
+        if len(x.Text.contents) > 0:
+            locs[x['Tag']] = x.Text.contents[0]
     
     return locs
 

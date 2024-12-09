@@ -44,8 +44,10 @@ replacements = [
     '[ICON_GREATWORK_LANDSCAPE]',
     '[ICON_GREATWORK_MUSIC]',
     '[ICON_GREATWORK_RELIC]',
+    '[ICON_GREATWORK_PORTRAIT]',
     '[ICON_GREATWORK_SCULPTURE]',
     '[ICON_GREATWORK_WRITING]',
+    '[ICON_GREATWORK_RELIGIOUS]',
     '[ICON_GREATWRITER]',
     '[ICON_HOUSING]',
     '[ICON_MOVEMENT]',
@@ -69,29 +71,38 @@ replacements = [
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
-def add_header():
-    p('Live BBG Leader Descriptions')
-    
-def add_sidebar_header():
+bbg_versions = ['6.0', '6.1']
+def add_header(curr_ver):
+    with div():
+        for v in bbg_versions:
+            a(v, href=f'leaders_{v}.html')
+    with div(style="text-align:right"):
+        a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
+        a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
+        # a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
+        a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
+        a(img(src='../assets/flags/4x3/jp.svg', height='16px'), href=f'../ja_JP/leaders_{curr_ver}.html')
+
+def add_sidebar_header(relative_path):
     with span(cls="image"):
-        img(src="images/logo.png")
+        img(src=f"{relative_path}/images/logo.png")
     with p():
         strong('Civ VI With BBG')
 
-def add_final_scripts():
-    script(src="assets/js/jquery.min.js")
-    script(src="assets/js/browser.min.js")
-    script(src="assets/js/breakpoints.min.js")
-    script(src="assets/js/util.js")
-    script(src="assets/js/main.js")
+def add_final_scripts(relative_path):
+    script(src=f"{relative_path}/assets/js/jquery.min.js")
+    script(src=f"{relative_path}/assets/js/browser.min.js")
+    script(src=f"{relative_path}/assets/js/breakpoints.min.js")
+    script(src=f"{relative_path}/assets/js/util.js")
+    script(src=f"{relative_path}/assets/js/main.js")
 
-def get_html_file(bbg_version, lang):
+def get_html_file(relative_path, bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
     doc = dominate.document(title=f'BBG {bbg_version} Static')
     with doc.head:
-        link(rel='stylesheet', href='assets/css/main.css')
+        link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
         meta(charset='utf-8')
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 
@@ -104,7 +115,7 @@ def get_html_file(bbg_version, lang):
             with div(id="main"):
                 with div(cls="inner"):
                     with header(id="header"):
-                        add_header()
+                        add_header(bbg_version)
                     with section(id="banner"):
                         with div():
                             attr(cls="content")
@@ -112,7 +123,7 @@ def get_html_file(bbg_version, lang):
                                 menu_items.append(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
                                 with div(id=locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
                                     with h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
-                                        img(src=f'images/leaders/{en_US_locs_data[leader[2]] + ' ' + en_US_locs_data[leader[5]]}.webp', style="vertical-align: middle;")
+                                        img(src=f'{relative_path}/images/leaders/{en_US_locs_data[leader[2]] + ' ' + en_US_locs_data[leader[5]]}.webp', style="vertical-align: middle;")
                                     # h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
                                     h3(locs_data[leader[3]])
                                     p(locs_data[leader[4]])
@@ -125,7 +136,7 @@ def get_html_file(bbg_version, lang):
             with div(id="sidebar"):
                 with div():
                     attr(cls="inner")
-                    add_sidebar_header()
+                    add_sidebar_header(relative_path)
                         
                     with nav(id="menu"):
                         with header():
@@ -134,20 +145,15 @@ def get_html_file(bbg_version, lang):
                         with ul():
                             for i in menu_items:
                                 li(a(i, href=f'#{i}'))
-        add_final_scripts()
+        add_final_scripts(relative_path)
 
     docStr = str(doc)
     docStr = docStr.replace('[NEWLINE]', '<br>')
 
     for replace in replacements:
         reg = re.compile(re.escape(replace), re.IGNORECASE)
-        docStr = reg.sub(f'<img src="./images/{replace[1:-1]}.webp" height=16px/>', docStr)
+        docStr = reg.sub(f'<img src="{relative_path}/images/{replace[1:-1]}.webp" height=16px/>', docStr)
     if docStr.find('[ICON_') != -1:
         print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
 
     return docStr
-
-
-docStr = get_html_file('6.1', 'en_US')
-with open('index.html', 'w') as f:
-    f.write(docStr)
