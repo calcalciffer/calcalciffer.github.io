@@ -1,0 +1,2 @@
+sqlFiles/CivVILocalization.sqlite filter=lfs diff=lfs merge=lfs -text
+sqlFiles/DebugConfiguration.sqlite filter=lfs diff=lfs merge=lfs -text
