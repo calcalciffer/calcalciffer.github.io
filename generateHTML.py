@@ -152,8 +152,6 @@ replacements = [
 for replace in replacements:
     reg = re.compile(re.escape(replace), re.IGNORECASE)
     docStr = reg.sub(f'<img src="./images/{replace[1:-1]}.webp" height=16px/>', docStr)
-# docStr = docStr.replace('[ICON_PRODUCTION]', '<img src="./images/ICON_PRODUCTION.webp" height=16px/>')
-docStr = docStr.replace('[ICON_AMENITIES]', '<img src="./images/ICON_AMENITIES.webp" height=16px/>')
 
 with open('index.html', 'w') as f:
     f.write(docStr)
