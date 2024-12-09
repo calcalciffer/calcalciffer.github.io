@@ -143,7 +143,7 @@ docStr = docStr.replace('[NEWLINE]', '<br>')
 replacements = [
     '[ICON_AMENITIES]',
     '[ICON_ARMY]',
-    '[ICON_BARBARIAN]'
+    '[ICON_BARBARIAN]',
     '[ICON_CAPITAL]',
     '[ICON_CHARGES]',
     '[ICON_CITIZEN]',
