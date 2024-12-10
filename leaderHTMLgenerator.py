@@ -220,11 +220,14 @@ def get_html_file(relative_path, bbg_version, lang):
     for replace in replacements:
         reg = re.compile(re.escape(replace), re.IGNORECASE)
         docStr = reg.sub(f'<img src="{relative_path}/images/{replace[1:-1]}.webp" height=16px/>', docStr)
-    if docStr.find('[ICON_') != -1:
-        # reg = re.compile(re.escape('\[ICON_[a-z]*'), re.IGNORECASE)
-        print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
-        print(re.findall('\[ICON_[A-Z]*', docStr))
-        # print(re.finditer('[ICON', docStr))
-        print()
+    reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
+    docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
+    docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
+    # if docStr.find('[ICON_') != -1:
+    #     # reg = re.compile(re.escape('\[ICON_[a-z]*'), re.IGNORECASE)
+    #     print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
+    #     print(re.findall('\[ICON_[A-Z]*', docStr))
+    #     # print(re.finditer('[ICON', docStr))
+    #     print()
 
     return docStr
