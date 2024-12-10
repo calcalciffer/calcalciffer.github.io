@@ -114,6 +114,22 @@ def get_html_file(relative_path, bbg_version, lang):
         link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
         meta(charset='utf-8')
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+        script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
+        script('''
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SKC1VQF10G');
+    ''')
+# <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G"></script>
+# <script>
+#   window.dataLayer = window.dataLayer || [];
+#   function gtag(){dataLayer.push(arguments);}
+#   gtag('js', new Date());
+
+#   gtag('config', 'G-SKC1VQF10G');
+# </script>
+
 
     with doc.body:
         attr(cls='is-preload')
