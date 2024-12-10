@@ -110,40 +110,20 @@ def get_html_file(relative_path, bbg_version, lang):
 
     doc = dominate.document(title=None)
     with doc.head:
-        # <!-- Google Tag Manager -->
-        script('''
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MW7GXTPN');
-''')
-# <!-- End Google Tag Manager -->
-        script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
+        script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
         script('''
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-SKC1VQF10G');
+      gtag('config', 'G-Z2ESCT7CR0');
     ''')
         title(f'BBG {bbg_version} Leader Description')
         link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
         meta(charset='utf-8')
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
-# <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G"></script>
-# <script>
-#   window.dataLayer = window.dataLayer || [];
-#   function gtag(){dataLayer.push(arguments);}
-#   gtag('js', new Date());
-
-#   gtag('config', 'G-SKC1VQF10G');
-# </script>
-
 
     with doc.body:
-        with noscript():
-            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-MW7GXTPN", height="0", width="0", style="display:none;visibility:hidden")
         attr(cls='is-preload')
 
     menu_items = []
