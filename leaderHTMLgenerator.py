@@ -119,13 +119,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MW7GXTPN');
 ''')
 # <!-- End Google Tag Manager -->
-    #     script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
-    #     script('''
-    #   window.dataLayer = window.dataLayer || [];
-    #   function gtag(){dataLayer.push(arguments);}
-    #   gtag('js', new Date());
-    #   gtag('config', 'G-SKC1VQF10G');
-    # ''')
+        script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
+        script('''
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SKC1VQF10G');
+    ''')
         title(f'BBG {bbg_version} Leader Description')
         link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
