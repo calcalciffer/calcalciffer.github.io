@@ -26,9 +26,16 @@ def get_locs_data(db_path, bbg_version, lang):
 
     b_unique = Bs_data.find_all('Replace')
     for x in b_unique:
-        # print(x)
-        if len(x.Text.contents) > 0:
-            locs[x['Tag']] = x.Text.contents[0]
+        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+            # print(x)
+            if len(x.Text.contents) > 0:
+                locs[x['Tag']] = x.Text.contents[0]
+        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+            if len(x.text.contents) > 0:
+                locs[x['Tag']] = x.text.contents[0]
+        else:
+            print(f'unsual element in xml file for {bbg_version} lang {lang}!!')
+            print(x)
     
     return locs
 

@@ -234,7 +234,7 @@
 		</Replace>
 		<!-- = leader ability (Yongle) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_YONGLE_XP_DESCRIPTION" Language="es_ES">
-			<Text>Todas las Ciudades reciben Proyectos en los que pueden convertir el 70% de su [Icon_Production] Producción en [Icon_Food] Alimentos, [Icon_Faith] Fe, o el 150 % si es [Icon_GOLD] Oro. [NEWLINE][NEWLINE]Las ciudades con 10 o más [ICON_CITIZEN] Población reciben +1 [Icon_Gold] Oro, +0.7 [Icon_Science] Ciencia y +0.5 [Icon_Culture] Cultura por turno por cada [ICON_CITIZEN] Ciudadano en la ciudad.[NEWLINE][NEWLINE]Cuando una ciudad alcanza 13 de Población [ICON_POPULATION] por primera vez recibe un Eureka [ICON_TechBoosted] al azar; al alcanzar 18 de Población [ICON_Citizen] recibe una Inspiración [ICON_CivicBoosted] al azar.</Text>
+			<Text>Todas las Ciudades reciben Proyectos en los que pueden convertir el 70% de su [Icon_Production] Producción en [Icon_Food] Alimentos, [Icon_Faith] Fe, o el 150 % si es [Icon_GOLD] Oro. [NEWLINE][NEWLINE]Las ciudades con 10 o más [ICON_CITIZEN] Población reciben +1 [Icon_Gold] Oro, +0.7 [Icon_Science] Ciencia y +0.5 [Icon_Culture] Cultura por turno por cada [ICON_CITIZEN] Ciudadano en la ciudad.[NEWLINE][NEWLINE]Cuando una ciudad alcanza 13 de Población [ICON_CITIZEN] por primera vez recibe un Eureka [ICON_TechBoosted] al azar; al alcanzar 18 de Población [ICON_Citizen] recibe una Inspiración [ICON_CivicBoosted] al azar.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_LIJIA_FOOD_DESCRIPTION" Language="es_ES">
 			<Text>Los proyectos otorgan Comida [ICON_Food] cada turno igual al 70% de la producción de la ciudad.</Text>

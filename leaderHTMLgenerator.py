@@ -19,6 +19,7 @@ replacements = [
     '[ICON_CULTURE]',
     '[ICON_DISTRICT_HOLY_SITE]',
     '[ICON_DISTRICT_INDUSTRIAL_ZONE]',
+    '[ICON_DISTRICT_WONDER]',
     '[ICON_DISTRICT]',
     '[ICON_ENVOY]',
     '[ICON_FAITH]',
@@ -62,6 +63,7 @@ replacements = [
     '[ICON_RELIGION]',
     '[ICON_RESOURCE_COAL]',
     '[ICON_RESOURCE_IRON]',
+    '[ICON_RESOURCE_HORSES]',
     '[ICON_SCIENCE]',
     '[ICON_STRENGTH]',
     '[ICON_TECHBOOSTED]',
@@ -74,7 +76,8 @@ replacements = [
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
-bbg_versions = [None, '6.1', '6.0', '5.8']
+bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
+# bbg_versions = ['5.7']
 def add_header(curr_ver):
     # with div(cls='dropdown'):
     #     button('BBG Version', cls='dropbtn')
@@ -91,11 +94,11 @@ def add_header(curr_ver):
             p(f'Civ VI GS RF Leader Descriptions')
     with div(style="text-align:right"):
         curr_ver = curr_ver if curr_ver != None else 'base_game'
-        a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
-        a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
-        a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
-        a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
-        a(img(src='../assets/flags/4x3/kr.svg', height='16px'), href=f'../ko_KR/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/us.svg', height='16px'), href=f'/en_US/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/fr.svg', height='16px'), href=f'/fr_FR/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/ru.svg', height='16px'), href=f'/ru_RU/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/cn.svg', height='16px'), href=f'/zh_Hans_CN/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/kr.svg', height='16px'), href=f'/ko_KR/leaders_{curr_ver}.html')
 
 def add_sidebar_header(relative_path, bbg_version):
     with span(cls="image"):
@@ -122,12 +125,36 @@ def get_loc(locs_data, s):
         return res
     else:
         return res[:res.find('|')]
+    
+def get_html_lang(lang):
+    if lang == 'de_DE':
+        return 'de'
+    if lang == 'en_US':
+        return 'en'
+    if lang == 'es_ES':
+        return 'es'
+    if lang == 'fr_FR':
+        return 'fr'
+    if lang == 'it_IT':
+        return 'it'
+    if lang == 'ja_JP':
+        return 'ja'
+    if lang == 'ko_KR':
+        return 'ko'
+    if lang == 'pl_PL':
+        return 'pl'
+    if lang == 'pt_BR':
+        return 'pt'
+    if lang == 'ru_RU':
+        return 'ru'
+    if lang == 'zh_Hans_CN':
+        return 'zh-Hans'
 
 def get_html_file(relative_path, bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
-    doc = dominate.document(title=None, lang=lang)
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
         script('''
@@ -194,7 +221,9 @@ def get_html_file(relative_path, bbg_version, lang):
         reg = re.compile(re.escape(replace), re.IGNORECASE)
         docStr = reg.sub(f'<img src="{relative_path}/images/{replace[1:-1]}.webp" height=16px/>', docStr)
     if docStr.find('[ICON_') != -1:
-        reg = re.compile(re.escape('[ICON_'), re.IGNORECASE)
+        # reg = re.compile(re.escape('\[ICON_[a-z]*'), re.IGNORECASE)
         print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
+        print(re.findall('\[ICON_[A-Z]*', docStr))
+        # print(re.finditer('[ICON', docStr))
 
     return docStr
