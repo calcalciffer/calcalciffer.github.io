@@ -108,7 +108,7 @@ def get_html_file(relative_path, bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
-    doc = dominate.document(title=f'BBG {bbg_version} Leader Description')
+    doc = dominate.document(title=None)
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
         script('''
@@ -117,6 +117,7 @@ def get_html_file(relative_path, bbg_version, lang):
       gtag('js', new Date());
       gtag('config', 'G-SKC1VQF10G');
     ''')
+        title(f'BBG {bbg_version} Leader Description')
         link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
         meta(charset='utf-8')
