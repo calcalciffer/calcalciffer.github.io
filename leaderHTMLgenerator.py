@@ -127,7 +127,7 @@ def get_html_file(relative_path, bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
-    doc = dominate.document(title=None)
+    doc = dominate.document(title=None, lang=lang)
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
         script('''
