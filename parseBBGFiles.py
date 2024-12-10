@@ -16,6 +16,9 @@ def get_locs_data(db_path, bbg_version, lang):
     for r in rows:
         locs[r[1]] = r[2]
         
+    if bbg_version == None:
+        return locs
+
     with open(f'bbg_xml/{bbg_version}/{lang}.xml', 'r') as f:
         data = f.read()
 

@@ -2302,6 +2302,7 @@ button,
 
 /* Style The Dropdown Button */
 .dropbtn {
+  width: calc(100%);
   /* background-color: #4CAF50; */
   color: white;
   font-family: "Roboto Slab", serif;
@@ -2314,12 +2315,14 @@ button,
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  width: calc(100%);
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  width: calc(100%);
   display: none;
   position: absolute;
   background-color: #f9f9f9;

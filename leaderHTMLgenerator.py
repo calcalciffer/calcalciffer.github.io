@@ -74,28 +74,40 @@ replacements = [
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
-bbg_versions = ['5.8', '6.0', '6.1']
+bbg_versions = [None, '6.1', '6.0', '5.8']
 def add_header(curr_ver):
-    with div(cls='dropdown'):
-        button('BBG Version', cls='dropbtn')
-        with div(cls="dropdown-content"):
-            for v in bbg_versions:
-                a(f'BBG {v}', href=f'leaders_{v}.html')
-    with div(style="text-align:center"):
-        p(f'BBG {curr_ver} Leader Descriptions')
+    # with div(cls='dropdown'):
+    #     button('BBG Version', cls='dropbtn')
+    #     with div(cls="dropdown-content"):
+    #         for v in bbg_versions:
+    #             if v == None:
+    #                 a(f'Base Game', href=f'leaders_base_game.html')
+    #             else:
+    #                 a(f'BBG {v}', href=f'leaders_{v}.html')
+    with div():
+        if curr_ver != None:
+            p(f'BBG {curr_ver} Leader Descriptions')
+        else:
+            p(f'Civ VI GS RF Leader Descriptions')
     with div(style="text-align:right"):
+        curr_ver = curr_ver if curr_ver != None else 'base_game'
         a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
-        br()
         # a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/kr.svg', height='16px'), href=f'../ko_KR/leaders_{curr_ver}.html')
 
-def add_sidebar_header(relative_path):
+def add_sidebar_header(relative_path, bbg_version):
     with span(cls="image"):
         img(src=f"{relative_path}/images/logo.png")
-    with p():
-        strong('Civ VI With BBG')
+    with div(cls='dropdown'):
+        button('BBG Version', cls='dropbtn')
+        with div(cls="dropdown-content"):
+            for v in bbg_versions:
+                if v == None:
+                    a(f'Base Game', href=f'leaders_base_game.html')
+                else:
+                    a(f'BBG {v}', href=f'leaders_{v}.html')
 
 def add_final_scripts(relative_path):
     script(src=f"{relative_path}/assets/js/jquery.min.js")
@@ -117,7 +129,10 @@ def get_html_file(relative_path, bbg_version, lang):
       gtag('js', new Date());
       gtag('config', 'G-Z2ESCT7CR0');
     ''')
-        title(f'BBG {bbg_version} Leader Description')
+        if bbg_version != None:
+            title(f'BBG {bbg_version} Leader Description')
+        else :
+            title(f'Civ VI GS RF Leaders Description')
         link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
         meta(charset='utf-8')
@@ -154,7 +169,7 @@ def get_html_file(relative_path, bbg_version, lang):
             with div(id="sidebar"):
                 with div():
                     attr(cls="inner")
-                    add_sidebar_header(relative_path)
+                    add_sidebar_header(relative_path, bbg_version)
 
                     with nav(id="menu"):
                         with header():
