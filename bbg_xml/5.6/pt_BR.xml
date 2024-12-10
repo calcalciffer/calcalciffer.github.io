@@ -363,7 +363,7 @@
 		</Replace>
 		<!-- = leader ability (Elizabeth) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION" Language="pt_BR">
-			<Text>+1 [ICON_TradeRoute] de capacidade da Rota Comercial com tecnologia de Construção Naval, cívica de Exploração e cívica de Mercantilismo. [As rotas comerciais para as cidades-estado fornecem +3 [ICON_GOLD] de ouro por cada distrito de especialidade [ICON_DISTRICT] na cidade de origem.[NEWLINE][NEWLINE]+100% [ICON_GOLD] de ouro ao pilhar rotas comerciais [ICON_TradeRoute] com unidades navais. Todas as unidades de saqueadores navais ganham +1 [ICON_Movimento] de movimento e +1 de visão.</Text>
+			<Text>+1 [ICON_TradeRoute] de capacidade da Rota Comercial com tecnologia de Construção Naval, cívica de Exploração e cívica de Mercantilismo. [As rotas comerciais para as cidades-estado fornecem +3 [ICON_GOLD] de ouro por cada distrito de especialidade [ICON_DISTRICT] na cidade de origem.[NEWLINE][NEWLINE]+100% [ICON_GOLD] de ouro ao pilhar rotas comerciais [ICON_TradeRoute] com unidades navais. Todas as unidades de saqueadores navais ganham +1 [ICON_Movement] de movimento e +1 de visão.</Text>
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="pt_BR">
@@ -575,7 +575,7 @@
 		<!-- == INDIA == -->
 		<!-- = leader ability (Chandragupta) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="pt_BR">
-			<Text>+1 [ICON_STRENGTH] Força de Combate para cada edifício no distrito de Local Sagrado para todas as unidades militares recém-treinadas na cidade. Os edifícios do Santuário e do Templo concedem +1 [ICON_Moviment] Movimento e +1 Visão, respetivamente, para todas as unidades militares recém-treinadas na cidade.[NEWLINE][NEWLINE]Assim que os Cívicos necessários forem desbloqueados, as cidades com edifícios de Culto podem treinar diretamente Corpos [ICON_Corps] ou Exércitos [ICON_Army] e os seus custos são reduzidos em 25%.</Text>
+			<Text>+1 [ICON_STRENGTH] Força de Combate para cada edifício no distrito de Local Sagrado para todas as unidades militares recém-treinadas na cidade. Os edifícios do Santuário e do Templo concedem +1 [ICON_Movement] Movimento e +1 Visão, respetivamente, para todas as unidades militares recém-treinadas na cidade.[NEWLINE][NEWLINE]Assim que os Cívicos necessários forem desbloqueados, as cidades com edifícios de Culto podem treinar diretamente Corpos [ICON_Corps] ou Exércitos [ICON_Army] e os seus custos são reduzidos em 25%.</Text>
 		</Replace>
 		<Row Tag="LOC_BBG_CHANDRA_MOVEMENT_ABILITY_DESC" Language="pt_BR">
 			<Text>+1 [ICON_Movement] Movimento do edifício do Santuário (Arthashastra)</Text>
@@ -643,7 +643,7 @@
 			<Text>As Rotas Comerciais Internacionais [ICON_TradeRoute] recebem -25% de Rendimento e [ICON_Tourism] Turismo, mas as Rotas Comerciais Nacionais [ICON_TradeRoute] fornecem +1 [ICON_Culture] Cultura, +1 [ICON_Science] Ciência e +1 [ICON_GOLD] Ouro por cada Distrito de Especialidade no Destino. As cidades num raio de 6 painéis da capital do Japão recebem +4 [ICON_Amenities] de serviços e, após pesquisar o Voo, recebem +1 [ICON_Tourism] Turismo por cada Distrito.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TOKUGAWA_XP_DESCRIPTION" Language="pt_BR">
-			<Text>As rotas comerciais internacionais [ICON_TradeRoute] recebem -25% de rendimento e [ICON_Tourism] turismo, mas as rotas comerciais domésticas [ICON_TradeRoute] fornecem +1 [ICON_Culture] cultura, +1 [ICON_Science] ciência e +1 [ICON_GOLD] ouro para cada distrito de especialidade no destino. As cidades num raio de 6 painéis da capital do Japão recebem 100% de lealdade e, depois de pesquisarem o voo, recebem +1 [ICON_Turism] Turismo por cada distrito.</Text>
+			<Text>As rotas comerciais internacionais [ICON_TradeRoute] recebem -25% de rendimento e [ICON_Tourism] turismo, mas as rotas comerciais domésticas [ICON_TradeRoute] fornecem +1 [ICON_Culture] cultura, +1 [ICON_Science] ciência e +1 [ICON_GOLD] ouro para cada distrito de especialidade no destino. As cidades num raio de 6 painéis da capital do Japão recebem 100% de lealdade e, depois de pesquisarem o voo, recebem +1 [ICON_Tourism] Turismo por cada distrito.</Text>
 		</Replace>
 
 		<!-- == KHMER == -->
@@ -896,7 +896,7 @@
 		</Replace>
 		<!-- = unique building = -->
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="pt_BR">
-			<Text>Um edifício exclusivo dos otomanos. Acumula 1 recurso estratégico extra por cada tipo diferente de recurso estratégico que esta cidade tenha melhorado. Recebe 1 [ICON_AMENITIES] de serviço por cada recurso de Luxo que esta cidade tenha melhorado. Concede um Título de Governador [ICON_Governador] quando construída pela primeira vez.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Capacidade de rotas comerciais.[NEWLINE]+2 [ICON_GOLD] Ouro por cada [ICON_TradeRoute] rotas comerciais desta cidade.[NEWLINE]+1 [ICON_GOLD] Ouro por cada [ICON_TradeRoute] rotas comerciais para esta cidade.</Text>
+			<Text>Um edifício exclusivo dos otomanos. Acumula 1 recurso estratégico extra por cada tipo diferente de recurso estratégico que esta cidade tenha melhorado. Recebe 1 [ICON_AMENITIES] de serviço por cada recurso de Luxo que esta cidade tenha melhorado. Concede um Título de Governador [ICON_Governor] quando construída pela primeira vez.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Capacidade de rotas comerciais.[NEWLINE]+2 [ICON_GOLD] Ouro por cada [ICON_TradeRoute] rotas comerciais desta cidade.[NEWLINE]+1 [ICON_GOLD] Ouro por cada [ICON_TradeRoute] rotas comerciais para esta cidade.</Text>
 		</Replace>
 
 		<!-- == PERSIA == -->
@@ -1100,7 +1100,7 @@
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade única da Suméria da Era Antiga. 4 [ICON_Movement] de movimento se esta unidade começar em terreno aberto. Pode escoltar unidades civis e de apoio em movimento à sua velocidade de movimento [ICON_Movement] mais elevada. Sem penalidades contra unidades de anti-cavalaria. +4 [ICON_STRENGTH] Força de Combate quando luta contra [ICON_BARBARIANS] Bárbaros.</Text>
+			<Text>Unidade única da Suméria da Era Antiga. 4 [ICON_Movement] de movimento se esta unidade começar em terreno aberto. Pode escoltar unidades civis e de apoio em movimento à sua velocidade de movimento [ICON_Movement] mais elevada. Sem penalidades contra unidades de anti-cavalaria. +4 [ICON_STRENGTH] Força de Combate quando luta contra [ICON_BARBARIAN] Bárbaros.</Text>
 		</Replace>
 		<Row Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="pt_BR">
 			<Text>+4 de [ICON_Strength] Força de Combate contra Bárbaros. [NEWLINE][ICON_Bullet] Sem penalidades contra unidades de anti-cavalaria.</Text>

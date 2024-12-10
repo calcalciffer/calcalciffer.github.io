@@ -315,7 +315,7 @@
 		</Replace>
 		<!-- = leader ability (Ramses II) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_RAMSES_DESCRIPTION" Language="pt_BR">
-			<Text>Ganha [ICON_CULTURA] Cultura igual a 10% do custo de construção ao terminar Edifícios e 25% ao completar Maravilhas</Text>
+			<Text>Ganha [ICON_CULTURE] Cultura igual a 10% do custo de construção ao terminar Edifícios e 25% ao completar Maravilhas</Text>
 		</Replace>
 		<!-- = leader ability (Egypt, Cleopatra Ptolemaic) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CLEOPATRA_ALT_DESCRIPTION" Language="pt_BR">
@@ -363,7 +363,7 @@
 		</Replace>
 		<!-- = leader ability (Elizabeth) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION" Language="pt_BR">
-			<Text>+1 [ICON_TradeRoute] de capacidade da Rota Comercial com tecnologia de Construção Naval, cívica de Exploração e cívica de Mercantilismo. [As rotas comerciais para as cidades-estado fornecem +3 [ICON_GOLD] de ouro por cada distrito de especialidade [ICON_DISTRICT] na cidade de origem.[NEWLINE][NEWLINE]+100% [ICON_GOLD] de ouro ao pilhar rotas comerciais [ICON_TradeRoute] com unidades navais. Todas as unidades de saqueadores navais ganham +1 [ICON_Movimento] de movimento e +1 de visão.</Text>
+			<Text>+1 [ICON_TradeRoute] de capacidade da Rota Comercial com tecnologia de Construção Naval, cívica de Exploração e cívica de Mercantilismo. [As rotas comerciais para as cidades-estado fornecem +3 [ICON_GOLD] de ouro por cada distrito de especialidade [ICON_DISTRICT] na cidade de origem.[NEWLINE][NEWLINE]+100% [ICON_GOLD] de ouro ao pilhar rotas comerciais [ICON_TradeRoute] com unidades navais. Todas as unidades de saqueadores navais ganham +1 [ICON_Movement] de movimento e +1 de visão.</Text>
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="pt_BR">
@@ -481,7 +481,7 @@
 			<Text>construção única da Georgia que substitui e é mais forte que as Muralhas Antigas. Geram +1 [ICON_TOURISM] de Turismo após alcançar o Cívico de Conservação. Gera +4 [ICON_FAITH] de Fé. Quando em uma Era Dourada, o [ICON_TOURISM] Turismo e a [ICON_FAITH] Fé aumentam +100%.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_TSIKHE_DESCRIPTION_XP2" Language="pt_BR">
-			<Text>Um edifício exclusivo da Geórgia que substitui e é mais forte do que as Muralhas Antigas. +4 [ICON_Faith] Fé e +1 [ICON_CULTURE] Cultura. Fornece +1 [ICON_TOURISM] de Turismo após avançar para o Cívico de Conservação. +3 [ICON_Faith] Fé e +100% [ICON_TURISM] Turismo quando estiver numa [ICON_GLORY_GOLDEN_AGE] Idade de Ouro ou [ICON_GLORY_SUPER_GOLDEN_AGE] Idade Heróica.</Text>
+			<Text>Um edifício exclusivo da Geórgia que substitui e é mais forte do que as Muralhas Antigas. +4 [ICON_Faith] Fé e +1 [ICON_CULTURE] Cultura. Fornece +1 [ICON_TOURISM] de Turismo após avançar para o Cívico de Conservação. +3 [ICON_Faith] Fé e +100% [ICON_TOURISM] Turismo quando estiver numa [ICON_GLORY_GOLDEN_AGE] Idade de Ouro ou [ICON_GLORY_SUPER_GOLDEN_AGE] Idade Heróica.</Text>
 		</Replace>
 
 		<!-- == GERMANY == -->
@@ -640,10 +640,10 @@
 		</Replace>
 		<!-- = leader ability (Tokugawa) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TOKUGAWA_DESCRIPTION" Language="pt_BR">
-			<Text>As Rotas Comerciais Internacionais [ICON_TradeRoute] recebem -25% de Rendimento e [ICON_Turismo] Turismo, mas as Rotas Comerciais Nacionais [ICON_TradeRoute] fornecem +1 [ICON_Cultura] Cultura, +1 [ICON_Ciência] Ciência e +1 [ICON_OURO] Ouro por cada Distrito de Especialidade no Destino. As cidades num raio de 6 painéis da capital do Japão recebem +4 [ICON_Amenities] de serviços e, após pesquisar o Voo, recebem +1 [ICON_Tourism] Turismo por cada Distrito.</Text>
+			<Text>As Rotas Comerciais Internacionais [ICON_TradeRoute] recebem -25% de Rendimento e [ICON_Tourism] Turismo, mas as Rotas Comerciais Nacionais [ICON_TradeRoute] fornecem +1 [ICON_Culture] Cultura, +1 [ICON_Science] Ciência e +1 [ICON_GOLD] Ouro por cada Distrito de Especialidade no Destino. As cidades num raio de 6 painéis da capital do Japão recebem +4 [ICON_Amenities] de serviços e, após pesquisar o Voo, recebem +1 [ICON_Tourism] Turismo por cada Distrito.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_TOKUGAWA_XP_DESCRIPTION" Language="pt_BR">
-			<Text>As rotas comerciais internacionais [ICON_TradeRoute] recebem -25% de rendimento e [ICON_Tourism] turismo, mas as rotas comerciais domésticas [ICON_TradeRoute] fornecem +1 [ICON_Culture] cultura, +1 [ICON_Science] ciência e +1 [ICON_GOLD] ouro para cada distrito de especialidade no destino. As cidades num raio de 6 painéis da capital do Japão recebem 100% de lealdade e, depois de pesquisarem o voo, recebem +1 [ICON_Turism] Turismo por cada distrito.</Text>
+			<Text>As rotas comerciais internacionais [ICON_TradeRoute] recebem -25% de rendimento e [ICON_Tourism] turismo, mas as rotas comerciais domésticas [ICON_TradeRoute] fornecem +1 [ICON_Culture] cultura, +1 [ICON_Science] ciência e +1 [ICON_GOLD] ouro para cada distrito de especialidade no destino. As cidades num raio de 6 painéis da capital do Japão recebem 100% de lealdade e, depois de pesquisarem o voo, recebem +1 [ICON_Tourism] Turismo por cada distrito.</Text>
 		</Replace>
 
 		<!-- == KHMER == -->
@@ -896,7 +896,7 @@
 		</Replace>
 		<!-- = unique building = -->
 		<Replace Tag="LOC_BUILDING_GRAND_BAZAAR_DESCRIPTION" Language="pt_BR">
-			<Text>Um edifício exclusivo dos otomanos. Acumula 1 recurso estratégico extra por cada tipo diferente de recurso estratégico que esta cidade tenha melhorado. Recebe 1 [ICON_AMENITIES] de serviço por cada recurso de Luxo que esta cidade tenha melhorado. Concede um Título de Governador [ICON_Governador] quando construída pela primeira vez.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Capacidade de rotas comerciais.[NEWLINE]+2 [ICON_OURO] Ouro por cada [ICON_TradeRoute] rotas comerciais desta cidade.[NEWLINE]+1 [ICON_OURO] Ouro por cada [ICON_TradeRoute] rotas comerciais para esta cidade.</Text>
+			<Text>Um edifício exclusivo dos otomanos. Acumula 1 recurso estratégico extra por cada tipo diferente de recurso estratégico que esta cidade tenha melhorado. Recebe 1 [ICON_AMENITIES] de serviço por cada recurso de Luxo que esta cidade tenha melhorado. Concede um Título de Governador [ICON_Governor] quando construída pela primeira vez.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Capacidade de rotas comerciais.[NEWLINE]+2 [ICON_Gold] Ouro por cada [ICON_TradeRoute] rotas comerciais desta cidade.[NEWLINE]+1 [ICON_Gold] Ouro por cada [ICON_TradeRoute] rotas comerciais para esta cidade.</Text>
 		</Replace>
 
 		<!-- == PERSIA == -->
@@ -1035,10 +1035,10 @@
 		<!-- == SPAIN == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION" Language="pt_BR">
-			<Text>Pode formar Frotas [ICON_Corps] e Armadas [ICON_Army] mais cedo do que o habitual (Mercenários e Mercantilismo). Assim que os Cívicos necessários forem desbloqueados, a construção de Estaleiros permite formar [ICON_Corps] Frotas e [ICON_Army] Armadas diretamente e os seus custos são reduzidos em 25%.[NEWLINE][NEWLINE][ICON_TradeRoute] As Rotas Comerciais recebem +3 [ICON_Gold] Ouro, +2 [ICON_Faith] Fé e +1 [ICON_PROCTION] Produção. As rotas comerciais internacionais [ICON_TradeRoute] entre vários continentes recebem o dobro destes números. As cidades a pelo menos 8 painéis de distância da capital [ICON_CAPITAL] recebem +25% de produção [ICON_PRODUCTION] para os distritos [ICON_DISTRITO].</Text>
+			<Text>Pode formar Frotas [ICON_Corps] e Armadas [ICON_Army] mais cedo do que o habitual (Mercenários e Mercantilismo). Assim que os Cívicos necessários forem desbloqueados, a construção de Estaleiros permite formar [ICON_Corps] Frotas e [ICON_Army] Armadas diretamente e os seus custos são reduzidos em 25%.[NEWLINE][NEWLINE][ICON_TradeRoute] As Rotas Comerciais recebem +3 [ICON_Gold] Ouro, +2 [ICON_Faith] Fé e +1 [ICON_PRODUCTION] Produção. As rotas comerciais internacionais [ICON_TradeRoute] entre vários continentes recebem o dobro destes números. As cidades a pelo menos 8 painéis de distância da capital [ICON_CAPITAL] recebem +25% de produção [ICON_PRODUCTION] para os distritos [ICON_DISTRICT].</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Pode formar Frotas [ICON_Corps] e Armadas [ICON_Army] mais cedo do que o habitual (Mercenários e Mercantilismo). Assim que os Cívicos necessários forem desbloqueados, a construção de Estaleiros permite formar [ICON_Corps] Frotas e [ICON_Army] Armadas diretamente e os seus custos são reduzidos em 25%.[NEWLINE][NEWLINE][ICON_TradeRoute] As Rotas Comerciais recebem +3 [ICON_Gold] Ouro, +2 [ICON_Faith] Fé e +1 [ICON_PROCTION] Produção. As rotas comerciais internacionais [ICON_TradeRoute] entre vários continentes recebem o dobro destes números. As cidades a pelo menos 8 painéis de distância da capital [ICON_CAPITAL] recebem +25% de produção [ICON_PRODUCTION] para os distritos [ICON_DISTRITO].</Text>
+			<Text>Pode formar Frotas [ICON_Corps] e Armadas [ICON_Army] mais cedo do que o habitual (Mercenários e Mercantilismo). Assim que os Cívicos necessários forem desbloqueados, a construção de Estaleiros permite formar [ICON_Corps] Frotas e [ICON_Army] Armadas diretamente e os seus custos são reduzidos em 25%.[NEWLINE][NEWLINE][ICON_TradeRoute] As Rotas Comerciais recebem +3 [ICON_Gold] Ouro, +2 [ICON_Faith] Fé e +1 [ICON_PRODUCTION] Produção. As rotas comerciais internacionais [ICON_TradeRoute] entre vários continentes recebem o dobro destes números. As cidades a pelo menos 8 painéis de distância da capital [ICON_CAPITAL] recebem +25% de produção [ICON_PRODUCTION] para os distritos [ICON_DISTRICT].</Text>
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION" Language="pt_BR">
@@ -1100,7 +1100,7 @@
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION" Language="pt_BR">
-			<Text>Unidade única da Suméria da Era Antiga. 4 [ICON_Movement] de movimento se esta unidade começar em terreno aberto. Pode escoltar unidades civis e de apoio em movimento à sua velocidade de movimento [ICON_Movement] mais elevada. Sem penalidades contra unidades de anti-cavalaria. +4 [ICON_STRENGTH] Força de Combate quando luta contra [ICON_BARBARIANOS] Bárbaros.</Text>
+			<Text>Unidade única da Suméria da Era Antiga. 4 [ICON_Movement] de movimento se esta unidade começar em terreno aberto. Pode escoltar unidades civis e de apoio em movimento à sua velocidade de movimento [ICON_Movement] mais elevada. Sem penalidades contra unidades de anti-cavalaria. +4 [ICON_STRENGTH] Força de Combate quando luta contra [ICON_BARBARIAN] Bárbaros.</Text>
 		</Replace>
 		<Row Tag="LOC_ABILITY_WAR_CART_COMBAT_STRENGTH_VS_BARBS_DESCRIPTION_BBG" Language="pt_BR">
 			<Text>+4 de [ICON_Strength] Força de Combate contra Bárbaros. [NEWLINE][ICON_Bullet] Sem penalidades contra unidades de anti-cavalaria.</Text>

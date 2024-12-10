@@ -225,5 +225,6 @@ def get_html_file(relative_path, bbg_version, lang):
         print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
         print(re.findall('\[ICON_[A-Z]*', docStr))
         # print(re.finditer('[ICON', docStr))
+        print()
 
     return docStr
