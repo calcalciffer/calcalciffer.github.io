@@ -93,7 +93,7 @@ def add_header(curr_ver):
         curr_ver = curr_ver if curr_ver != None else 'base_game'
         a(img(src='../assets/flags/4x3/us.svg', height='16px'), href=f'../en_US/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/fr.svg', height='16px'), href=f'../fr_FR/leaders_{curr_ver}.html')
-        # a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
+        a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/kr.svg', height='16px'), href=f'../ko_KR/leaders_{curr_ver}.html')
 
@@ -115,6 +115,13 @@ def add_final_scripts(relative_path):
     script(src=f"{relative_path}/assets/js/breakpoints.min.js")
     script(src=f"{relative_path}/assets/js/util.js")
     script(src=f"{relative_path}/assets/js/main.js")
+    
+def get_loc(locs_data, s):
+    res = locs_data[s]
+    if res.find('|') == -1:
+        return res
+    else:
+        return res[:res.find('|')]
 
 def get_html_file(relative_path, bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
@@ -152,19 +159,19 @@ def get_html_file(relative_path, bbg_version, lang):
                         with div():
                             attr(cls="content")
                             for leader in civ_leaders_items:
-                                menu_items.append(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
-                                with div(id=locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
-                                    with h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]]):
-                                        img(src=f'{relative_path}/images/leaders/{en_US_locs_data[leader[2]] + ' ' + en_US_locs_data[leader[5]]}.webp', style="vertical-align: middle")
-                                    # h2(locs_data[leader[2]] + ' ' + locs_data[leader[5]])
-                                    h3(locs_data[leader[3]])
-                                    p(locs_data[leader[4]])
-                                    h3(locs_data[leader[6]])
-                                    p(f'{locs_data[leader[7]]}')
+                                menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
+                                with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                    with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                        img(src=f'{relative_path}/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
+                                    # h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
+                                    h3(get_loc(locs_data, leader[3]))
+                                    p(get_loc(locs_data, leader[4]))
+                                    h3(get_loc(locs_data, leader[6]))
+                                    p(f'{get_loc(locs_data, leader[7])}')
                                     for item in civ_leaders_items[leader]:
-                                        with h3(f'{locs_data[item[4]]}'):
-                                            img(src=f'{relative_path}/images/items/{en_US_locs_data[item[4]]}.webp', style="vertical-align: middle; width:50px")
-                                        p(f'{locs_data[item[5]]}')
+                                        with h3(f'{get_loc(locs_data, item[4])}'):
+                                            img(src=f'{relative_path}/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:50px")
+                                        p(f'{get_loc(locs_data, item[5])}')
                                     hr()
             with div(id="sidebar"):
                 with div():
