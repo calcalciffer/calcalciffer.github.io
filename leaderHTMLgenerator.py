@@ -89,7 +89,7 @@ def add_header(curr_ver):
         br()
         # a(img(src='../assets/flags/4x3/ru.svg', height='16px'), href=f'../ru_RU/leaders_{curr_ver}.html')
         a(img(src='../assets/flags/4x3/cn.svg', height='16px'), href=f'../zh_Hans_CN/leaders_{curr_ver}.html')
-        a(img(src='../assets/flags/4x3/jp.svg', height='16px'), href=f'../ja_JP/leaders_{curr_ver}.html')
+        a(img(src='../assets/flags/4x3/kr.svg', height='16px'), href=f'../ko_KR/leaders_{curr_ver}.html')
 
 def add_sidebar_header(relative_path):
     with span(cls="image"):
