@@ -110,10 +110,6 @@ def get_html_file(relative_path, bbg_version, lang):
 
     doc = dominate.document(title=f'BBG {bbg_version} Leader Description')
     with doc.head:
-        link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
-        link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
-        meta(charset='utf-8')
-        meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G")
         script('''
       window.dataLayer = window.dataLayer || [];
@@ -121,6 +117,10 @@ def get_html_file(relative_path, bbg_version, lang):
       gtag('js', new Date());
       gtag('config', 'G-SKC1VQF10G');
     ''')
+        link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
+        link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 # <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKC1VQF10G"></script>
 # <script>
 #   window.dataLayer = window.dataLayer || [];
