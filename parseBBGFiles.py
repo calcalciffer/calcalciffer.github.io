@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import sqlite3
 import re
+import csv
 
 import dominate
 from dominate.tags import *
@@ -69,3 +70,23 @@ def get_civs_tables(db_path):
     
     connection.close()
     return civLeaderItems
+
+def get_start_biases(db_path):
+    writer = csv.writer()
+    writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])
+
+    connection = sqlite3.connect(db_path)
+    crsr = connection.cursor()
+    
+    startBiasCustomQuery = "SELECT CivilizationType, 'Custom', Null AS TerrainType, Null AS FeatureType, Null AS ResourceType, Null AS Tier, Null AS Extra, CustomPlacement FROM StartBiasCustom"
+    startBiasFeaturesQuery = "SELECT CivilizationType, 'Feature', Null AS TerrainType, FeatureType, Null AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasFeatures"
+    startBiasNegativesQuery = "SELECT CivilizationType, 'Negative', TerrainType, FeatureType, ResourceType, Tier, Extra, Null AS CustomPlacement FROM StartBiasNegatives"
+    startBiasResourcesQuery = "SELECT CivilizationType, 'Resources', Null AS TerrainType, Null AS FeatureType, ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasResources"
+    startBiasRiversQuery = "SELECT CivilizationType, 'Rivers', Null AS TerrainType, Null AS FeatureType, NULL AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasRivers"
+    startBiasTerrainsQuery = "SELECT CivilizationType, 'Terrains', TerrainType, Null AS FeatureType, Null AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasTerrains"
+    
+    crsr.execute(f'{startBiasCustomQuery} UNION {startBiasFeaturesQuery} UNION {startBiasNegativesQuery} UNION {startBiasResourcesQuery} UNION {startBiasRiversQuery} UNION {startBiasTerrainsQuery}')
+    # crsr.execute(f'{startBiasCustomQuery}')s
+    rows = crsr.fetchall()
+    writer.writerows(rows)
+    connection.close()

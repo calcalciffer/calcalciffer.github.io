@@ -79,14 +79,6 @@ civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
 def add_header(curr_ver):
-    # with div(cls='dropdown'):
-    #     button('BBG Version', cls='dropbtn')
-    #     with div(cls="dropdown-content"):
-    #         for v in bbg_versions:
-    #             if v == None:
-    #                 a(f'Base Game', href=f'leaders_base_game.html')
-    #             else:
-    #                 a(f'BBG {v}', href=f'leaders_{v}.html')
     with div():
         if curr_ver != None:
             p(f'BBG {curr_ver} Leader Descriptions')
@@ -101,9 +93,9 @@ def add_header(curr_ver):
         a(img(src='/assets/flags/4x3/cn.svg', height='16px'), href=f'/zh_Hans_CN/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/kr.svg', height='16px'), href=f'/ko_KR/leaders_{curr_ver}.html')
 
-def add_sidebar_header(relative_path, bbg_version):
+def add_sidebar_header(bbg_version):
     with span(cls="image"):
-        img(src=f"{relative_path}/images/logo.png")
+        img(src=f"/images/logo.png")
     with div(cls='dropdown'):
         if bbg_version == None:
             button('Base Game', cls='dropbtn')
@@ -116,12 +108,12 @@ def add_sidebar_header(relative_path, bbg_version):
                 else:
                     a(f'BBG {v}', href=f'leaders_{v}.html')
 
-def add_final_scripts(relative_path):
-    script(src=f"{relative_path}/assets/js/jquery.min.js")
-    script(src=f"{relative_path}/assets/js/browser.min.js")
-    script(src=f"{relative_path}/assets/js/breakpoints.min.js")
-    script(src=f"{relative_path}/assets/js/util.js")
-    script(src=f"{relative_path}/assets/js/main.js")
+def add_final_scripts():
+    script(src=f"/assets/js/jquery.min.js")
+    script(src=f"/assets/js/browser.min.js")
+    script(src=f"/assets/js/breakpoints.min.js")
+    script(src=f"/assets/js/util.js")
+    script(src=f"/assets/js/main.js")
     
 def get_loc(locs_data, s):
     res = locs_data[s]
@@ -154,7 +146,7 @@ def get_html_lang(lang):
     if lang == 'zh_Hans_CN':
         return 'zh-Hans'
 
-def get_html_file(relative_path, bbg_version, lang):
+def get_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
@@ -171,8 +163,8 @@ def get_html_file(relative_path, bbg_version, lang):
             title(f'BBG {bbg_version} Leader Description')
         else :
             title(f'Civ VI GS RF Leaders Description')
-        link(rel='icon', href=f'{relative_path}/images/civVI.webp', type='image/x-icon')
-        link(rel='stylesheet', href=f"{relative_path}/assets/css/main.css")
+        link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
+        link(rel='stylesheet', href=f"/assets/css/main.css")
         meta(charset='utf-8')
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 
@@ -193,7 +185,7 @@ def get_html_file(relative_path, bbg_version, lang):
                                 menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
                                 with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
                                     with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
-                                        img(src=f'{relative_path}/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
+                                        img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
                                     # h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
                                     h3(get_loc(locs_data, leader[3]))
                                     p(get_loc(locs_data, leader[4]))
@@ -201,13 +193,13 @@ def get_html_file(relative_path, bbg_version, lang):
                                     p(f'{get_loc(locs_data, leader[7])}')
                                     for item in civ_leaders_items[leader]:
                                         with h3(f'{get_loc(locs_data, item[4])}'):
-                                            img(src=f'{relative_path}/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:50px")
+                                            img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:50px")
                                         p(f'{get_loc(locs_data, item[5])}')
                                     hr()
             with div(id="sidebar"):
                 with div():
                     attr(cls="inner")
-                    add_sidebar_header(relative_path, bbg_version)
+                    add_sidebar_header(bbg_version)
 
                     with nav(id="menu"):
                         with header():
@@ -216,22 +208,16 @@ def get_html_file(relative_path, bbg_version, lang):
                         with ul():
                             for i in menu_items:
                                 li(a(i, href=f'#{i}'))
-        add_final_scripts(relative_path)
+        add_final_scripts()
 
     docStr = str(doc)
     docStr = docStr.replace('[NEWLINE]', '<br>')
 
     for replace in replacements:
         reg = re.compile(re.escape(replace), re.IGNORECASE)
-        docStr = reg.sub(f'<img src="{relative_path}/images/{replace[1:-1]}.webp" height=16px/>', docStr)
+        docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" height=16px/>', docStr)
     reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
-    # if docStr.find('[ICON_') != -1:
-    #     # reg = re.compile(re.escape('\[ICON_[a-z]*'), re.IGNORECASE)
-    #     print(f'!!!! find missing ICON replacement in BBG {bbg_version} lang:{lang}')
-    #     print(re.findall('\[ICON_[A-Z]*', docStr))
-    #     # print(re.finditer('[ICON', docStr))
-    #     print()
 
     return docStr
