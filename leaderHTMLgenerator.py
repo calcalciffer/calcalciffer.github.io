@@ -97,6 +97,7 @@ def add_header(curr_ver):
         a(img(src='/assets/flags/4x3/us.svg', height='16px'), href=f'/en_US/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/fr.svg', height='16px'), href=f'/fr_FR/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/ru.svg', height='16px'), href=f'/ru_RU/leaders_{curr_ver}.html')
+        a(img(src='/assets/flags/4x3/de.svg', height='16px'), href=f'/de_DE/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/cn.svg', height='16px'), href=f'/zh_Hans_CN/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/kr.svg', height='16px'), href=f'/ko_KR/leaders_{curr_ver}.html')
 
