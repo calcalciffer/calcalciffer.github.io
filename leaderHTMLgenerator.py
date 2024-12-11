@@ -105,7 +105,10 @@ def add_sidebar_header(relative_path, bbg_version):
     with span(cls="image"):
         img(src=f"{relative_path}/images/logo.png")
     with div(cls='dropdown'):
-        button('BBG Version', cls='dropbtn')
+        if bbg_version == None:
+            button('Base Game', cls='dropbtn')
+        else:
+            button(f'BBG v{bbg_version}', cls='dropbtn')
         with div(cls="dropdown-content"):
             for v in bbg_versions:
                 if v == None:
