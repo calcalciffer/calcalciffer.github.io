@@ -98,13 +98,18 @@ civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
-def add_header(curr_ver):
+def add_header(curr_ver, lang):
     with div():
         if curr_ver != None:
             p(f'BBG {curr_ver} Leader Descriptions')
         else:
             p(f'Civ VI GS RF Leader Descriptions')
     with div(style="text-align:right"):
+    # with div(id='menu'):
+    #     button(f'Leaders', style='text-transform: none', href=f'/{lang}/leaders_{curr_ver}.html')
+    #     button(f'Governors', style='text-transform: none')
+    #     button(f'Pantheons', style='text-transform: none')
+    # with div(id='icons'):
         curr_ver = curr_ver if curr_ver != None else 'base_game'
         a(img(src='/assets/flags/4x3/us.svg', height='16px'), href=f'/en_US/leaders_{curr_ver}.html')
         a(img(src='/assets/flags/4x3/fr.svg', height='16px'), href=f'/fr_FR/leaders_{curr_ver}.html')
@@ -197,7 +202,7 @@ def get_html_file(bbg_version, lang):
             with div(id="main"):
                 with div(cls="inner"):
                     with header(id="header"):
-                        add_header(bbg_version)
+                        add_header(bbg_version, lang)
                     with section(id="banner"):
                         with div():
                             attr(cls="content")
