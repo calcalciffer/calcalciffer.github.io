@@ -1205,6 +1205,10 @@
  .lang-switcher svg {
    stroke: #B9B9B9;
  }
+
+ .version-switcher svg {
+    stroke: #B9B9B9;
+  }
  
  .theme-switcher svg {
    width: 24px;
@@ -1545,6 +1549,15 @@
    -ms-flex-align: center;
    align-items: center;
  }
+
+ .version-switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 
  .top-menu-items {
     display: -webkit-box;
@@ -2587,6 +2600,29 @@
    opacity: 1;
    visibility: visible;
  }
+
+ .version-switcher {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.75px;
+    color: #767676;
+  }
+  
+  .version-switcher-wrapper {
+    position: relative;
+  }
+  
+  .version-menu {
+    top: 40px;
+    right: 0;
+    width: 125px;
+  }
+  
+  .version-menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
 
  .top-menu-items {
     font-weight: 500;

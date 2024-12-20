@@ -286,11 +286,27 @@ def get_html_file(bbg_version, lang):
                                     i(data_feather="chevron-down", aria_hidden="true")
                                 with ul(cls="lang-menu dropdown"):
                                     with li():
-                                        a("English", href="##")
+                                        a("English", href=f"/en_US/leaders_{bbg_version}.html")
                                     with li():
-                                        a("French", href="##")
+                                        a("French", href=f"/fr_FR/leaders_{bbg_version}.html")
                                     with li():
-                                        a("Russian", href="##")
+                                        a("Russian", href=f"/ru_RU/leaders_{bbg_version}.html")
+                                    with li():
+                                        a("German", href=f"/de_DE/leaders_{bbg_version}.html")
+                                    with li():
+                                        a("Chinese", href=f"/zh_Hans_CN/leaders_{bbg_version}.html")
+                                    with li():
+                                        a("Korean", href=f"/kr_KR/leaders_{bbg_version}.html")
+                            with div(cls="version-switcher-wrapper"):
+                                with button(bbg_version, cls="version-switcher transparent-btn", type="button"):
+                                    i(data_feather="chevron-down", aria_hidden="true")
+                                with ul(cls="version-menu dropdown"):
+                                    for v in bbg_versions:
+                                        with li():
+                                            if v is None:
+                                                a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
+                                            else:
+                                                a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
                             with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
                                 span("Switch theme", cls="sr-only")
                                 i(cls="sun-icon", data_feather="sun", aria_hidden="true")

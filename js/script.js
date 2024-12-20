@@ -84,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
   (function () {
     var showMenu = document.querySelector('.lang-switcher');
     var langMenu = document.querySelector('.lang-menu');
+    var showVerMenu = document.querySelector('.version-switcher');
+    var verMenu = document.querySelector('.version-menu');
     var layer = document.querySelector('.layer');
 
     if (showMenu) {
@@ -98,8 +100,18 @@ document.addEventListener('DOMContentLoaded', function () {
             langMenu.classList.remove('active');
             layer.classList.remove('active');
           }
+          if (verMenu.classList.contains('active')) {
+            verMenu.classList.remove('active');
+            layer.classList.remove('active');
+          }
         });
       }
+    }
+    if (showVerMenu) {
+      showVerMenu.addEventListener('click', function () {
+        verMenu.classList.add('active');
+        layer.classList.add('active');
+      });
     }
   })();
 
