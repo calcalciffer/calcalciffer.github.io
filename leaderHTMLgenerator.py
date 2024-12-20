@@ -225,7 +225,7 @@ def get_html_file(bbg_version, lang):
         else :
             title(f'Civ VI GS RF Leaders Description')
         link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
-        # link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
+        link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
         link(rel='stylesheet', href=f"/css/style.min.css")
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
@@ -304,18 +304,18 @@ def get_html_file(bbg_version, lang):
                                         with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
                                             with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
                                                 img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
-                                            h3(get_loc(locs_data, leader[3]), style="text-align:left")
+                                            h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
                                             br()
-                                            p(get_loc(locs_data, leader[4]), style="text-align:left")
+                                            p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
                                             br()
-                                            h3(get_loc(locs_data, leader[6]), style="text-align:left")
+                                            h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
                                             br()
-                                            p(f'{get_loc(locs_data, leader[7])}', style="text-align:left")
+                                            p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
                                             br()
                                             for item in civ_leaders_items[leader]:
-                                                with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left"):
+                                                with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
                                                     img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
-                                                p(f'{get_loc(locs_data, item[5])}', style="text-align:left")
+                                                p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
                                                 br()
                                             hr()
                         
@@ -350,7 +350,7 @@ def get_html_file(bbg_version, lang):
 
     for replace in replacements:
         reg = re.compile(re.escape(replace), re.IGNORECASE)
-        docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" style="height:1.4em"/>', docStr)
+        docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" style="height:1em"/>', docStr)
     reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
