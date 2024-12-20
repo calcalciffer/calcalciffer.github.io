@@ -280,7 +280,7 @@ def get_html_file(bbg_version, lang):
                         with div(cls="main-nav-end"):
                             with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
                                 span("Toggle menu", cls="sr-only")
-                                span(cls="icon menu-toggle--gray", aria_hidden="true")
+                                span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="lang-switcher-wrapper"):
                                 with button('EN', cls="lang-switcher transparent-btn", type="button"):
                                     i(data_feather="chevron-down", aria_hidden="true")
@@ -298,10 +298,10 @@ def get_html_file(bbg_version, lang):
                 with main(cls="main users chart-page"):
                     with div(cls="container"):
                         for leader in civ_leaders_items:
-                            with div(cls="row"):
+                            with div(cls="row", id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
                                 with div(cls="col-lg-12"):
-                                    with div(cls="section-title"):
-                                        with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                    with div(cls="chart"):
+                                        # with div():
                                             with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
                                                 img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
                                             h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
@@ -317,7 +317,7 @@ def get_html_file(bbg_version, lang):
                                                     img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
                                                 p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
                                                 br()
-                                            hr()
+                                            # hr()
                         
             # with div(cls="loader"):
             #     div(cls="loader-outter")
