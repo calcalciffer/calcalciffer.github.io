@@ -246,8 +246,8 @@ def get_html_file(bbg_version, lang):
                             span("Home", cls="sr-only")
                             span(cls="icon logo", aria_hidden="true", style="background-image: url(/images/civVI.webp)")
                             with div(cls="logo-text"):
-                                span("Civ", cls="logo-title")
-                                span("VI", cls="logo-subtitle")
+                                span("BBG", cls="logo-title")
+                                # span("VI", cls="logo-subtitle")
                         with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
                             span("Toggle menu", cls="sr-only")
                             span(cls="icon menu-toggle", aria_hidden="true")

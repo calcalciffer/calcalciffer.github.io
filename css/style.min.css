@@ -2062,7 +2062,7 @@
  }
 
  .sidebar-body-menu {
-    position: fixed;
+    position: absolute;
     overflow-x: hidden;
     overflow-y: auto;
     width: 11.5em;
@@ -4214,7 +4214,7 @@
  
  @media (max-width: 1199.98px) {
    .sidebar {
-     position: fixed;
+     position: absolute;
      z-index: 2;
      overflow-y: auto;
      left: -1000px;
