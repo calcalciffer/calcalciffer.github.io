@@ -9,6 +9,7 @@
  */
 
  @import url(../fonts/stylesheet.css);
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
  html {
    line-height: 1.15;
@@ -1032,13 +1033,13 @@
  }
  
  .menu-toggle {
-   background-image: url(../images/Menu-toggle-white.svg);
+   background-image: url(../images/Menu-toggle-gray.svg);
    width: 24px;
    height: 24px;
  }
  
  .menu-toggle--gray {
-   background-image: url(../images/Menu-toggle-gray.svg);
+   background-image: url(../images/Menu-toggle-white.svg);
    width: 24px;
    height: 24px;
  }
@@ -1285,7 +1286,23 @@
     font-family: 'Roboto slab', serif;
     font-weight: 700;
  }
- 
+
+ .civ-ability-name {
+    color:rgb(61, 68, 73);
+    text-align: center;
+    font-family: 'Roboto slab', serif;
+    font-weight: 600;
+ }
+
+ .civ-ability-desc {
+    color:rgb(61, 68, 73);
+    text-align: center;
+    font-family: 'Roboto slab', serif;
+    font-weight: 400;
+    padding-bottom: 1em;
+    line-height: 2;
+ }
+
  h1,
  h2,
  h3 {
@@ -2008,7 +2025,7 @@
    -webkit-box-pack: justify;
    -ms-flex-pack: justify;
    justify-content: space-between;
-   background-color: #0061f7 !important;
+   background-color: #f5f6f7 !important;
    width: 253px;
    padding: 20px 15px 37px 20px;
    -webkit-transition: 0.5s all;
@@ -2068,7 +2085,7 @@
    flex-wrap: wrap;
    padding: 8px 0;
    opacity: 0.6;
-   color: #fff;
+   color: #3d4449;
    font-weight: 500;
    font-size: 14px;
    line-height: 2.43;
@@ -2194,7 +2211,7 @@
    -webkit-box-direction: normal;
    -ms-flex-direction: column;
    flex-direction: column;
-   color: #fff;
+   color: #3d4449;
  }
  
  .logo-title {
@@ -3354,6 +3371,10 @@
  .darkmode .sidebar {
    background-color: #161624 !important;
  }
+
+ .darkmode .sidebar-body-menu a {
+    color: #fff;
+ }
  
  .darkmode .dropdown {
    background-color: #11111d;
@@ -3386,7 +3407,17 @@
     text-align: center;
     color: #b9b9b9;
  }
- 
+
+ .darkmode .civ-ability-name {
+    text-align: center;
+    color: #b9b9b9;
+ }
+
+ .darkmode .civ-ability-desc {
+    text-align: center;
+    color: #b9b9b9;
+ }
+
  .darkmode .stat-cards-item {
    background-color: #222235;
    -webkit-box-shadow: none;
@@ -3526,7 +3557,7 @@
  }
  
  .darkmode .menu-toggle--gray {
-   background-image: url(../images/Menu-toggle-white.svg);
+   background-image: url(../images/Menu-toggle-gray.svg);
  }
  
  .moon-icon {
