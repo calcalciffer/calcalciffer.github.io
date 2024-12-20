@@ -172,26 +172,9 @@ def add_sidebar_header(bbg_version):
                     a(f'BBG {v}', href=f'leaders_{v}.html')
 
 def add_final_scripts():
-    script(src="/js/jquery.min.js")
-    script(src="/js/jquery-migrate-3.0.0.js")
-    script(src="/js/jquery-ui.min.js")
-    script(src="/js/easing.js")
-    script(src="/js/colors.js")
-    script(src="/js/popper.min.js")
-    script(src="/js/bootstrap-datepicker.js")
-    script(src="/js/jquery.nav.js")
-    script(src="/js/slicknav.min.js")
-    script(src="/js/jquery.scrollUp.min.js")
-    script(src="/js/niceselect.js")
-    script(src="/js/tilt.jquery.min.js")
-    script(src="/js/owl-carousel.js")
-    script(src="/js/jquery.counterup.min.js")
-    script(src="/js/steller.js")
-    script(src="/js/wow.min.js")
-    script(src="/js/jquery.magnific-popup.min.js")
-    script(src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js")
-    script(src="/js/bootstrap.min.js")
-    script(src="/js/main.js")
+    script(src="/js/script.js")
+    script(src="/plugins/feather.min.js")
+    script(src="/plugins/chart.min.js")
     
 def get_loc(locs_data, s):
     res = locs_data[s]
@@ -228,7 +211,7 @@ def get_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
-    doc = dominate.document(title=None, lang=get_html_lang(lang), cls="no-js")
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
         script('''
@@ -242,60 +225,112 @@ def get_html_file(bbg_version, lang):
         else :
             title(f'Civ VI GS RF Leaders Description')
         link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
-        link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
-        link(rel='stylesheet', href=f"/css/bootstrap.min.css")
-        link(rel='stylesheet', href=f"/css/nice-select.css")
-        link(rel='stylesheet', href=f"/css/font-awesome.min.css")
-        link(rel='stylesheet', href=f"/css/icofont.css")
-        link(rel='stylesheet', href=f"/css/slicknav.min.css")
-        link(rel='stylesheet', href=f"/css/owl-carousel.css")
-        link(rel='stylesheet', href=f"/css/datepicker.css")
-        link(rel='stylesheet', href=f"/css/animate.min.css")
-        link(rel='stylesheet', href=f"/css/magnific-popup.css")
-        link(rel='stylesheet', href=f"/css/normalize.css")
-        link(rel='stylesheet', href=f"/style.css")
-        link(rel='stylesheet', href=f"/css/responsive.css")
+        # link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
+        link(rel='stylesheet', href=f"/css/style.min.css")
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
 
     # doc.body
 
     menu_items = []
+    for leader in civ_leaders_items:
+        menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
     with doc:
-        with div(cls="preloader"):
-            with div(cls="loader"):
-                div(cls="loader-outter")
-                div(cls="loader-inner")
-                with div(cls="indicator"):
-                    with svg(width='16px', height='12px'):
-                        polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
-                        polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with aside(cls="sidebar"):
+                with div(cls="sidebar-start"):
+                    with div(cls="sidebar-head"):
+                        with a(href="/", cls="logo-wrapper", title="Home"):
+                            span("Home", cls="sr-only")
+                            span(cls="icon logo", aria_hidden="true", style="background-image: url(/images/civVI.webp)")
+                            with div(cls="logo-text"):
+                                span("Civ", cls="logo-title")
+                                span("VI", cls="logo-subtitle")
+                        with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
+                            span("Toggle menu", cls="sr-only")
+                            span(cls="icon menu-toggle", aria_hidden="true")
+                    with div(cls="sidebar-body"):
+                        with ul(cls="sidebar-body-menu"):
+                            # with li():
+                            #     with a("Leaders", cls="active", href="/"):
+                            #         span(cls="icon home", aria_hidden="true")
+                            for item in menu_items:
+                                with li():
+                                    with a(href=f'#{item}'):
+                                        span(item, cls="icon", aria_hidden="true",
+                                            #  style=f'background-image: url("/images/leaders/{item}.webp")'
+                                             )
+            with div(cls="main-wrapper"):
+                with nav(cls="main-nav--bg"):
+                    with div(cls="container main-nav"):
+                        with div(cls="main-nav-start"):
+                            with div(cls="row"):
+                                with div(cls="col-lg"):
+                                    button('Leaders', cls="top-menu-items transparent-btn", type="button", title="Leaders")
+                                with div(cls="col-lg"):
+                                    button('City States', cls="top-menu-items transparent-btn", type="button", title="City States")
+                                with div(cls="col-lg"):
+                                    button('Governors', cls="top-menu-items transparent-btn", type="button", title="Governors")
+                            
+                            # with div():
+                            #     p("City States")
+                            #     p("Governors")
+                        with div(cls="main-nav-end"):
+                            with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
+                                span("Toggle menu", cls="sr-only")
+                                span(cls="icon menu-toggle--gray", aria_hidden="true")
+                            with div(cls="lang-switcher-wrapper"):
+                                with button('EN', cls="lang-switcher transparent-btn", type="button"):
+                                    i(data_feather="chevron-down", aria_hidden="true")
+                                with ul(cls="lang-menu dropdown"):
+                                    with li():
+                                        a("English", href="##")
+                                    with li():
+                                        a("French", href="##")
+                                    with li():
+                                        a("Russian", href="##")
+                            with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
+                                span("Switch theme", cls="sr-only")
+                                i(cls="sun-icon", data_feather="sun", aria_hidden="true")
+                                i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+                with main(cls="main users chart-page"):
+                    with div(cls="container"):
+                        for leader in civ_leaders_items:
+                            with div(cls="row"):
+                                with div(cls="col-lg-12"):
+                                    with div(cls="section-title"):
+                                        with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                            with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
+                                                img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
+                                            h3(get_loc(locs_data, leader[3]), style="text-align:left")
+                                            br()
+                                            p(get_loc(locs_data, leader[4]), style="text-align:left")
+                                            br()
+                                            h3(get_loc(locs_data, leader[6]), style="text-align:left")
+                                            br()
+                                            p(f'{get_loc(locs_data, leader[7])}', style="text-align:left")
+                                            br()
+                                            for item in civ_leaders_items[leader]:
+                                                with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left"):
+                                                    img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
+                                                p(f'{get_loc(locs_data, item[5])}', style="text-align:left")
+                                                br()
+                                            hr()
                         
-        add_header(bbg_version, lang)
+            # with div(cls="loader"):
+            #     div(cls="loader-outter")
+            #     div(cls="loader-inner")
+            #     with div(cls="indicator"):
+            #         with svg(width='16px', height='12px'):
+            #             polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
+            #             polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
+                        
+        # add_header(bbg_version, lang)
 
-        with section(cls="Feautes section"):
-            with div(cls="containter"):
-                for leader in civ_leaders_items:
-                    menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
-                    with div(cls="row"):
-                        with div(cls="col-lg-12"):
-                            with div(cls="section-title"):
-                                with div(id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
-                                    with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
-                                        img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
-                                    h3(get_loc(locs_data, leader[3]), style="text-align:left")
-                                    p(get_loc(locs_data, leader[4]), style="text-align:left")
-                                    br()
-                                    h3(get_loc(locs_data, leader[6]), style="text-align:left")
-                                    p(f'{get_loc(locs_data, leader[7])}', style="text-align:left")
-                                    br()
-                                    for item in civ_leaders_items[leader]:
-                                        with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left"):
-                                            img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
-                                        p(f'{get_loc(locs_data, item[5])}', style="text-align:left")
-                                        br()
-                                    hr()
+        # with section(cls="Feautes section"):
+        #     with div(cls="containter"):
         #     with div(id="sidebar"):
         #         with div():
         #             attr(cls="inner")
