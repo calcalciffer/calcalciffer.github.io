@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   (function () {
     var sidebar = document.querySelector('.sidebar'),
+        leaderData = document.querySelector('.leaders-data'),
         // catSubMenu = document.querySelector('.cat-sub-menu'),
         sidebarBtns = document.querySelectorAll('.sidebar-toggle');
 
@@ -54,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             sidebar.classList.toggle('hidden');
+            leaderData.classList.toggle('main-pl');
+            leaderData.classList.toggle('main-pl-sidebar-close');
             // catSubMenu.classList.remove('visible');
           });
         }

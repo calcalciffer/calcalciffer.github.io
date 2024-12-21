@@ -3655,9 +3655,6 @@
    width:253px
  }
 
- .pl-\[260px\] {
-   padding-left:260px
- }
 
  .min-w-full {
    min-width:100%
@@ -3999,6 +3996,14 @@
  }
  
  @media (min-width: 1200px) {
+
+    .main-pl {
+      padding-left:260px
+    }
+     
+    .main-pl-sidebar-close {
+      padding-left:60px
+    }
 
    .main-nav.sticky {
      margin-left: -260px;

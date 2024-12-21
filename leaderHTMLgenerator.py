@@ -330,7 +330,7 @@ def get_leader_html_file(bbg_version, lang):
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items)
-                    with div(cls="min-w-full pl-[260px] md:pl-0 py-10"):
+                    with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for leader in civ_leaders_items:
