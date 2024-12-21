@@ -75,10 +75,9 @@ def get_city_states(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT * FROM CityStates WHERE Domain = 'Expansion2CityStates'")
+    crsr.execute("SELECT * FROM CityStates WHERE Domain = 'Expansion2CityStates' ORDER BY CityStateCategory, CivilizationType")
     rows = crsr.fetchall()
     
-    rows = sorted(rows)
     cityStates = []
     uniques = []
 
