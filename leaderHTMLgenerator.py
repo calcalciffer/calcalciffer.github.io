@@ -109,62 +109,67 @@ def add_preloader():
 
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
-def add_header(curr_ver, lang):
-    with header(cls="header"):
-            with div(cls="header-inner"):
-                with div(cls="container"):
+
+def add_lang(text_name, link_name, bbg_version, flag):
+    with li():
+        with a(href=f"/{link_name}/leaders_{bbg_version}.html", style="align-content: center;"):
+            img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+
+def add_header(bbg_version, lang):
+    with nav(cls="main-nav--bg"):
+        with div(cls="main-nav"):
+            with div(cls="header"):
+                with div(cls="header-inner"):
                     with div(cls="inner"):
                         with div(cls="row"):
-                            with div(cls="col-lg-3 col-md-3 col-12"):
-                                with div(cls="logo"):
-                                    with a(href="/index.html"):
-                                        img(src="/images/logo.png", alt="#")
+                            with div(cls="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1"):
+                                with button(cls="transparent-btn", title="Menu", type="button"):
+                                    span("Toggle menu", cls="sr-only")
+                                    span(cls="icon menu-toggle", aria_hidden="true")
+                            with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
+                                with a(href="/index.html", style="align-content: center;"):
+                                    img(src="/images/BBGlogo.png",alt="#")
                                 div(cls="mobile-nav")
-                            with div(cls="col-lg-6 col-md-6 col-12"):
+                            with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
+                                with div(cls="main-menu"):
+                                    with nav(cls="navigation"):
+                                        with ul(cls="nav menu"):
+                                            with li(cls="active"):
+                                                a('Leaders', href="#")
+                                            with li():
+                                                a('City States', href="#")
+                                            with li():
+                                                a('Pantheons', href="#")
+                                            with li():
+                                                with a('BBG Version'):
+                                                    i(cls="icofont-rounded-down")
+                                                with ul(cls="dropdown"):
+                                                    for v in bbg_versions:
+                                                        with li():
+                                                            if v is None:
+                                                                a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
+                                                            else:
+                                                                a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
                                             with li():
-                                                a('Leaders', href='#')
-                                            with li():
-                                                a('Governors', href='#')
-                                            with li():
-                                                a('Pantheons', href='#')
-                                            with li():
-                                                a('City States', href='#')
-                                            # with li():
-                            with div(cls="col-lg-3 col-md-3 col-12", style="align-content: center;"):
-                                with a(href=f'/en_US/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/us.svg', style='height:1em')
-                                with a(href=f'/fr_FR/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/fr.svg', style='height:1em')
-                                with a(href=f'/ru_RU/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/ru.svg', style='height:1em')
-                                with a(href=f'/de_DE/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/de.svg', style='height:1em')
-                                with a(href=f'/zh_Hans_CN/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/cn.svg', style='height:1em')
-                                with a(href=f'/ko_KR/leaders_{curr_ver}.html'):
-                                    img(src='/assets/flags/4x3/kr.svg', style='height:1em')
-    
-    # with div():
-    #     if curr_ver != None:
-    #         p(f'BBG {curr_ver} Leader Descriptions')
-    #     else:
-    #         p(f'Civ VI GS RF Leader Descriptions')
-    # with div(style="text-align:right"):
-    # # with div(id='menu'):
-    # #     button(f'Leaders', style='text-transform: none', href=f'/{lang}/leaders_{curr_ver}.html')
-    # #     button(f'Governors', style='text-transform: none')
-    # #     button(f'Pantheons', style='text-transform: none')
-    # # with div(id='icons'):
-    #     curr_ver = curr_ver if curr_ver != None else 'base_game'
-    #     a(img(src='/assets/flags/4x3/us.svg', height='16px'), href=f'/en_US/leaders_{curr_ver}.html')
-    #     a(img(src='/assets/flags/4x3/fr.svg', height='16px'), href=f'/fr_FR/leaders_{curr_ver}.html')
-    #     a(img(src='/assets/flags/4x3/ru.svg', height='16px'), href=f'/ru_RU/leaders_{curr_ver}.html')
-    #     a(img(src='/assets/flags/4x3/de.svg', height='16px'), href=f'/de_DE/leaders_{curr_ver}.html')
-    #     a(img(src='/assets/flags/4x3/cn.svg', height='16px'), href=f'/zh_Hans_CN/leaders_{curr_ver}.html')
-    #     a(img(src='/assets/flags/4x3/kr.svg', height='16px'), href=f'/ko_KR/leaders_{curr_ver}.html')
+                                                i(cls="lang-icon fa fa-language", style="font-size:50px; padding-top:7px")
+
+                                                with ul(cls="dropdown", style="width:80px"):
+                                                    add_lang('English  ', 'en_US', bbg_version, 'us')
+                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr')
+                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru')
+                                                    add_lang('German  ', 'de_DE', bbg_version, 'de')
+                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn')
+                                                    add_lang('Korean  ', 'kr_KR', bbg_version, 'kr')
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                                with div(cls="theme-switcher-wrapper"):
+                                    with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
+                                        span("Switch theme", cls="sr-only")
+                                        i(cls="sun-icon", data_feather="sun", aria_hidden="true")
+                                        i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     
 def add_sidebar(menu_items):
     with aside(cls="sidebar"):
@@ -198,6 +203,7 @@ def add_final_scripts():
     script(src="/js/script.js")
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
+    script(src="https://kit.fontawesome.com/bd91c323e3.js", crossorigin="anonymous")
     
 def get_loc(locs_data, s):
     res = locs_data[s]
@@ -267,66 +273,7 @@ def get_leader_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                with nav(cls="main-nav--bg"):
-                    with div(cls="main-nav"):
-                        with div(cls="header"):
-                            with div(cls="header-inner"):
-                                with div(cls="inner"):
-                                    with div(cls="row"):
-                                        with div(cls="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1"):
-                                            with button(cls="transparent-btn", title="Menu", type="button"):
-                                                span("Toggle menu", cls="sr-only")
-                                                span(cls="icon menu-toggle", aria_hidden="true")
-                                        with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
-                                            with a(href="/index.html", style="align-content: center;"):
-                                                img(src="/images/BBGlogo.png",alt="#")
-                                            div(cls="mobile-nav")
-                                        with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
-                                            with div(cls="main-menu"):
-                                                with nav(cls="navigation"):
-                                                    with ul(cls="nav menu"):
-                                                        with li(cls="active"):
-                                                            a('Leaders', href="#")
-                                                        with li():
-                                                            a('City States', href="#")
-                                                        with li():
-                                                            a('Pantheons', href="#")
-                                                        with li():
-                                                            with a('BBG Version'):
-                                                                i(cls="icofont-rounded-down")
-                                                            with ul(cls="dropdown"):
-                                                                for v in bbg_versions:
-                                                                    with li():
-                                                                        if v is None:
-                                                                            a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
-                                                                        else:
-                                                                            a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
-                                        with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
-                                            with div(cls="main-menu"):
-                                                with nav(cls="navigation"):
-                                                    with ul(cls="nav menu"):
-                                                        with li():
-                                                            with a('Lang'):
-                                                                i(cls="icofont-rounded-down")
-                                                            with ul(cls="dropdown"):
-                                                                with li():
-                                                                    a("English", href=f"/en_US/leaders_{bbg_version}.html")
-                                                                with li():
-                                                                    a("French", href=f"/fr_FR/leaders_{bbg_version}.html")
-                                                                with li():
-                                                                    a("Russian", href=f"/ru_RU/leaders_{bbg_version}.html")
-                                                                with li():
-                                                                    a("German", href=f"/de_DE/leaders_{bbg_version}.html")
-                                                                with li():
-                                                                    a("Chinese", href=f"/zh_Hans_CN/leaders_{bbg_version}.html")
-                                                                with li():
-                                                                    a("Korean", href=f"/kr_KR/leaders_{bbg_version}.html")
-                                        with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
-                                            with div(cls="theme-switcher-wrapper"):
-                                                with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
-                                                    span("Switch theme", cls="sr-only")
-                                                    i(cls="sun-icon", data_feather="sun", aria_hidden="true")
-                                                    i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+                add_header(bbg_version, lang)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items)
