@@ -538,7 +538,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var lastCivClicked = localStorage.getItem('lastCivClicked');
       if (lastCivClicked != null) {
         const element = document.getElementById(lastCivClicked);
-        element.scrollIntoView();
+        if (element != null) {
+          element.scrollIntoView();
+        }
       }
   	});
   })(jQuery);
