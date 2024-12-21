@@ -111,13 +111,16 @@ def add_preloader():
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
 
+def get_version_name(bbg_version):
+    return bbg_version if bbg_version != None else 'base_game'
+
 def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page):
     with li():
         if leader_page:
-            with a(href=f"/{link_name}/leaders_{bbg_version}.html", style="align-content: center;"):
+            with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
         elif cs_page:
-            with a(href=f"/{link_name}/city_states_{bbg_version}.html", style="align-content: center;"):
+            with a(href=f"/{link_name}/city_states_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
         if pantheon_page:
             with a(href=f"#", style="align-content: center;"):
@@ -143,9 +146,9 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
                                             with li(cls="active" if leader_page else ""):
-                                                a('Leaders', href=f"/{lang}/leaders_{bbg_version}.html", onclick=f'civClicked(null)')
+                                                a('Leaders', href=f"/{lang}/leaders_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if cs_page else ""):
-                                                a('City States', href=f"/{lang}/city_states_{bbg_version}.html", onclick=f'civClicked(null)')
+                                                a('City States', href=f"/{lang}/city_states_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if pantheon_page else ""):
                                                 a('Pantheons', href=f"#", onclick=f'civClicked(null)')
                                             with li():
@@ -259,6 +262,11 @@ def add_html_header(doc, page_title):
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
+        
+def add_scroll_up():
+    with a(id="scrollUp", cls="scroll-up displayNone", href="#top", onclick=f'civClicked(null)', style="position: fixed; z-index: 2147483647;"):
+        with span():
+            i(cls='fa fa-angle-up')
 
 def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
@@ -308,9 +316,7 @@ def get_leader_html_file(bbg_version, lang):
                                                     br()
 
         add_final_scripts()
-        with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
-            with span():
-                i(cls='fa fa-angle-up')
+        add_scroll_up()
 
     docStr = str(doc)
     docStr = docStr.replace('[NEWLINE]', '<br>')
@@ -360,9 +366,7 @@ def get_city_state_html_file(bbg_version, lang):
                                                 p(get_loc(locs_data, cs[5]), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
-        with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
-            with span():
-                i(cls='fa fa-angle-up')
+        add_scroll_up()
 
     docStr = str(doc)
     docStr = docStr.replace('[NEWLINE]', '<br>')
