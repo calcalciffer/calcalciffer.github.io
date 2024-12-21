@@ -182,7 +182,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                     add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page)
                                                     add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page)
                                                     add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page)
-                                                    add_lang('Korean  ', 'kr_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page)
+                                                    add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page)
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="theme-switcher-wrapper"):
                                     with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
@@ -190,16 +190,16 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                         i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                                         i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     
-def add_sidebar(menu_items, images_dir):
+def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"):
         with div(cls="sidebar-start"):
             with div(cls="sidebar-body"):
                 with ul(cls="sidebar-body-menu"):
-                    for item in menu_items:
+                    for i, item in enumerate(menu_items):
                         with li():
                             with a(href=f'#{item}', onclick=f'civClicked("{item}")'):
                                 with span(cls="icon", aria_hidden="true"):
-                                    img(src=f'/{images_dir}/{item}.webp')
+                                    img(src=f'/{images_dir}/{menu_icons[i]}.webp')
                                 p(item)
 
 def add_final_scripts():
@@ -271,8 +271,10 @@ def get_leader_html_file(bbg_version, lang):
         add_html_header(doc, f'Civ VI GS RF Leaders Description')
 
     menu_items = []
+    menu_icons = []
     for leader in civ_leaders_items:
         menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
+        menu_icons.append(get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5]))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -281,7 +283,7 @@ def get_leader_html_file(bbg_version, lang):
                 add_header(bbg_version, lang, leader_page=True)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items, 'images/leaders')
+                        add_sidebar(menu_items, menu_icons, 'images/leaders')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
@@ -333,8 +335,10 @@ def get_city_state_html_file(bbg_version, lang):
         add_html_header(doc, f'Civ VI GS RF City State Description')
 
     menu_items = []
+    menu_icons = []
     for cs in city_states:
         menu_items.append(get_loc(locs_data, cs[2]))
+        menu_icons.append(get_loc(en_US_locs_data, cs[2]))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -343,7 +347,7 @@ def get_city_state_html_file(bbg_version, lang):
                 add_header(bbg_version, lang, cs_page=True)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items, 'images/city_states')
+                        add_sidebar(menu_items, menu_icons, 'images/city_states')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
