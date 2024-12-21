@@ -556,10 +556,12 @@ function adjustStickyHeader(scrollPos) {
     $('.main-nav').addClass("sticky");
     $('.sidebar-body').addClass("sticky");
     $('.sidebar-body-menu').addClass("sticky");
+    $('.scroll-up').removeClass('displayNone');
   } else {
     $('.main-nav').removeClass("sticky");
     $('.sidebar-body').removeClass("sticky");
     $('.sidebar-body-menu').removeClass("sticky");
+    $('.scroll-up').addClass('displayNone');
   }
 }
 

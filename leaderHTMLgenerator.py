@@ -327,6 +327,9 @@ def get_leader_html_file(bbg_version, lang):
         #                     for i in menu_items:
         #                         li(a(i, href=f'#{i}'))
         add_final_scripts()
+        with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
+            with span():
+                i(cls='fa fa-angle-up')
 
     docStr = str(doc)
     docStr = docStr.replace('[NEWLINE]', '<br>')

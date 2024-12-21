@@ -4134,8 +4134,8 @@
    }
 
    .sidebar img {
-    width: 3em;
-  }
+     width: 3em;
+   }
 
    .sidebar.hidden img {
      width: 5em;
@@ -4356,6 +4356,14 @@
      left: -1000px;
    }
 
+   .sidebar img {
+     width: 3em;
+   }
+
+   .sidebar.hidden img {
+     width: 5em;
+   }
+
    .md\:pl-0 {
      padding-left:0
    }
@@ -4524,3 +4532,26 @@
     width: 97%;
   }
 }
+
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #1a76d1;
+	color: #fff;
+	font-size: 25px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #00000026;
+}
+#scrollUp:hover{
+	background:#2C2D3F;
+}
+
+ .scroll-up.displayNone {
+    display: none;
+ }
