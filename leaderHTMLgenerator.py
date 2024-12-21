@@ -165,6 +165,18 @@ def add_header(curr_ver, lang):
     #     a(img(src='/assets/flags/4x3/de.svg', height='16px'), href=f'/de_DE/leaders_{curr_ver}.html')
     #     a(img(src='/assets/flags/4x3/cn.svg', height='16px'), href=f'/zh_Hans_CN/leaders_{curr_ver}.html')
     #     a(img(src='/assets/flags/4x3/kr.svg', height='16px'), href=f'/ko_KR/leaders_{curr_ver}.html')
+    
+def add_sidebar(menu_items):
+    with aside(cls="sidebar"):
+        with div(cls="sidebar-start"):
+            with div(cls="sidebar-body"):
+                with ul(cls="sidebar-body-menu"):
+                    for item in menu_items:
+                        with li():
+                            with a(href=f'#{item}'):
+                                span(item, cls="icon", aria_hidden="true",
+                                    #  style=f'background-image: url("/images/leaders/{item}.webp")'
+                                        )
 
 def add_sidebar_header(bbg_version):
     with span(cls="image"):
@@ -239,6 +251,8 @@ def get_leader_html_file(bbg_version, lang):
         link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
         link(rel='stylesheet', href=f"/css/style.min.css")
         link(rel='stylesheet', href=f"/css/preloader.css")
+        link(rel='stylesheet', href=f"/css/animate.min.css")
+        link(rel='stylesheet', href=f"/css/header.css")
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -252,102 +266,94 @@ def get_leader_html_file(bbg_version, lang):
         add_preloader()
         div(cls="layer")
         with div(cls="page-flex"):
-            with aside(cls="sidebar"):
-                with div(cls="sidebar-start"):
-                    with div(cls="sidebar-head"):
-                        with a(href="/", cls="logo-wrapper", title="Home"):
-                            span("Home", cls="sr-only")
-                            span(cls="icon logo", aria_hidden="true", style="background-image: url(/images/civVI.webp)")
-                            with div(cls="logo-text"):
-                                span("BBG", cls="logo-title")
-                                # span("VI", cls="logo-subtitle")
-                        with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
-                            span("Toggle menu", cls="sr-only")
-                            span(cls="icon menu-toggle", aria_hidden="true")
-                    with div(cls="sidebar-body"):
-                        with ul(cls="sidebar-body-menu"):
-                            # with li():
-                            #     with a("Leaders", cls="active", href="/"):
-                            #         span(cls="icon home", aria_hidden="true")
-                            for item in menu_items:
-                                with li():
-                                    with a(href=f'#{item}'):
-                                        span(item, cls="icon", aria_hidden="true",
-                                            #  style=f'background-image: url("/images/leaders/{item}.webp")'
-                                             )
             with div(cls="main-wrapper"):
                 with nav(cls="main-nav--bg"):
-                    with div(cls="container main-nav"):
-                        with div(cls="main-nav-start"):
-                            with div(cls="row"):
-                                with div(cls="col-lg3"):
-                                    button('Leaders', cls="top-menu-items transparent-btn", type="button", title="Leaders")
-                                with div(cls="col-lg3"):
-                                    button('City States', cls="top-menu-items transparent-btn", type="button", title="City States")
-                                with div(cls="col-lg3"):
-                                    button('Governors', cls="top-menu-items transparent-btn", type="button", title="Governors")
-                            
-                            # with div():
-                            #     p("City States")
-                            #     p("Governors")
-                        with div(cls="main-nav-end"):
-                            with button(cls="sidebar-toggle transparent-btn", title="Menu", type="button"):
-                                span("Toggle menu", cls="sr-only")
-                                span(cls="icon menu-toggle", aria_hidden="true")
-                            with div(cls="lang-switcher-wrapper"):
-                                with button('EN', cls="lang-switcher transparent-btn", type="button"):
-                                    i(data_feather="chevron-down", aria_hidden="true")
-                                with ul(cls="lang-menu dropdown"):
-                                    with li():
-                                        a("English", href=f"/en_US/leaders_{bbg_version}.html")
-                                    with li():
-                                        a("French", href=f"/fr_FR/leaders_{bbg_version}.html")
-                                    with li():
-                                        a("Russian", href=f"/ru_RU/leaders_{bbg_version}.html")
-                                    with li():
-                                        a("German", href=f"/de_DE/leaders_{bbg_version}.html")
-                                    with li():
-                                        a("Chinese", href=f"/zh_Hans_CN/leaders_{bbg_version}.html")
-                                    with li():
-                                        a("Korean", href=f"/kr_KR/leaders_{bbg_version}.html")
-                            with div(cls="version-switcher-wrapper"):
-                                with button(bbg_version, cls="version-switcher transparent-btn", type="button"):
-                                    i(data_feather="chevron-down", aria_hidden="true")
-                                with ul(cls="version-menu dropdown"):
-                                    for v in bbg_versions:
-                                        with li():
-                                            if v is None:
-                                                a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
-                                            else:
-                                                a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
-                            with div(cls="theme-switcher-wrapper"):
-                                with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
-                                    span("Switch theme", cls="sr-only")
-                                    i(cls="sun-icon", data_feather="sun", aria_hidden="true")
-                                    i(cls="moon-icon", data_feather="moon", aria_hidden="true")
-                with main(cls="main users chart-page"):
-                    with div(cls="container"):
-                        for leader in civ_leaders_items:
-                            with div(cls="row", id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
-                                with div(cls="col-lg-12"):
-                                    with div(cls="chart"):
-                                        # with div():
-                                            with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
-                                                img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
-                                            h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
-                                            br()
-                                            p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
-                                            br()
-                                            h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
-                                            br()
-                                            p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
-                                            br()
-                                            for item in civ_leaders_items[leader]:
-                                                with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
-                                                    img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
-                                                p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
-                                                br()
-                                            # hr()
+                    with div(cls="main-nav"):
+                        with div(cls="header"):
+                            with div(cls="header-inner"):
+                                with div(cls="inner"):
+                                    with div(cls="row"):
+                                        with div(cls="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1"):
+                                            with button(cls="transparent-btn", title="Menu", type="button"):
+                                                span("Toggle menu", cls="sr-only")
+                                                span(cls="icon menu-toggle", aria_hidden="true")
+                                        with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
+                                            with a(href="/index.html", style="align-content: center;"):
+                                                img(src="/images/BBGlogo.png",alt="#")
+                                            div(cls="mobile-nav")
+                                        with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
+                                            with div(cls="main-menu"):
+                                                with nav(cls="navigation"):
+                                                    with ul(cls="nav menu"):
+                                                        with li(cls="active"):
+                                                            a('Leaders', href="#")
+                                                        with li():
+                                                            a('City States', href="#")
+                                                        with li():
+                                                            a('Pantheons', href="#")
+                                                        with li():
+                                                            with a('BBG Version'):
+                                                                i(cls="icofont-rounded-down")
+                                                            with ul(cls="dropdown"):
+                                                                for v in bbg_versions:
+                                                                    with li():
+                                                                        if v is None:
+                                                                            a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
+                                                                        else:
+                                                                            a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
+                                        with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                                            with div(cls="main-menu"):
+                                                with nav(cls="navigation"):
+                                                    with ul(cls="nav menu"):
+                                                        with li():
+                                                            with a('Lang'):
+                                                                i(cls="icofont-rounded-down")
+                                                            with ul(cls="dropdown"):
+                                                                with li():
+                                                                    a("English", href=f"/en_US/leaders_{bbg_version}.html")
+                                                                with li():
+                                                                    a("French", href=f"/fr_FR/leaders_{bbg_version}.html")
+                                                                with li():
+                                                                    a("Russian", href=f"/ru_RU/leaders_{bbg_version}.html")
+                                                                with li():
+                                                                    a("German", href=f"/de_DE/leaders_{bbg_version}.html")
+                                                                with li():
+                                                                    a("Chinese", href=f"/zh_Hans_CN/leaders_{bbg_version}.html")
+                                                                with li():
+                                                                    a("Korean", href=f"/kr_KR/leaders_{bbg_version}.html")
+                                        with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                                            with div(cls="theme-switcher-wrapper"):
+                                                with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
+                                                    span("Switch theme", cls="sr-only")
+                                                    i(cls="sun-icon", data_feather="sun", aria_hidden="true")
+                                                    i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items)
+                    with div(cls="min-w-full pl-[260px] md:pl-0 py-10"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for leader in civ_leaders_items:
+                                    with div(cls="row", id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                # with div():
+                                                    with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
+                                                        img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
+                                                    h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
+                                                    br()
+                                                    p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
+                                                    br()
+                                                    h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
+                                                    br()
+                                                    p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
+                                                    br()
+                                                    for item in civ_leaders_items[leader]:
+                                                        with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
+                                                            img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
+                                                        p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
+                                                        br()
+                                                    # hr()
                         
             # with div(cls="loader"):
             #     div(cls="loader-outter")
