@@ -128,7 +128,7 @@ def add_header(bbg_version, lang):
                                     span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
                                 with a(href="/index.html", style="align-content: center;"):
-                                    img(src="/images/BBGlogo.png",alt="#")
+                                    img(src="/images/BBGLogo.png",alt="#")
                                 div(cls="mobile-nav")
                             with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
                                 with div(cls="main-menu"):
