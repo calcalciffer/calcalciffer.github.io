@@ -38,7 +38,7 @@
 	color: #2C2D3F;
 	font-size: 14px;
 	font-weight: 500;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	padding: 25px 12px;
 	position: relative;
 	display: inline-block;
@@ -174,7 +174,7 @@
 	color: #666;
 	display: block;
 	font-weight: 400;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	background: transparent;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;

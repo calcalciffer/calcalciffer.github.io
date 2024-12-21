@@ -179,9 +179,9 @@ def add_sidebar(menu_items):
                     for item in menu_items:
                         with li():
                             with a(href=f'#{item}'):
-                                span(item, cls="icon", aria_hidden="true",
-                                    #  style=f'background-image: url("/images/leaders/{item}.webp")'
-                                        )
+                                with span(cls="icon", aria_hidden="true"):
+                                    img(src=f'/images/leaders/{item}.webp')
+                                p(item)
 
 def add_sidebar_header(bbg_version):
     with span(cls="image"):
