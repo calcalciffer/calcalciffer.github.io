@@ -535,6 +535,11 @@ document.addEventListener('DOMContentLoaded', function () {
     $(window).on('load', function() {
       adjustStickyHeader(window.scrollY);
       $('.preloader').addClass('preloader-deactivate');
+      var lastCivClicked = localStorage.getItem('lastCivClicked');
+      if (lastCivClicked != null) {
+        const element = document.getElementById(lastCivClicked);
+        element.scrollIntoView();
+      }
   	});
   })(jQuery);
 
@@ -568,3 +573,7 @@ document.addEventListener("scroll", (event) => {
     ticking = true;
   }
 });
+
+function civClicked(civName) {
+  localStorage.setItem('lastCivClicked', civName);
+}

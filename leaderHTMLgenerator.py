@@ -178,7 +178,7 @@ def add_sidebar(menu_items):
                 with ul(cls="sidebar-body-menu"):
                     for item in menu_items:
                         with li():
-                            with a(href=f'#{item}'):
+                            with a(href=f'#{item}', onclick=f'civClicked("{item}")'):
                                 with span(cls="icon", aria_hidden="true"):
                                     img(src=f'/images/leaders/{item}.webp')
                                 p(item)
