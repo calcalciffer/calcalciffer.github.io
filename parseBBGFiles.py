@@ -71,6 +71,26 @@ def get_civs_tables(db_path):
     connection.close()
     return civLeaderItems
 
+def get_city_states(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT * FROM CityStates WHERE Domain = 'Expansion2CityStates'")
+    rows = crsr.fetchall()
+    
+    rows = sorted(rows)
+    cityStates = []
+    uniques = []
+
+    for val in rows:
+        # print(val)
+        if val[0] + val[1] not in uniques:
+            cityStates.append(val)
+            uniques.append(val[0] + val[1])
+    
+    connection.close()
+    return cityStates
+
 def get_start_biases(db_path):
     writer = csv.writer()
     writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])

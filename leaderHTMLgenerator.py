@@ -97,6 +97,16 @@ replacements = [
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
 
+def add_preloader():
+    with div(cls="preloader"):
+        with div(cls="loader"):
+            div(cls="loader-outter")
+            div(cls="loader-inner")
+            with div(cls="indicator"):
+                with svg(width="16px",height="12px"):
+                    polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
+                    polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
+
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
 def add_header(curr_ver, lang):
@@ -172,6 +182,7 @@ def add_sidebar_header(bbg_version):
                     a(f'BBG {v}', href=f'leaders_{v}.html')
 
 def add_final_scripts():
+    script(src="/js/jquery.min.js")
     script(src="/js/script.js")
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
@@ -207,7 +218,7 @@ def get_html_lang(lang):
     if lang == 'zh_Hans_CN':
         return 'zh-Hans'
 
-def get_html_file(bbg_version, lang):
+def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
 
@@ -227,6 +238,7 @@ def get_html_file(bbg_version, lang):
         link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
         link(rel='stylesheet', href=f"/css/style.min.css")
+        link(rel='stylesheet', href=f"/css/preloader.css")
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -237,6 +249,7 @@ def get_html_file(bbg_version, lang):
     for leader in civ_leaders_items:
         menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
     with doc:
+        add_preloader()
         div(cls="layer")
         with div(cls="page-flex"):
             with aside(cls="sidebar"):
@@ -267,11 +280,11 @@ def get_html_file(bbg_version, lang):
                     with div(cls="container main-nav"):
                         with div(cls="main-nav-start"):
                             with div(cls="row"):
-                                with div(cls="col-lg"):
+                                with div(cls="col-lg3"):
                                     button('Leaders', cls="top-menu-items transparent-btn", type="button", title="Leaders")
-                                with div(cls="col-lg"):
+                                with div(cls="col-lg3"):
                                     button('City States', cls="top-menu-items transparent-btn", type="button", title="City States")
-                                with div(cls="col-lg"):
+                                with div(cls="col-lg3"):
                                     button('Governors', cls="top-menu-items transparent-btn", type="button", title="Governors")
                             
                             # with div():
@@ -307,10 +320,11 @@ def get_html_file(bbg_version, lang):
                                                 a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
                                             else:
                                                 a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
-                            with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
-                                span("Switch theme", cls="sr-only")
-                                i(cls="sun-icon", data_feather="sun", aria_hidden="true")
-                                i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+                            with div(cls="theme-switcher-wrapper"):
+                                with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
+                                    span("Switch theme", cls="sr-only")
+                                    i(cls="sun-icon", data_feather="sun", aria_hidden="true")
+                                    i(cls="moon-icon", data_feather="moon", aria_hidden="true")
                 with main(cls="main users chart-page"):
                     with div(cls="container"):
                         for leader in civ_leaders_items:

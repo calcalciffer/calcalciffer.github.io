@@ -528,5 +528,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  (function($) {
+    $(window).on('load', function() {
+      $('.preloader').addClass('preloader-deactivate');
+  	});
+  })(jQuery);
+
   addData();
 });

@@ -12,11 +12,24 @@
     <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta contents="IE=edge" httpequiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
   </head>
   <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
     <div class="layer"></div>
     <div class="page-flex">
       <aside class="sidebar">
@@ -430,13 +443,13 @@
           <div class="container main-nav">
             <div class="main-nav-start">
               <div class="row">
-                <div class="col-lg">
+                <div class="col-lg3">
                   <button class="top-menu-items transparent-btn" title="Leaders" type="button">Leaders</button>
                 </div>
-                <div class="col-lg">
+                <div class="col-lg3">
                   <button class="top-menu-items transparent-btn" title="City States" type="button">City States</button>
                 </div>
-                <div class="col-lg">
+                <div class="col-lg3">
                   <button class="top-menu-items transparent-btn" title="Governors" type="button">Governors</button>
                 </div>
               </div>
@@ -504,9 +517,11 @@
                   </li>
                 </ul>
               </div>
-              <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-              </button>
+              <div class="theme-switcher-wrapper">
+                <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                  <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -2185,6 +2200,7 @@
         </main>
       </div>
     </div>
+    <script src="/js/jquery.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/plugins/feather.min.js"></script>
     <script src="/plugins/chart.min.js"></script>
