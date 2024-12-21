@@ -143,11 +143,11 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
                                             with li(cls="active" if leader_page else ""):
-                                                a('Leaders', href=f"/{lang}/leaders_{bbg_version}.html")
+                                                a('Leaders', href=f"/{lang}/leaders_{bbg_version}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if cs_page else ""):
-                                                a('City States', href=f"/{lang}/city_states_{bbg_version}.html")
+                                                a('City States', href=f"/{lang}/city_states_{bbg_version}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if pantheon_page else ""):
-                                                a('Pantheons', href=f"/{lang}/pantheons_{bbg_version}.html")
+                                                a('Pantheons', href=f"/{lang}/pantheons_{bbg_version}.html", onclick=f'civClicked(null)')
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
