@@ -120,7 +120,7 @@ def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pant
             with a(href=f"/{link_name}/city_states_{bbg_version}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
         if pantheon_page:
-            with a(href=f"/{link_name}/pantheons_{bbg_version}.html", style="align-content: center;"):
+            with a(href=f"#", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
 def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False):
@@ -147,7 +147,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                             with li(cls="active" if cs_page else ""):
                                                 a('City States', href=f"/{lang}/city_states_{bbg_version}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if pantheon_page else ""):
-                                                a('Pantheons', href=f"/{lang}/pantheons_{bbg_version}.html", onclick=f'civClicked(null)')
+                                                a('Pantheons', href=f"#", onclick=f'civClicked(null)')
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
@@ -166,9 +166,9 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"BBG v{v}", href=f"/{lang}/city_states_{v}.html")
                                                             elif pantheon_page:
                                                                 if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/pantheons_base_game.html")
+                                                                    a(f"Base Game", href=f"#")
                                                                 else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/pantheons_{v}.html")
+                                                                    a(f"BBG v{v}", href=f"#")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
