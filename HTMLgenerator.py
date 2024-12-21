@@ -111,10 +111,17 @@ def add_preloader():
 bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
 
-def add_lang(text_name, link_name, bbg_version, flag):
+def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page):
     with li():
-        with a(href=f"/{link_name}/leaders_{bbg_version}.html", style="align-content: center;"):
-            img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        if leader_page:
+            with a(href=f"/{link_name}/leaders_{bbg_version}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        elif cs_page:
+            with a(href=f"/{link_name}/city_states_{bbg_version}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        if pantheon_page:
+            with a(href=f"/{link_name}/pantheons_{bbg_version}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
 def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False):
     with nav(cls="main-nav--bg"):
@@ -136,21 +143,32 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
                                             with li(cls="active" if leader_page else ""):
-                                                a('Leaders', href="#")
+                                                a('Leaders', href=f"/{lang}/leaders_{bbg_version}.html")
                                             with li(cls="active" if cs_page else ""):
-                                                a('City States', href="#")
+                                                a('City States', href=f"/{lang}/city_states_{bbg_version}.html")
                                             with li(cls="active" if pantheon_page else ""):
-                                                a('Pantheons', href="#")
+                                                a('Pantheons', href=f"/{lang}/pantheons_{bbg_version}.html")
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
                                                 with ul(cls="dropdown"):
                                                     for v in bbg_versions:
                                                         with li():
-                                                            if v is None:
-                                                                a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
-                                                            else:
-                                                                a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
+                                                            if leader_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
+                                                            elif cs_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/city_states_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/city_states_{v}.html")
+                                                            elif pantheon_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/pantheons_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/pantheons_{v}.html")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
@@ -159,12 +177,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                 i(cls="lang-icon fa fa-language", style="font-size:50px; padding-top:7px")
 
                                                 with ul(cls="dropdown", style="width:80px"):
-                                                    add_lang('English  ', 'en_US', bbg_version, 'us')
-                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr')
-                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru')
-                                                    add_lang('German  ', 'de_DE', bbg_version, 'de')
-                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn')
-                                                    add_lang('Korean  ', 'kr_KR', bbg_version, 'kr')
+                                                    add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page)
+                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page)
+                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page)
+                                                    add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page)
+                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page)
+                                                    add_lang('Korean  ', 'kr_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page)
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="theme-switcher-wrapper"):
                                     with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
