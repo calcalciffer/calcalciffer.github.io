@@ -183,21 +183,6 @@ def add_sidebar(menu_items):
                                     img(src=f'/images/leaders/{item}.webp')
                                 p(item)
 
-def add_sidebar_header(bbg_version):
-    with span(cls="image"):
-        img(src=f"/images/logo.png")
-    with div(cls='dropdown'):
-        if bbg_version == None:
-            button('Base Game', cls='dropbtn')
-        else:
-            button(f'BBG v{bbg_version}', cls='dropbtn')
-        with div(cls="dropdown-content"):
-            for v in bbg_versions:
-                if v == None:
-                    a(f'Base Game', href=f'leaders_base_game.html')
-                else:
-                    a(f'BBG {v}', href=f'leaders_{v}.html')
-
 def add_final_scripts():
     script(src="/js/jquery.min.js")
     script(src="/js/script.js")
@@ -235,12 +220,8 @@ def get_html_lang(lang):
         return 'ru'
     if lang == 'zh_Hans_CN':
         return 'zh-Hans'
-
-def get_leader_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
-
-    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    
+def add_html_header(doc, page_title):
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
         script('''
@@ -249,10 +230,7 @@ def get_leader_html_file(bbg_version, lang):
       gtag('js', new Date());
       gtag('config', 'G-Z2ESCT7CR0');
     ''')
-        if bbg_version != None:
-            title(f'BBG {bbg_version} Leader Description')
-        else :
-            title(f'Civ VI GS RF Leaders Description')
+        title(page_title)
         link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
         link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
         link(rel='stylesheet', href=f"/css/style.min.css")
@@ -263,7 +241,15 @@ def get_leader_html_file(bbg_version, lang):
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
 
-    # doc.body
+def get_leader_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} Leader Description')
+    else :
+        add_html_header(doc, f'Civ VI GS RF Leaders Description')
 
     menu_items = []
     for leader in civ_leaders_items:
@@ -284,48 +270,22 @@ def get_leader_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                # with div():
-                                                    with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
-                                                        img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
-                                                    h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
+                                                with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
+                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
+                                                h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
+                                                br()
+                                                p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
+                                                br()
+                                                h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
+                                                br()
+                                                p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
+                                                br()
+                                                for item in civ_leaders_items[leader]:
+                                                    with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
+                                                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
+                                                    p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
                                                     br()
-                                                    p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
-                                                    br()
-                                                    h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
-                                                    br()
-                                                    p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
-                                                    br()
-                                                    for item in civ_leaders_items[leader]:
-                                                        with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
-                                                            img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
-                                                        p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
-                                                        br()
-                                                    # hr()
-                        
-            # with div(cls="loader"):
-            #     div(cls="loader-outter")
-            #     div(cls="loader-inner")
-            #     with div(cls="indicator"):
-            #         with svg(width='16px', height='12px'):
-            #             polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
-            #             polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
-                        
-        # add_header(bbg_version, lang)
 
-        # with section(cls="Feautes section"):
-        #     with div(cls="containter"):
-        #     with div(id="sidebar"):
-        #         with div():
-        #             attr(cls="inner")
-        #             add_sidebar_header(bbg_version)
-
-        #             with nav(id="menu"):
-        #                 with header():
-        #                     attr(cls='major')
-        #                     h2('Menu')
-        #                 with ul():
-        #                     for i in menu_items:
-        #                         li(a(i, href=f'#{i}'))
         add_final_scripts()
         with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
             with span():
