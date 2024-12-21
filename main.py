@@ -19,8 +19,10 @@ for bbg_ver in bbg_versions:
             with open(f'{l}/leaders_{bbg_ver}.html', 'w') as f:
                 f.write(docStr)
 
-get_city_states("sqlFiles/DebugConfiguration.sqlite")
-
-docStr= get_leader_html_file('Beta', 'en_US')
+docStr = get_leader_html_file('Beta', 'en_US')
 with open(f'en_US/leaders_Beta.html', 'w') as f:
+    f.write(docStr)
+    
+docStr = get_city_state_html_file('Beta', 'en_US')
+with open(f'en_US/city_states_Beta.html', 'w') as f:
     f.write(docStr)

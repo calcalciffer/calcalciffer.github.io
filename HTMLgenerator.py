@@ -96,6 +96,7 @@ replacements = [
 ]
 
 civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
+city_states = get_city_states("sqlFiles/DebugConfiguration.sqlite")
 
 def add_preloader():
     with div(cls="preloader"):
@@ -115,7 +116,7 @@ def add_lang(text_name, link_name, bbg_version, flag):
         with a(href=f"/{link_name}/leaders_{bbg_version}.html", style="align-content: center;"):
             img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang):
+def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False):
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -134,11 +135,11 @@ def add_header(bbg_version, lang):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
-                                            with li(cls="active"):
+                                            with li(cls="active" if leader_page else ""):
                                                 a('Leaders', href="#")
-                                            with li():
+                                            with li(cls="active" if cs_page else ""):
                                                 a('City States', href="#")
-                                            with li():
+                                            with li(cls="active" if pantheon_page else ""):
                                                 a('Pantheons', href="#")
                                             with li():
                                                 with a('BBG Version'):
@@ -171,7 +172,7 @@ def add_header(bbg_version, lang):
                                         i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                                         i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     
-def add_sidebar(menu_items):
+def add_sidebar(menu_items, images_dir):
     with aside(cls="sidebar"):
         with div(cls="sidebar-start"):
             with div(cls="sidebar-body"):
@@ -180,7 +181,7 @@ def add_sidebar(menu_items):
                         with li():
                             with a(href=f'#{item}', onclick=f'civClicked("{item}")'):
                                 with span(cls="icon", aria_hidden="true"):
-                                    img(src=f'/images/leaders/{item}.webp')
+                                    img(src=f'/{images_dir}/{item}.webp')
                                 p(item)
 
 def add_final_scripts():
@@ -259,10 +260,10 @@ def get_leader_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang)
+                add_header(bbg_version, lang, leader_page=True)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items)
+                        add_sidebar(menu_items, 'images/leaders')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
@@ -285,6 +286,56 @@ def get_leader_html_file(bbg_version, lang):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
                                                     p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
                                                     br()
+
+        add_final_scripts()
+        with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
+            with span():
+                i(cls='fa fa-angle-up')
+
+    docStr = str(doc)
+    docStr = docStr.replace('[NEWLINE]', '<br>')
+
+    for replace in replacements:
+        reg = re.compile(re.escape(replace), re.IGNORECASE)
+        docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" style="height:1em"/>', docStr)
+    reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
+    docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
+    docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
+
+    return docStr
+
+def get_city_state_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} City State Description')
+    else :
+        add_html_header(doc, f'Civ VI GS RF City State Description')
+
+    menu_items = []
+    for cs in city_states:
+        menu_items.append(get_loc(locs_data, cs[2]))
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, cs_page=True)
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, 'images/city_states')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for cs in city_states:
+                                    with div(cls="row", id=get_loc(locs_data, cs[2])):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, cs[2]), cls='civ-name'):
+                                                    img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2])}.webp', style="vertical-align: middle")
+                                                p(get_loc(locs_data, cs[5]), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
         with a(id="scrollUp", cls="scroll-up displayNone", href="#top", style="position: fixed; z-index: 2147483647;"):
