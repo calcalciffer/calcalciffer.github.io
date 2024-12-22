@@ -1527,6 +1527,10 @@
    border-radius: 50%;
    border-width: 0;
  }
+
+ .gray-circle-btn:hover {
+    background-color: #ff8c33
+ }
  
  .ligt-circle-btn {
    display: -webkit-box;
@@ -1554,6 +1558,10 @@
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
+ }
+
+ .lang-icon:hover {
+    color: #ff8c33
  }
 
  .version-switcher {
@@ -2117,6 +2125,10 @@
    font-weight: 500;
    /* font-size: 14px; */
    /* line-height: 2.43; */
+ }
+
+ .sidebar-body-menu p:hover {
+    color:#ff8c33
  }
  
  .sidebar-body-menu a::after {
@@ -3429,6 +3441,10 @@
  .darkmode .gray-circle-btn {
    background-color: #222235;
  }
+
+ .darkmode .gray-circle-btn:hover {
+    color: #ff8c33;
+  }
  
  .darkmode .sun-icon {
    display: none;
@@ -3638,6 +3654,10 @@
  
  .darkmode .lang-icon {
     color: #7679a8
+ }
+
+ .darkmode .lang-icon:hover {
+    color: #ff8c33
  }
  
  .moon-icon {
