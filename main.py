@@ -12,7 +12,7 @@ langs = ['de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'en_US', 'fr
 
 def generate_leader_html_file(bbg_ver, l):
     docStr = get_leader_html_file(bbg_ver, l)
-    print(f'writing ver={bbg_ver} lang={l}')
+    # print(f'writing ver={bbg_ver} lang={l}')
     if bbg_ver == None:
         with open(f'{l}/leaders_base_game.html', 'w') as f:
             f.write(docStr)
@@ -22,17 +22,29 @@ def generate_leader_html_file(bbg_ver, l):
 
 def generate_city_state_html_file(bbg_ver, l):
     docStr = get_city_state_html_file(bbg_ver, l)
-    print(f'writing ver={bbg_ver} lang={l}')
+    # print(f'writing ver={bbg_ver} lang={l}')
     if bbg_ver == None:
         with open(f'{l}/city_states_base_game.html', 'w') as f:
             f.write(docStr)
     else:
         with open(f'{l}/city_states_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
+            
+def generate_pantheon_html_file(bbg_ver, l):
+    docStr = get_pantheon_html_file(bbg_ver, l)
+    # print(f'writing ver={bbg_ver} lang={l}')
+    if bbg_ver == None:
+        with open(f'{l}/pantheons_base_game.html', 'w') as f:
+            f.write(docStr)
+    else:
+        with open(f'{l}/pantheons_{bbg_ver}.html', 'w') as f:
+            f.write(docStr)
 
 for bbg_ver in bbg_versions:
     for l in langs:
         generate_leader_html_file(bbg_ver, l)
         generate_city_state_html_file(bbg_ver, l)
+        generate_pantheon_html_file(bbg_ver, l)
 generate_leader_html_file('Beta', 'en_US')
 generate_city_state_html_file('Beta', 'en_US')
+generate_pantheon_html_file('Beta', 'en_US')

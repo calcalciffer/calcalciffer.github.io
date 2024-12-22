@@ -90,6 +90,15 @@ def get_city_states(db_path):
     connection.close()
     return cityStates
 
+def get_pantheons(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT * FROM Beliefs WHERE BeliefClassType = 'BELIEF_CLASS_PANTHEON'")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
+    
 def get_start_biases(db_path):
     writer = csv.writer()
     writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])
