@@ -141,7 +141,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                 with a(href="/index.html", style="align-content: center;"):
                                     img(src="/images/BBGLogo.webp", style="width:50px; border-radius:10%", alt="#")
                                 div(cls="mobile-nav")
-                            with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
+                            with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-5"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
@@ -172,7 +172,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"Base Game", href=f"#")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"#")
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
@@ -186,7 +186,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                     add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page)
                                                     add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page)
                                                     add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page)
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                                 with div(cls="theme-switcher-wrapper"):
                                     with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
                                         span("Switch theme", cls="sr-only")
