@@ -139,7 +139,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                     span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
                                 with a(href="/index.html", style="align-content: center;"):
-                                    img(src="/images/BBGLogo.png",alt="#")
+                                    img(src="/images/BBGLogo.webp", style="width:50px; border-radius:10%", alt="#")
                                 div(cls="mobile-nav")
                             with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
                                 with div(cls="main-menu"):
