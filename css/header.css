@@ -55,8 +55,6 @@
 	border-radius: 5px 5px 0 0;
 	opacity:0;
 	visibility:hidden;
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 }
 .header .nav li.active a:before{
@@ -143,13 +141,9 @@
 	left:-20px;
 	top: 100%;
 	z-index: 999;
-	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 3px 5px #3333334d;
 	transform-origin: 0 0 0;
 	transform: scaleY(0.2);
-	-webkit-transition: all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	opacity: 0;
 	visibility: hidden;
@@ -176,8 +170,6 @@
 	font-weight: 400;
 	/* text-transform: capitalize; */
 	background: transparent;
-	-webkit-transition:all 0.2s ease;
-	-moz-transition:all 0.2s ease;
 	transition:all 0.2s ease;
 }
 .header .nav li .dropdown li a:before{
@@ -232,8 +224,6 @@
 	z-index: 9999;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	top: 74px;
 	box-shadow: 0px 0px 10px #0000001c;
@@ -251,8 +241,6 @@
 	height: 50px;
 	line-height: 50px;
 	padding: 0 70px 0 20px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	border-radius: 3px;
 	border: none;
@@ -283,8 +271,6 @@
 	top:0;
 	left:0;
 	bottom:initial;
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
 	animation: fadeInDown 0.5s both 0.1s;
 	box-shadow:0px 0px 13px #00000054;
