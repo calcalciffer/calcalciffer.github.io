@@ -90,11 +90,11 @@ def get_city_states(db_path):
     connection.close()
     return cityStates
 
-def get_pantheons(db_path):
+def get_beliefs(db_path, belief_type):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT * FROM Beliefs WHERE BeliefClassType = 'BELIEF_CLASS_PANTHEON'")
+    crsr.execute(f"SELECT * FROM Beliefs WHERE BeliefClassType = '{belief_type}'")
     rows = crsr.fetchall()
     connection.close()
     return rows

@@ -1385,7 +1385,7 @@
 			<Text>ガードワラの建設が可能になる。（[ICON_Faith] 信仰力+3、[ICON_Food] 食料+3、 [ICON_Housing]住宅+1。）</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MEETING_HOUSE_DESCRIPTION" Language="ja_JP">
-			<Text>公会堂の建設が可能になる。（[ICON_Faith] 信仰力+3、[ICON_Produciton] 生産力+3。）</Text>
+			<Text>公会堂の建設が可能になる。（[ICON_Faith] 信仰力+3、[ICON_Production] 生産力+3。）</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WAT_DESCRIPTION" Language="ja_JP">
 			<Text>ワットの建設が可能になる。 （[ICON_Faith] 信仰力+3、[ICON_Science]科学力+3。）</Text>
