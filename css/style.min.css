@@ -1845,8 +1845,6 @@
    color: #3d4449;
    font-family: 'Roboto slab', serif;
    font-weight: 500;
-   /* font-size: 14px; */
-   /* line-height: 2.43; */
  }
 
  .sidebar-body-menu a::after {
@@ -3659,6 +3657,11 @@
      z-index: 2;
      overflow-y: auto;
      left: -1000px;
+     width: 130px;
+   }
+
+   .sidebar-body-menu {
+    width: 95px;
    }
 
    .sidebar img {
@@ -3680,6 +3683,10 @@
    .sidebar.hidden {
      left: 0;
    }
+
+   .sidebar-body-menu a p {
+        font-size: 0;
+    }
  
    .main-nav {
      flex-direction: row-reverse;
