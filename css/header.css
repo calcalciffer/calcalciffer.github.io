@@ -304,3 +304,10 @@
 .darkmode .header .nav li .dropdown li:hover a{
 	color:#ff8c33;
 }
+
+@media (max-width: 799.9px) {
+    .header .nav li a {
+        font-size: 11px;
+        padding: 10px 8px;
+    }   
+}
