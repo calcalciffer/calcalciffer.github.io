@@ -28,7 +28,7 @@ replacements = [
     '[ICON_DISTRICT_DAM]',
     '[ICON_DISTRICT_DIPLOMATIC_QUARTER]',
     '[ICON_DISTRICT_ENCAMPMENT]',
-    '[ICON_DISTRICT_ENTERTAINMENT_COMPLEX]',
+    '[ICON_DISTRICT_ENTERTAINMENT]',
     '[ICON_DISTRICT_HARBOR]',
     '[ICON_DISTRICT_GOVERNMENT]',
     '[ICON_DISTRICT_HOLYSITE]',
@@ -126,6 +126,8 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
+    docStr = docStr.replace('[ICON_PRESSUREUP]', '')
+    docStr = docStr.replace('[ICON_PRESSUREDOWN]', '')
     if (docStr.find('[ICON_') != -1):
         print(f'missing ICON_ in {bbg_version} lang={lang} {docStr.find('[ICON_')}')
 

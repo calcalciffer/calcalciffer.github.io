@@ -191,7 +191,7 @@
 		</Replace>
 		<!-- = unique district = -->
 		<Replace Tag="LOC_DISTRICT_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der einzigartig für Brasilien ist, der keinen Bezirks-Bürger-Platz kostet und kein Spezial-[ICON_DISTRICT] Bezirk ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk und gewährt +2 [ICON_AMENITIES] Annehmlichkeiten. Schaltet auch das "Karneval-Projekt" frei, das zusätzlich +1 [ICON_AMENITIES] Annehmlichkeit während der Durchführung und eine Vielzahl von [ICON_GreatPerson] Große Persönlichkeit-Punkten nach Abschluss gewährt. Kann nicht in einer Stadt mit einem "Copacabana-Bezirk" gebaut werden.</Text>
+			<Text>Ein Bezirk, der einzigartig für Brasilien ist, der keinen Bezirks-Bürger-Platz kostet und kein Spezial-[ICON_DISTRICT] Bezirk ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk und gewährt +2 [ICON_AMENITIES] Annehmlichkeiten. Schaltet auch das "Karneval-Projekt" frei, das zusätzlich +1 [ICON_AMENITIES] Annehmlichkeit während der Durchführung und eine Vielzahl von [ICON_GreatPerson] Große Persönlichkeit-Punkten nach Abschluss gewährt. Kann nicht in einer Stadt mit einem "Copacabana-Bezirk" gebaut werden.</Text>
 		</Replace>
 		<!-- = unique district = -->
 		<Replace Tag="LOC_DISTRICT_WATER_STREET_CARNIVAL_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -217,10 +217,10 @@
 			<Text>Erhalte +2 [ICON_RELIGION] Religiöse Stärke für jede Heilige Stadt, die zu deiner [ICON_RELIGION] Religion konvertiert wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_HIPPODROME_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der einzigartig für Byzanz ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk, gewährt +2 [ICON_AMENITIES] Annehmlichkeiten und ist günstiger im Bau. Wenn der "Hippodrom-Bezirk" und die Gebäude in diesem Bezirk gebaut werden, erhältst du eine schwere Kavallerie-Einheit.</Text>
+			<Text>Ein Bezirk, der einzigartig für Byzanz ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt +2 [ICON_AMENITIES] Annehmlichkeiten und ist günstiger im Bau. Wenn der "Hippodrom-Bezirk" und die Gebäude in diesem Bezirk gebaut werden, erhältst du eine schwere Kavallerie-Einheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_HIPPODROME_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein Bezirk, der einzigartig für Byzanz ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk, gewährt +2 [ICON_AMENITIES] Annehmlichkeiten und ist günstiger im Bau. Wenn der "Hippodrom-Bezirk" und die Gebäude in diesem Bezirk gebaut werden, erhältst du eine schwere Kavallerie-Einheit. Einheiten, die von diesem Bezirk gewährt werden, haben keine Ressourcenunterhaltskosten. Kann nicht in einer Stadt mit einem [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark-Bezirk gebaut werden.</Text>
+			<Text>Ein Bezirk, der einzigartig für Byzanz ist. Er ersetzt das [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt +2 [ICON_AMENITIES] Annehmlichkeiten und ist günstiger im Bau. Wenn der "Hippodrom-Bezirk" und die Gebäude in diesem Bezirk gebaut werden, erhältst du eine schwere Kavallerie-Einheit. Einheiten, die von diesem Bezirk gewährt werden, haben keine Ressourcenunterhaltskosten. Kann nicht in einer Stadt mit einem [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark-Bezirk gebaut werden.</Text>
 		</Replace>
 		<!-- = leader ability (Theodora) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_THEODORA_DESCRIPTION" Language="de_DE">
@@ -271,7 +271,7 @@
 		</Replace>
 		<!-- = unique improvement = -->
 		<Replace Tag="LOC_IMPROVEMENT_ICE_HOCKEY_RINK_DESCRIPTION" Language="de_DE">
-			<Text>Die Ausrichtung "Diplomatischer Dienst" schaltet die Fähigkeit des Handwerkers frei, die "Eissporthalle" zu bauen, die für Kanada einzigartig ist. Kann auf Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeldern gebaut werden. Es kann nur eine "Eissporthalle" pro Stadt gebaut werden.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur für jedes angrenzende Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeld.[NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit und + 2 Anziehungskraft für jedes angrenzende Feld.[NEWLINE]+2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Profisport".[NEWLINE]+4 [ICON_CULTURE] Kultur für ein angrenzendes Stadion-Gebäude im [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk.[NEWLINE][NEWLINE]Bietet [ICON_Tourism] Tourismus aus Kultur nach Erforschung der Technologie "Luftfahrt".</Text>
+			<Text>Die Ausrichtung "Diplomatischer Dienst" schaltet die Fähigkeit des Handwerkers frei, die "Eissporthalle" zu bauen, die für Kanada einzigartig ist. Kann auf Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeldern gebaut werden. Es kann nur eine "Eissporthalle" pro Stadt gebaut werden.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur für jedes angrenzende Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeld.[NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit und + 2 Anziehungskraft für jedes angrenzende Feld.[NEWLINE]+2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Profisport".[NEWLINE]+4 [ICON_CULTURE] Kultur für ein angrenzendes Stadion-Gebäude im [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk.[NEWLINE][NEWLINE]Bietet [ICON_Tourism] Tourismus aus Kultur nach Erforschung der Technologie "Luftfahrt".</Text>
 		</Replace>
 
 		<!-- == CHINA == -->
@@ -666,7 +666,7 @@
 			<Text>Ein einzigartiger Bezirk für Griechenland, der den [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk ersetzt und günstiger zu bauen ist.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kulturbonus für jeden benachbarten [ICON_DISTRICT] Bezirk. Zusätzlicher +1 [ICON_CULTURE] Kulturbonus für benachbartes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk, +2 [ICON_CULTURE] Kulturbonus für jedes benachbarte [ICON_DISTRICT_WONDER] Weltwunder. Kann nur auf Hügelfeldern gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Ein einzigartiger Bezirk für Griechenland, der den [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk ersetzt und günstiger zu bauen ist.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kulturbonus für jeden benachbarten [ICON_DISTRICT] Bezirk. Zusätzlicher +1 [ICON_CULTURE] Kulturbonus für benachbartes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk, +2 [ICON_CULTURE] Kulturbonus für jedes benachbarte [ICON_DISTRICT_WONDER] Weltwunder, [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex- und [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark-Bezirk. Kann nur auf Hügelfeldern gebaut werden.</Text>
+			<Text>Ein einzigartiger Bezirk für Griechenland, der den [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk ersetzt und günstiger zu bauen ist.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kulturbonus für jeden benachbarten [ICON_DISTRICT] Bezirk. Zusätzlicher +1 [ICON_CULTURE] Kulturbonus für benachbartes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk, +2 [ICON_CULTURE] Kulturbonus für jedes benachbarte [ICON_DISTRICT_WONDER] Weltwunder, [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex- und [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark-Bezirk. Kann nur auf Hügelfeldern gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus: Standard-[ICON_CULTURE] Kulturbonus für benachbartes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk. Standard-[ICON_CULTURE] Kulturbonus für jeden benachbarten [ICON_DISTRICT] Bezirk. Großer-[ICON_CULTURE] Kulturbonus für jedes benachbarte [ICON_DISTRICT_WONDER] Weltwunder. Kann nur auf Hügelfeldern gebaut werden.</Text>
@@ -768,7 +768,7 @@
 		<!-- == INDONESIA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION" Language="de_DE">
-			<Text>Küsten- und Seefelder bieten einen geringen Nachbarschaftsbonus für [ICON_DISTRICT_HOLYSITE] Heilige Stätte-, [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke. +1 [ICON_AMENITIES] Annehmlichkeit für jeden [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk, der an ein Küsten- oder Seefeld angrenzt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>Küsten- und Seefelder bieten einen geringen Nachbarschaftsbonus für [ICON_DISTRICT_HOLYSITE] Heilige Stätte-, [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke. +1 [ICON_AMENITIES] Annehmlichkeit für jeden [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, der an ein Küsten- oder Seefeld angrenzt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = leader ability (Gitarja) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION" Language="de_DE">
@@ -1249,7 +1249,7 @@
 		</Replace>
 		<!-- = einzigartige Verbesserung = -->
 		<Replace Tag="LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Die Ausrichtung „Spiele und Erholung“ schaltet die Fähigkeit des Handwerkers frei, einen "Golfplatz" zu bauen, der nur für Schottland einzigartig ist.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_CULTURE] Kultur, +1 [ICON_AMENITIES] Annehmlichkeit und +1 Anziehungskraft für angrenzende Felder.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur, wenn angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk. +1 [ICON_CULTURE] Kultur und +1 [ICON_AMENITIES] Annehmlichkeit, wenn angrenzend an einen [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk. Zusätzlich +1 [ICON_AMENITIES] Annehmlichkeit nach Erforschung der Ausrichtung "Gilden". Zusätzlich +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur nach Erforschung der Ausrichtung "Aufklärung". +1 [ICON_HOUSING] Wohnraum nach Erforschung der Ausrichtung "Globalisierung".[NEWLINE][NEWLINE]Kann nicht auf Wüsten- oder Wüstenhügelfeldern platziert werden. Einmal pro Stadt. Felder mit "Golfplatz" können nicht getauscht werden.</Text>
+			<Text>Die Ausrichtung „Spiele und Erholung“ schaltet die Fähigkeit des Handwerkers frei, einen "Golfplatz" zu bauen, der nur für Schottland einzigartig ist.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold, +1 [ICON_CULTURE] Kultur, +1 [ICON_AMENITIES] Annehmlichkeit und +1 Anziehungskraft für angrenzende Felder.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur, wenn angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirk. +1 [ICON_CULTURE] Kultur und +1 [ICON_AMENITIES] Annehmlichkeit, wenn angrenzend an einen [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk. Zusätzlich +1 [ICON_AMENITIES] Annehmlichkeit nach Erforschung der Ausrichtung "Gilden". Zusätzlich +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur nach Erforschung der Ausrichtung "Aufklärung". +1 [ICON_HOUSING] Wohnraum nach Erforschung der Ausrichtung "Globalisierung".[NEWLINE][NEWLINE]Kann nicht auf Wüsten- oder Wüstenhügelfeldern platziert werden. Einmal pro Stadt. Felder mit "Golfplatz" können nicht getauscht werden.</Text>
 		</Replace>
 		
 		<!-- == SCYTHIA == -->
@@ -2117,7 +2117,7 @@
 			<Text>+1 [ICON_CULTURE] Kultur und +1 [ICON_PRODUCTION] Produktion für alle Regenwaldfelder in deinem Reich.[NEWLINE][NEWLINE]Muss auf einem Regenwaldfeld gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COLOSSEUM_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_CULTURE] Kultur, +2 [ICON_PRESSUREUP] Loyalität, +2 [ICON_AMENITIES] Annehmlichkeiten für jedes deiner [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirke innerhalb von 6 Feldern.[NEWLINE][NEWLINE]Muss auf flachem Land angrenzend an einen [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk mit dem Arena-Gebäude gebaut werden.</Text>
+			<Text>+1 [ICON_CULTURE] Kultur, +2 [ICON_PRESSUREUP] Loyalität, +2 [ICON_AMENITIES] Annehmlichkeiten für jedes deiner [ICON_DISTRICT_CITY_CENTER] Stadtzentrum-Bezirke innerhalb von 6 Feldern.[NEWLINE][NEWLINE]Muss auf flachem Land angrenzend an einen [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk mit dem Arena-Gebäude gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COLOSSUS_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_TradeRoute] Handelswegkapazität. Gewährt sofort eine [ICON_TradeRoute] Händler-Einheit. Eingehende internationale [ICON_TradeRoute] Handelswege zu dieser Stadt bringen +2 [ICON_GOLD] Gold für beide Städte. Muss auf einem Küstenfeld, angrenzend an ein Landfeld und einen [ICON_DISTRICT_HARBOR] Hafen-Bezirk gebaut werden.</Text>
@@ -2311,7 +2311,7 @@
 			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Vulkanfeld und bietet +1 [ICON_CULTURE] Kultur und +1 [ICON_FOOD] Nahrung. Bei einem Ausbruch gibt es mittlere Erträge und beschädigt wahrscheinlich Gebäude und [ICON_DISTRICT] Bezirke. Bricht selten aus, ist aber immer aktiv.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PAMUKKALE_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_AMENITIES] Annehmlichkeit für die Städte, die mindestens ein Feld von "Pamukkale" besitzen. Großer-Nachbarschaftsbonus für [ICON_DISTRICT_THEATER] Theaterplatz-, [ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke. Zusätzlicher Standard-Nachbarschaftsbonus für den [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk. [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk bietet +1 [ICON_AMENITIES] Annehmlichkeit, wenn er benachbart zu "Pamukkale" ist. Es bietet Süßwasser.</Text>
+			<Text>Zweiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_AMENITIES] Annehmlichkeit für die Städte, die mindestens ein Feld von "Pamukkale" besitzen. Großer-Nachbarschaftsbonus für [ICON_DISTRICT_THEATER] Theaterplatz-, [ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke. Zusätzlicher Standard-Nachbarschaftsbonus für den [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk. [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk bietet +1 [ICON_AMENITIES] Annehmlichkeit, wenn er benachbart zu "Pamukkale" ist. Es bietet Süßwasser.</Text>
 		</Replace>
 		<Row Tag="LOC_CAMPUS_MOUNTAIN_WONDER_ADJACENCY_BBG" Language="de_DE">
 			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft vom benachbarten Bergfeld-Naturwunder.</Text>
@@ -2378,10 +2378,10 @@
 		</Replace>
 		<!-- = Mexico City = -->
 		<Replace Tag="LOC_CIVILIZATION_MEXICO_CITY_BONUS" Language="de_DE">
-			<Text>Regionale Effekte von deinen [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-, [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark- und [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirken reichen 3 Feldern weiter. +1 [ICON_AMENITIES] Annehmlichkeit von [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirken.</Text>
+			<Text>Regionale Effekte von deinen [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-, [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark- und [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirken reichen 3 Feldern weiter. +1 [ICON_AMENITIES] Annehmlichkeit von [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirken.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_MEXICO_CITY_DESCRIPTION" Language="de_DE">
-			<Text>Regionale Effekte von deinen [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-, [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark- und [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirken reichen 3 Feldern weiter. +1 [ICON_AMENITIES] Annehmlichkeit von [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirken.</Text>
+			<Text>Regionale Effekte von deinen [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-, [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark- und [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirken reichen 3 Feldern weiter. +1 [ICON_AMENITIES] Annehmlichkeit von [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirken.</Text>
 		</Replace>
 		<!-- = Singapore = -->
 		<Replace Tag="LOC_CIVILIZATION_SINGAPORE_BONUS" Language="de_DE">
@@ -2461,10 +2461,10 @@
 		</Replace>
 		<!-- = Caguana = -->
 		<Replace Tag="LOC_CIVILIZATION_CAGUANA_BONUS" Language="de_DE">
-			<Text>Deine Handwerker können jetzt "Batey"-Verbesserungen durchführen.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur. +1 [ICON_CULTURE] Kultur für jede angrenzende Bonusressource und [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk, steigend auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Erkundung". +1 [ICON_PRODUCTION] Produktion für jede angrenzende strategische Ressource. +1 [ICON_GOLD] Gold für jede angrenzende Luxusressource. Bietet [ICON_TOURISM] Tourismus nach Erforschung der Technologie "Luftfahrt". Kann nicht neben einem anderen "Batey" gebaut werden.</Text>
+			<Text>Deine Handwerker können jetzt "Batey"-Verbesserungen durchführen.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur. +1 [ICON_CULTURE] Kultur für jede angrenzende Bonusressource und [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, steigend auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Erkundung". +1 [ICON_PRODUCTION] Produktion für jede angrenzende strategische Ressource. +1 [ICON_GOLD] Gold für jede angrenzende Luxusressource. Bietet [ICON_TOURISM] Tourismus nach Erforschung der Technologie "Luftfahrt". Kann nicht neben einem anderen "Batey" gebaut werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_CAGUANA_DESCRIPTION" Language="de_DE">
-			<Text>Deine Handwerker können jetzt "Batey"-Verbesserungen durchführen.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur. +1 [ICON_CULTURE] Kultur für jede angrenzende Bonusressource und [ICON_DISTRICT_ENTERTAINMENT_COMPLEX] Unterhaltungskomplex-Bezirk, steigend auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Erkundung". +1 [ICON_PRODUCTION] Produktion für jede angrenzende strategische Ressource. +1 [ICON_GOLD] Gold für jede angrenzende Luxusressource. Bietet [ICON_TOURISM] Tourismus nach Erforschung der Technologie "Luftfahrt". Kann nicht neben einem anderen "Batey" gebaut werden.</Text>
+			<Text>Deine Handwerker können jetzt "Batey"-Verbesserungen durchführen.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur. +1 [ICON_CULTURE] Kultur für jede angrenzende Bonusressource und [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, steigend auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Erkundung". +1 [ICON_PRODUCTION] Produktion für jede angrenzende strategische Ressource. +1 [ICON_GOLD] Gold für jede angrenzende Luxusressource. Bietet [ICON_TOURISM] Tourismus nach Erforschung der Technologie "Luftfahrt". Kann nicht neben einem anderen "Batey" gebaut werden.</Text>
 		</Replace>
 		<!-- = Kumasi = -->
   		<Replace Tag="LOC_CIVILIZATION_KUMASI_BONUS" Language="de_DE">
