@@ -38,6 +38,7 @@ replacements = [
     '[ICON_DISTRICT_NEIGHBORHOOD]',
     '[ICON_DISTRICT_LAVRA]',
     '[ICON_DISTRICT_PRESERVE]',
+    '[ICON_DISTRICT_SEOWON]',
     '[ICON_DISTRICT_SPACEPORT]',
     '[ICON_DISTRICT_THEATER]',
     '[ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX]',
@@ -75,6 +76,9 @@ replacements = [
     '[ICON_STAT_GRIEVANCE]',
     '[ICON_HOUSING]',
     '[ICON_MOVEMENT]',
+    '[ICON_FORTIFIED]',
+    '[ICON_PILLAGED]',
+    '[ICON_DAMAGED]',
     # '[ICON_POPULATION]',
     '[ICON_POWER]',
     '[ICON_PRODUCTION]',
@@ -85,10 +89,14 @@ replacements = [
     '[ICON_RESOURCE_COAL]',
     '[ICON_RESOURCE_IRON]',
     '[ICON_RESOURCE_HORSES]',
+    '[ICON_RESOURCE_NITER]',
+    '[ICON_RESOURCE_BANANAS]',
+    '[ICON_RESOURCE_DEER]',
     '[ICON_RESOURCE_CATTLE]',
     '[ICON_RESOURCE_CINNAMON]',
     '[ICON_RESOURCE_CLOVES]',
     '[ICON_RESOURCE_MAIZE]',
+    '[ICON_RESOURCE_SHEEP]',
     '[ICON_RESOURCE_RICE]',
     '[ICON_RESOURCE_WHEAT]',
     '[ICON_SCIENCE]',
@@ -133,7 +141,7 @@ def add_preloader():
                     polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
-bbg_versions = [None, '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
+bbg_versions = [None, '6.2', '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
 # bbg_versions = ['5.7']
 
 def get_version_name(bbg_version):
