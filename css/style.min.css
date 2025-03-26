@@ -3473,6 +3473,10 @@
  
    .sidebar.hidden p {
      font-size: 0px;
+     color:#f5f6f7
+   }
+   .darkmode .sidebar.hidden p {
+     color:#161624
    }
 
    .sidebar img {
@@ -3685,7 +3689,13 @@
    }
 
    .sidebar-body-menu a p {
-        font-size: 0;
+      font-size: 0px;
+      color:#f5f6f7
+    }
+
+    .darkmode .sidebar-body-menu a p {
+      font-size: 0px;
+      color: #161624;
     }
  
    .main-nav {
