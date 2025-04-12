@@ -143,7 +143,7 @@ def add_preloader():
                     polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
-bbg_versions = [None, '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6', '5.5', '5.4', '5.3', '5.2']
+bbg_versions = [None, '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 # bbg_versions = ['5.7']
 
 def get_version_name(bbg_version):
