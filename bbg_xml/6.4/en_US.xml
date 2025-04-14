@@ -35,6 +35,7 @@
 			<!-- === SPLASH TEXT === -->
 			<!-- === CIVILOPEDIA === -->
 			<!-- === FRONTEND, MENU, AND VICTORIES === -->
+			<!-- === SETTLER CAPTURE === -->
 			<!-- === BETTER CITY YIELDS (BCY) === -->
 
 
@@ -1022,10 +1023,10 @@
 		</Row>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
-			<Text>Mapuche unique Medieval Era unit that replaces the Courser. +1 [ICON_MOVEMENT] Movement when starting in open flat terrain. Starts with [ICON_PROMOTION] free Promotion.</Text>
+			<Text>Mapuche unique Medieval Era unit that replaces the Courser. +1 [ICON_MOVEMENT] Movement when starting on flat terrain. Starts with [ICON_PROMOTION] free Promotion.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_MAPUCHE_MALON_RAIDER_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_MOVEMENT] Movement when starting in open flat terrain.</Text>
+			<Text>+1 [ICON_MOVEMENT] Movement when starting in flat terrain.</Text>
 		</Replace>
 		<!-- = unique improvement = -->
 		<Replace Tag="LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION" Language="en_US">
@@ -1058,10 +1059,10 @@
 		</Replace>
 		<!-- = unique building = -->
 		<Replace Tag="LOC_BUILDING_ORDU_DESCRIPTION" Language="en_US">
-			<Text>A building unique to Mongolia. Grants an ability that gives +1 [ICON_MOVEMENT] Movement when starting on open flat terrain to Heavy and Light Cavalry trained in this city. +25% combat experience for all cavalry and siege class units trained in this city. May not be built in an Encampment district that already has a Barracks.[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_HORSES] Horses per turn once discovered.</Text>
+			<Text>A building unique to Mongolia. Grants an ability that gives +1 [ICON_MOVEMENT] Movement when starting on flat terrain to Heavy and Light Cavalry trained in this city. +25% combat experience for all cavalry and siege class units trained in this city. May not be built in an Encampment district that already has a Barracks.[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_HORSES] Horses per turn once discovered.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ORDU_INCREASED_MOVEMENT_DESCRIPTION" Language="en_US">
-			<Text>+1 [ICON_MOVEMENT] Movement when starting in open flat terrain.</Text>
+			<Text>+1 [ICON_MOVEMENT] Movement when starting on flat terrain.</Text>
 		</Replace>
 
 
@@ -1221,7 +1222,10 @@
 		<!-- == ROME == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION" Language="en_US">
-			<Text>All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_GOLD] Gold for passing through Trading Posts in your own cities.[NEWLINE][ICON_BULLET]Bias: None.</Text>
+			<!-- = BBG 6.3 <Text>All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_GOLD] Gold for passing through Trading Posts in your own cities.[NEWLINE][ICON_BULLET]Bias: None.</Text> = -->
+			<!-- = BBG 6.4 = -->
+			<Text>All cities you found or conquer start with a Trading Post. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_GOLD] Gold for passing through Trading Posts in your own cities.[NEWLINE][ICON_BULLET]Bias: None.</Text>
+
 		</Replace>
 		<!-- = leader ability (Trajan) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="en_US">
@@ -1229,7 +1233,7 @@
 		</Replace>
 		<!-- = leader ability (Julius Caesar) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAESAR_DESCRIPTION" Language="en_US">
-			<Text>+150 [ICON_GOLD] Gold when you conquer a city for the first time or when you capture a [ICON_BARBARIAN] Barbarian Outpost, increasing to +250 [ICON_GOLD] Gold after researching Metal Casting and +350 [ICON_GOLD] Gold after Steel (on Standard speed). When targeting Barbarians, receive +5 Combat Strength and always earn normal XP.[NEWLINE][NEWLINE]Receive a free melee unit each time you found a non-capital city and in your capital after researching Code of Laws. Gain an extra Wildcard Policy slot when capturing and retaining at least one city founded by a major civilization and owned by a major civilization at the time of capture (maximum 1 extra wildcard slot).[NEWLINE][NEWLINE]All Units receive +50% Combat Experience, increasing to +100% when entering the medieval era.</Text>
+			<Text>If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, cities also start with a road to it.[NEWLINE][NEWLINE]+150 [ICON_GOLD] Gold when you conquer a city for the first time or when you capture a [ICON_BARBARIAN] Barbarian Outpost, increasing to +250 [ICON_GOLD] Gold after researching Metal Casting and +350 [ICON_GOLD] Gold after Steel (on Standard speed). When targeting Barbarians, receive +5 Combat Strength and always earn normal XP.[NEWLINE][NEWLINE]Receive a free melee unit each time you found a non-capital city and in your capital after researching Code of Laws. Gain an extra Wildcard Policy slot when capturing and retaining at least one city founded by a major civilization and owned by a major civilization at the time of capture (maximum 1 extra wildcard slot).[NEWLINE][NEWLINE]All Units receive +50% Combat Experience, increasing to +100% when entering the medieval era.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_CAESAR_DOUBLE_XP_BONUS_MODIFIER_NAME" Language="en_US">
 			<Text>+100% Combat Experience (Veni, Vidi, Vici)</Text>
@@ -1245,7 +1249,7 @@
 		<!-- == RUSSIA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Extra territory upon founding cities. +1 [ICON_FAITH] Faith for your Empire. +1 [ICON_PRODUCTION] Production from Tundra tiles.[NEWLINE]Units do not receive damage from Blizzards. Civilizations that are at war with Russia receive +100% unit damage from Blizzards in Russian territory.[NEWLINE][ICON_BULLET]Bias: T1 Tundra.</Text>
+			<Text>Extra territory upon founding cities. +1 [ICON_PRODUCTION] Production from Tundra tiles.[NEWLINE]Units do not receive damage from Blizzards. Civilizations that are at war with Russia receive +100% unit damage from Blizzards in Russian territory.[NEWLINE][ICON_BULLET]Bias: T1 Tundra.</Text>
 		</Replace>
 		<!-- = unique unit = -->
 		<Replace Tag="LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION" Language="en_US">
@@ -3584,6 +3588,26 @@
 		<Replace Tag="LOC_WORLD_RANKINGS_DOMINATION_DETAILS" Language="en_US">
 			<Text>To achieve a [COLOR:ResMilitaryLabelCS]CONQUEST[ENDCOLOR] victory, you must conquer the original [ICON_CAPITAL] Capital of every other civilization.[NEWLINE][NEWLINE]A strong military is highly recommended.</Text>
 		</Replace>
+		
+
+		<!-- === SETTLER CAPTURE === -->
+		<Row Tag="LOC_BBG_SETTLER_CONFIG_NAME" Language="en_US">
+			<Text>[COLOR:92,216,92]Settler Capture[ENDCOLOR]</Text>
+		</Row>
+		<!-- == Settlers can be captured == -->
+		<Row Tag="LOC_BBG_SETTLER_CONFIG_BASEGAME_NAME" Language="en_US">
+			<Text>Capture</Text>
+		</Row>
+		<Row Tag="LOC_BBG_SETTLER_CONFIG_BASEGAME_DESC" Language="en_US">
+			<Text>Default firaxis setting. Settlers can be captured.</Text>
+		</Row>
+		<!-- == Settlers sent to City Centers == -->		
+		<Row Tag="LOC_BBG_SETTLER_CONFIG_CHILL_NAME" Language="en_US">
+			<Text>Sent Home</Text>
+		</Row>
+		<Row Tag="LOC_BBG_SETTLER_CONFIG_CHILL_DESC" Language="en_US">
+			<Text>Settlers are sent to the nearest city similar to great people when stepped on with an enemy unit.</Text>
+		</Row>
 
 
 
