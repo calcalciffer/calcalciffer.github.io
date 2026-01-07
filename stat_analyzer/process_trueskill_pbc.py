@@ -9,7 +9,7 @@ import copy
 import sys
 sys.path.append('../')
 
-class TrueSkillCalculator:
+class PBCTrueSkillCalculator:
     TS_MU=1250
     TS_SIGMA=150
     TS_BETA=400
@@ -191,7 +191,7 @@ class TrueSkillCalculator:
                     player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
                     self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
 
-    def get_matches_with_delta(self):
+    def get_pbc_matches_with_delta(self):
         file_path = 'stat_analyzer/pbcMatches.json'
         data = self.read_json_file(file_path)
         match_parse_model = MatchParseModel(**data)

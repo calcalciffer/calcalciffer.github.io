@@ -1,5 +1,5 @@
 from dom_generator_helper import *
-from stat_analyzer.process_trueskill import TrueSkillCalculator
+from stat_analyzer.process_trueskill_pbc import PBCTrueSkillCalculator
 
 def get_player_name(player_id: str, player_id_name_map) -> str:
     if player_id in player_id_name_map:
@@ -11,9 +11,9 @@ def get_civ_name(player) -> str:
     return player.leader if player.leader else "No Civ"
 
 def generate_pbc_history_content():
-    TSProcessor = TrueSkillCalculator()
+    TSProcessor = PBCTrueSkillCalculator()
     player_id_name_map = TSProcessor.build_player_id_name_map()
-    _, _, _, _, matches_list = TSProcessor.get_matches_with_delta()
+    _, _, _, _, matches_list = TSProcessor.get_pbc_matches_with_delta()
     for match in reversed(matches_list):
         with div(cls="row"), div(cls="chart"):
             p(f"Gametype: {match[0].gametype}", cls='civ-ability-name')
