@@ -21,8 +21,9 @@ def generate_ffa_leaderboard():
                 wins = ratings[player].wins
                 loses = games - wins
                 rating = ratings[player].mu
+                sigma = round(ratings[player].sigma, 2)
                 name = get_player_name(player, player_id_name_map)
-                p(f"#{i + 1} - {rating} [{wins} - {loses}] {name}", cls='civ-ability-name')
+                p(f"#{i + 1} - {rating} +/- {sigma} [{wins} - {loses}] {name}", cls='civ-ability-name')
 
 def get_ffa_leaderboard_page(pages_list):
     return create_page(
