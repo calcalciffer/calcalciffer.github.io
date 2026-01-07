@@ -14,7 +14,7 @@ def generate_pbc_history_content():
     TSProcessor = TrueSkillCalculator()
     player_id_name_map = TSProcessor.build_player_id_name_map()
     _, _, _, _, matches_list = TSProcessor.get_matches_with_delta()
-    for match in matches_list:
+    for match in reversed(matches_list):
         with div(cls="row"), div(cls="chart"):
             p(f"Gametype: {match[0].gametype}", cls='civ-ability-name')
             for player in match[0].players:
