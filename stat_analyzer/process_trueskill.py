@@ -209,8 +209,6 @@ class TrueSkillCalculator:
         sorted_teamer_ratings = dict(sorted(self.teamer_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_duel_ratings = dict(sorted(self.duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_ffa_duel_ratings = dict(sorted(self.ffa_duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
-        # for i, player in enumerate(sorted_duel_ratings):
-        #     print(f"duel Rank {i+1}: {str(player)} - Mu: {sorted_duel_ratings[player].mu}, Sigma: {sorted_duel_ratings[player].sigma}")
         return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, sorted_ffa_duel_ratings, self.matches_list
 
     def build_player_id_name_map(self) -> Dict[str, str]:
