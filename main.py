@@ -12,6 +12,7 @@ import datetime
 
 from dom_generator_helper import *
 from pages.home import *
+from pages.rt_history import *
 from pages.pbc_history import *
 from pages.pbc_ffa_duel_leaderboard import *
 from pages.pbc_ffa_leaderboard import *
@@ -20,6 +21,10 @@ from pages.pbc_duel_leaderboard import *
 
 pages_list = [
     {'name': 'index', 'func': get_home_page, 'title': 'Home'},
+    {'name': 'rt_games', 'func': get_realtime_history_page, 'title': 'Real time Game History'},
+    # {'name': 'rt_ffa_leaderboard', 'func': get_rt_ffa_leaderboard_page, 'title': 'Real time FFA Leaderboard'},
+    # {'name': 'rt_teamer_leaderboard', 'func': get_rt_teamer_leaderboard_page, 'title': 'Real time Teamer Leaderboard'},
+    # {'name': 'rt_duel_leaderboard', 'func': get_rt_duel_leaderboard_page, 'title': 'Real time Duel Leaderboard'},
     {'name': 'pbc_games', 'func': get_pbc_history_page, 'title': 'PBC Game History'},
     {'name': 'pbc_ffa_duel_leaderboard', 'func': get_pbc_ffa_duel_leaderboard_page, 'title': 'PBC FFA+Duel Leaderboard'},
     {'name': 'pbc_ffa_leaderboard', 'func': get_pbc_ffa_leaderboard_page, 'title': 'PBC FFA Leaderboard'},

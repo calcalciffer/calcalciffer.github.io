@@ -1,3 +1,4 @@
+import numpy as np
 from stat_analyzer.match import MatchParseModel, MatchModel, PlayerModel, StatModel
 from pydantic import BaseModel
 import json
@@ -115,6 +116,10 @@ class RealtimeTrueSkillCalculator:
         ]
         ts_teams = [[Rating(p.mu, p.sigma) for p in team] for team in team_states]
         placements = [teams[team][0][1].position for team in teams]
+        if match.validation_msg_id == {'$numberLong': '946466234747211847'}:
+            print(placements)
+        if len(placements) <= 1:
+            return None, None
 
         ts_env = self.make_ts_env()
         new_ts = ts_env.rate(ts_teams, ranks=placements)
@@ -172,6 +177,8 @@ class RealtimeTrueSkillCalculator:
             print(f"Validation Msg ID: {match.validation_msg_id}, Gametype: {match.gametype}")
             player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
+            if match is None:
+                continue
             self.matches_list.append((match, post))
             for i, player in enumerate(match.players):
                 player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
@@ -196,12 +203,19 @@ class RealtimeTrueSkillCalculator:
         data = self.read_json_file(file_path)
         match_parse_model = MatchParseModel(**data)
         for m in match_parse_model.matches:
+            positions = set()
+            for p in m.players:
+                positions.add(p.position)
             if m.gametype == 'FFA':
-                positions = set()
-                for p in m.players:
-                    positions.add(p.position)
                 if len(positions) == 2:
                     m.gametype = 'Teamer'
+            # else:
+            #     if len(positions) == 1:
+            #         for p in np.arange(int(len(m.players) / 2), len(m.players)):
+            #             m.players[p].position += 1
+            #             m.players[p].team += 1
+                    # print(m)
+                    # raise ValueError(f"Teamer match with all players on the same team found. Validation Msg ID: {m.validation_msg_id}")
 
         self.process_ts(match_parse_model)
 
