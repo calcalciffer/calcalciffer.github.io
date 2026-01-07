@@ -22,12 +22,14 @@ class TrueSkillCalculator:
     ffa_ratings = {}
     teamer_ratings = {}
     duel_ratings = {}
+    ffa_duel_ratings = {}
     matches_list = []
 
     def __init__(self):
         self.ffa_ratings = {}
         self.teamer_ratings = {}
         self.duel_ratings = {}
+        self.ffa_duel_ratings = {}
         self.matches_list = []
 
     def is_sub(self, player: PlayerModel) -> bool:
@@ -51,14 +53,20 @@ class TrueSkillCalculator:
             draw_probability=self.TS_DRAW_PROB,
         )
 
-    def get_rating(self, game_type: str, id: str, player_index: int) -> StatModel:
+    def get_rating(self, game_type: str, id: str, player_index: int, combine_ffa_duel: bool) -> StatModel:
         ratings = {}
         if game_type == "PBC":
-            ratings = self.ffa_ratings
+            if combine_ffa_duel:
+                ratings = self.ffa_duel_ratings
+            else:
+                ratings = self.ffa_ratings
         elif game_type == "PBC-Teamer":
             ratings = self.teamer_ratings
         elif game_type == "PBC-Duel":
-            ratings = self.duel_ratings
+            if combine_ffa_duel:
+                ratings = self.ffa_duel_ratings
+            else:
+                ratings = self.duel_ratings
         else:
             raise ValueError(f"Unsupported game type. Use 'FFA', 'Teamer' or 'Duel'. {game_type} given.")
         if id in ratings:
@@ -162,12 +170,11 @@ class TrueSkillCalculator:
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
             print(f"Validation Msg ID: {match.validation_msg_id}, Gametype: {match.gametype}")
-            player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i) for i, p in enumerate(match.players)]
+            player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
             self.matches_list.append((match, post))
             for i, player in enumerate(match.players):
                 player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
-                print(player, player_stats_db)
                 if match.gametype == "PBC":
                     self.ffa_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
                 elif match.gametype == "PBC-Teamer":
@@ -176,6 +183,13 @@ class TrueSkillCalculator:
                     self.duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
                 else:
                     raise ValueError(f"Unsupported game type. Use 'PBC', 'PBC-Teamer' or 'PBC-Duel'. {match.gametype} given.")
+
+            if match.gametype == "PBC" or match.gametype == "PBC-Duel":
+                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, True) for i, p in enumerate(match.players)]
+                match, post = self.update_player_stats(match, player_ratings, "delta")
+                for i, player in enumerate(match.players):
+                    player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
+                    self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
 
     def get_matches_with_delta(self):
         file_path = 'stat_analyzer/pbcMatches.json'
@@ -194,9 +208,10 @@ class TrueSkillCalculator:
         sorted_ffa_ratings = dict(sorted(self.ffa_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_teamer_ratings = dict(sorted(self.teamer_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_duel_ratings = dict(sorted(self.duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
-        for i, player in enumerate(sorted_duel_ratings):
-            print(f"duel Rank {i+1}: {str(player)} - Mu: {sorted_duel_ratings[player].mu}, Sigma: {sorted_duel_ratings[player].sigma}")
-        return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, self.matches_list
+        sorted_ffa_duel_ratings = dict(sorted(self.ffa_duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
+        # for i, player in enumerate(sorted_duel_ratings):
+        #     print(f"duel Rank {i+1}: {str(player)} - Mu: {sorted_duel_ratings[player].mu}, Sigma: {sorted_duel_ratings[player].sigma}")
+        return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, sorted_ffa_duel_ratings, self.matches_list
 
     def build_player_id_name_map(self) -> Dict[str, str]:
         file_path = 'stat_analyzer/players.players.json'

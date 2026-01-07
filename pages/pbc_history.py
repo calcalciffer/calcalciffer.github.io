@@ -13,7 +13,7 @@ def get_civ_name(player) -> str:
 def generate_pbc_history_content():
     TSProcessor = TrueSkillCalculator()
     player_id_name_map = TSProcessor.build_player_id_name_map()
-    ffa_ratings, teamer_ratings, duel_ratings, matches_list = TSProcessor.get_matches_with_delta()
+    _, _, _, _, matches_list = TSProcessor.get_matches_with_delta()
     for match in matches_list:
         with div(cls="row"), div(cls="chart"):
             p(f"Gametype: {match[0].gametype}", cls='civ-ability-name')
@@ -26,7 +26,7 @@ def generate_pbc_history_content():
 
 def get_pbc_history_page(pages_list):
     return create_page(
-        title='Play By Cloud Game History - Civilization Plus League',
+        title='Play By Cloud Game History - Civilization Player League',
         header='pbc_games',
         pages_list=pages_list,
         page_content_func=generate_pbc_history_content

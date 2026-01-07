@@ -13,7 +13,7 @@ def get_civ_name(player) -> str:
 def generate_duel_leaderboard():
     TSProcessor = TrueSkillCalculator()
     player_id_name_map = TSProcessor.build_player_id_name_map()
-    _, _, ratings, matches_list = TSProcessor.get_matches_with_delta()
+    _, _, ratings, _, _ = TSProcessor.get_matches_with_delta()
     for i, player in enumerate(ratings):
         if ratings[player].games >= 3:
             with div(cls="row"), div(cls="chart"):
@@ -26,7 +26,7 @@ def generate_duel_leaderboard():
 
 def get_duel_leaderboard_page(pages_list):
     return create_page(
-        title='Play By Cloud Duel Leaderboard - Civilization Plus League',
+        title='Play By Cloud Duel Leaderboard - Civilization Players League',
         header='pbc_duel_leaderboard',
         pages_list=pages_list,
         page_content_func=generate_duel_leaderboard
