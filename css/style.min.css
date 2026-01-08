@@ -1090,10 +1090,27 @@
  .version-switcher svg {
     stroke: #B9B9B9;
   }
-
-.theme-switcher-wrapper {
+  
+ .match-switcher-wrapper {
     justify-content: center;
-}
+ }
+ .match-switcher svg {
+   width: 24px;
+   height: 24px;
+ }
+ 
+ .match-switcher circle {
+   fill: #D6D7E3;
+   stroke: #D6D7E3;
+ }
+ 
+ .match-switcher line {
+   stroke: #D6D7E3;
+ }
+
+ .theme-switcher-wrapper {
+    justify-content: center;
+ }
  
  .theme-switcher svg {
    width: 24px;
@@ -3953,4 +3970,61 @@
     margin-left: -260px;
     width: 97%;
   }
-}
+ }
+
+ .match-teamer .PBC-FFA {
+    display: none;
+ }
+ .match-teamer .PBC-Duel {
+    display: none;
+ }
+ .match-teamer .FFA {
+    display: none;
+ }
+ .match-teamer .Duel {
+    display: none;
+ }
+ .match-teamer .ffa-icon {
+   display: none;
+ }
+ .match-teamer .duel-icon {
+   display: none;
+ }
+
+ .match-ffa .PBC-Teamer {
+    display: none;
+ }
+ .match-ffa .PBC-Duel {
+    display: none;
+ }
+ .match-ffa .Teamer {
+    display: none;
+ }
+ .match-ffa .Duel {
+    display: none;
+ }
+ .match-ffa .teamer-icon {
+   display: none;
+ }
+ .match-ffa .duel-icon {
+   display: none;
+ }
+
+ .match-duel .PBC-Teamer {
+    display: none;
+ }
+ .match-duel .PBC-FFA {
+    display: none;
+ }
+ .match-duel .Teamer {
+    display: none;
+ }
+ .match-duel .FFA {
+    display: none;
+ }
+ .match-duel .teamer-icon {
+   display: none;
+ }
+ .match-duel .ffa-icon {
+   display: none;
+ }

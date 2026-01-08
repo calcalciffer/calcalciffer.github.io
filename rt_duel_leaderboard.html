@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Realtime Duel Leaderboard - Civilization Player League</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/cplLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/index.html" onclick="civClicked(null)">Home</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_games.html" onclick="civClicked(null)">Real time Game History</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_ffa_leaderboard.html" onclick="civClicked(null)">Real time FFA Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_teamer_leaderboard.html" onclick="civClicked(null)">Real time Teamer Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_duel_leaderboard.html" onclick="civClicked(null)">Real time Duel Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_games.html" onclick="civClicked(null)">PBC Game History</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_ffa_duel_leaderboard.html" onclick="civClicked(null)">PBC FFA+Duel Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_ffa_leaderboard.html" onclick="civClicked(null)">PBC FFA Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_teamer_leaderboard.html" onclick="civClicked(null)">PBC Teamer Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_duel_leaderboard.html" onclick="civClicked(null)">PBC Duel Leaderboard</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="match-switcher-wrapper">
+                            <button class="match-switcher gray-circle-btn" title="Switch Gametype" type="button">
+                              <span class="sr-only">Switch Gametype</span><i aria-hidden="true" class="ffa-icon">FFA</i><i aria-hidden="true" class="teamer-icon">Te</i><i aria-hidden="true" class="duel-icon">Du</i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="leaders-data min-w-full">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Realtime Duel Leaderboard - Civilization Player League</h1><br>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#1 - 1917.0 +/- 102.34 [482 - 50] AFLYINGTOILET</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#2 - 1645.0 +/- 95.34 [122 - 23] Alsign</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#3 - 1453.0 +/- 97.4 [43 - 15] Stadler Robert MatyasGPT [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#4 - 1447.0 +/- 128.53 [10 - 1] TaskForceFish</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#5 - 1435.0 +/- 134.71 [7 - 0] Mr Toes [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#6 - 1427.0 +/- 107.91 [24 - 8] Deskra</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#7 - 1404.0 +/- 132.83 [8 - 1] Alcotollick</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#8 - 1402.0 +/- 88.5 [98 - 183] afunovits</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#9 - 1395.0 +/- 125.47 [13 - 2] Maelstrum</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#10 - 1395.0 +/- 128.08 [9 - 2] _kamielke</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#11 - 1393.0 +/- 131.79 [8 - 1] tiejai</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#12 - 1383.0 +/- 138.46 [5 - 0] M1oel</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#13 - 1383.0 +/- 138.38 [5 - 0] Khornie</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#14 - 1363.0 +/- 123.43 [12 - 4] Ando</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#15 - 1353.0 +/- 140.69 [4 - 0] Lumon</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#16 - 1351.0 +/- 140.76 [4 - 0] commutant</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#17 - 1345.0 +/- 132.65 [6 - 2] ramphy</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#18 - 1334.0 +/- 132.56 [6 - 2] Daethern</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#19 - 1333.0 +/- 142.66 [3 - 0] liuohr</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#20 - 1331.0 +/- 142.75 [3 - 0] begrol</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#21 - 1329.0 +/- 134.32 [5 - 2] Nairi</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#22 - 1329.0 +/- 142.61 [3 - 0] 2intrusive.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#24 - 1314.0 +/- 138.09 [4 - 1] 42ykovc [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#25 - 1311.0 +/- 139.72 [2 - 2] Regnier</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#26 - 1310.0 +/- 134.6 [4 - 3] triplexfour</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#38 - 1303.0 +/- 140.37 [3 - 1] baldaquinn</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#40 - 1290.0 +/- 139.98 [2 - 2] 777231203912515595</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#41 - 1288.0 +/- 142.9 [2 - 1] Adrydry</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#42 - 1287.0 +/- 142.76 [2 - 1] Caliph</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#45 - 1281.0 +/- 142.55 [2 - 1] Titiits</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#46 - 1281.0 +/- 142.28 [2 - 1] Philipp329</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#75 - 1279.0 +/- 142.36 [2 - 1] alexis krempp</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#76 - 1279.0 +/- 134.19 [4 - 3] (CivFR) Malm</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#82 - 1278.0 +/- 142.44 [2 - 1] Ganger</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#84 - 1277.0 +/- 142.39 [2 - 1] Poolp</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#86 - 1276.0 +/- 142.46 [2 - 1] General Han Xin</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#87 - 1275.0 +/- 138.02 [3 - 2] Dave</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#92 - 1267.0 +/- 135.06 [3 - 4] kryptotaku</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#94 - 1253.0 +/- 132.01 [4 - 5] Barbos Nikitos</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <p class="civ-ability-name">#98 - 1250.0 +/- 140.15 [2 - 2] SandroGames</p>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

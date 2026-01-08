@@ -15,7 +15,7 @@ def generate_realtime_history_content():
     player_id_name_map = TSProcessor.build_player_id_name_map()
     _, _, _, _, matches_list = TSProcessor.get_realtime_matches_with_delta()
     for match in reversed(matches_list):
-        with div(cls="row"), div(cls="chart"):
+        with div(cls=f"row {match[0].gametype}"), div(cls="chart"):
             p(f"Gametype: {match[0].gametype}", cls='civ-ability-name')
             for player in match[0].players:
                 # print(player.id, player.delta)

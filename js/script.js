@@ -221,6 +221,40 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
+    Chart.defaults.backgroundColor = '#000';
+    var matchModeToggle = document.querySelector('.match-switcher');
+
+    var toggleMatchType = function toggleMatchType() {
+      console.log('toggling match type');
+      var matchMode = localStorage.getItem('matchMode');
+      console.log('toggling match type from ' + matchMode);
+      if (matchMode == 'FFA') {
+        document.body.classList.remove('match-ffa');
+        document.body.classList.add('match-teamer');
+        localStorage.setItem('matchMode', 'Teamer');
+      } else if (matchMode == 'Teamer') {
+        document.body.classList.remove('match-teamer');
+        document.body.classList.add('match-duel');
+        localStorage.setItem('matchMode', 'Duel');
+      } else {
+        document.body.classList.remove('match-duel');
+        document.body.classList.add('match-ffa');
+        localStorage.setItem('matchMode', 'FFA');
+      }
+    };
+
+    // if (darkMode === 'enabled') {
+    //   enableDarkMode();
+    // }
+
+    if (matchModeToggle) {
+      matchModeToggle.addEventListener('click', function () {
+        toggleMatchType();
+      });
+    }
+  })();
+
+  (function () {
     var baseGameMode = localStorage.getItem('baseGameMode');
     var baseGameModeToggle = document.querySelector('.base-game-switcher');
 
@@ -641,3 +675,12 @@ function newDonateText() {
   document.getElementById('donateText').innerHTML = options[randOption];
 };
 newDonateText();
+
+function initGameTypeSwitch() {
+  document.body.classList.remove('match-teamer');
+  document.body.classList.remove('match-ffa');
+  document.body.classList.remove('match-duel');
+  document.body.classList.add('match-ffa');
+  localStorage.setItem('matchMode', 'FFA');
+}
+initGameTypeSwitch();
