@@ -15,8 +15,6 @@ def generate_ffa_duel_leaderboard():
     player_id_name_map = TSProcessor.build_player_id_name_map()
     _, _, _, ratings, _ = TSProcessor.get_pbc_matches_with_delta()
     for i, player in enumerate(ratings):
-        if i == 100:
-            break
         if ratings[player].games >= 3:
             with div(cls="row"), div(cls="chart"):
                 games = ratings[player].games
