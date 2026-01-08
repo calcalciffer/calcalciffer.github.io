@@ -37,8 +37,6 @@ pages_list = [
 
 for page in pages_list:
     page_name = f'{page['name']}.html'
-    if page_name == 'rt_games':
-        continue
     get_page_function = page['func']
     docStr = get_page_function(pages_list)
     with open(page_name, 'w') as f:

@@ -169,7 +169,6 @@ class PBCTrueSkillCalculator:
         
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
-            print(f"Validation Msg ID: {match.validation_msg_id}, Gametype: {match.gametype}")
             player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
             self.matches_list.append((match, post))

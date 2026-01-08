@@ -53,6 +53,16 @@ class RealtimeTrueSkillCalculator:
             tau=self.TS_TAU,
             draw_probability=self.TS_DRAW_PROB,
         )
+        
+    def reset_ratings(self, id: str):
+        if id in self.ffa_ratings:
+            del self.ffa_ratings[id]
+        if id in self.teamer_ratings:
+            del self.teamer_ratings[id]
+        if id in self.duel_ratings:
+            del self.duel_ratings[id]
+        if id in self.ffa_duel_ratings:
+            del self.ffa_duel_ratings[id]
 
     def get_rating(self, game_type: str, id: str, player_index: int, combine_ffa_duel: bool) -> StatModel:
         ratings = {}
@@ -116,8 +126,6 @@ class RealtimeTrueSkillCalculator:
         ]
         ts_teams = [[Rating(p.mu, p.sigma) for p in team] for team in team_states]
         placements = [teams[team][0][1].position for team in teams]
-        if match.validation_msg_id == {'$numberLong': '946466234747211847'}:
-            print(placements)
         if len(placements) <= 1:
             return None, None
 
@@ -174,7 +182,6 @@ class RealtimeTrueSkillCalculator:
         
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
-            print(f"Validation Msg ID: {match.validation_msg_id}, Gametype: {match.gametype}")
             player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
             if match is None:
@@ -218,6 +225,13 @@ class RealtimeTrueSkillCalculator:
                     # raise ValueError(f"Teamer match with all players on the same team found. Validation Msg ID: {m.validation_msg_id}")
 
         self.process_ts(match_parse_model)
+        
+        reset_stats_ids = []
+        with open('stat_analyzer/reset_realtime_stats_ids.txt', 'r') as file:
+            for line in file:
+                reset_stats_ids.append(line.strip())
+        for id in reset_stats_ids:
+            self.reset_ratings(id)
 
         sorted_ffa_ratings = dict(sorted(self.ffa_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_teamer_ratings = dict(sorted(self.teamer_ratings.items(), key=lambda x: x[1].mu, reverse=True))
