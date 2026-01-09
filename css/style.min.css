@@ -3972,7 +3972,7 @@
   }
  }
 
- .match-teamer .PBC-FFA {
+ .match-teamer .PBC {
     display: none;
  }
  .match-teamer .PBC-Duel {
@@ -4013,7 +4013,7 @@
  .match-duel .PBC-Teamer {
     display: none;
  }
- .match-duel .PBC-FFA {
+ .match-duel .PBC {
     display: none;
  }
  .match-duel .Teamer {

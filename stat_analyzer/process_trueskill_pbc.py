@@ -201,6 +201,9 @@ class PBCTrueSkillCalculator:
                     positions.add(p.position)
                 if len(positions) == 2:
                     m.gametype = 'PBC-Teamer'
+                    if len(m.players) == 2:
+                        # 1v1 FFA is actually Duel
+                        m.gametype = 'PBC-Duel'
         
         self.process_ts(match_parse_model)
 

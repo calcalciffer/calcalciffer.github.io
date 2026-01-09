@@ -37,7 +37,9 @@ pages_list = [
 
 for page in pages_list:
     page_name = f'{page['name']}.html'
+    print(f'Creating {page_name}')
     get_page_function = page['func']
+    # if page_name == 'pbc_games.html':
     docStr = get_page_function(pages_list)
     with open(page_name, 'w') as f:
         f.write(docStr)

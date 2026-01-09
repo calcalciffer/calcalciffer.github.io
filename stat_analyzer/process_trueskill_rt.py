@@ -216,6 +216,9 @@ class RealtimeTrueSkillCalculator:
             if m.gametype == 'FFA':
                 if len(positions) == 2:
                     m.gametype = 'Teamer'
+                    if len(m.players) == 2:
+                        # 1v1 FFA is actually Duel
+                        m.gametype = 'Duel'
             # else:
             #     if len(positions) == 1:
             #         for p in np.arange(int(len(m.players) / 2), len(m.players)):
