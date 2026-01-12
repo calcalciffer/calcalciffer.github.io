@@ -53,7 +53,7 @@ class RealtimeTrueSkillCalculator:
             tau=self.TS_TAU,
             draw_probability=self.TS_DRAW_PROB,
         )
-        
+
     def reset_ratings(self, id: str):
         if id in self.ffa_ratings:
             del self.ffa_ratings[id]
@@ -97,7 +97,7 @@ class RealtimeTrueSkillCalculator:
             civs={},
             lastModified=None
         )
-        
+
     def create_stat_model(self, player_id, player_stats_db: Dict[str, Any]) -> StatModel:
         return StatModel(
             index=0,
@@ -118,24 +118,45 @@ class RealtimeTrueSkillCalculator:
             return json.load(file)
         
     def update_player_stats(self, match: MatchModel, players_ranking: List[StatModel], delta_value_name: str):
-        teams = defaultdict(list)
-        for i, p in enumerate(match.players):
-            teams[p.team].append((i, p))
-        team_states: List[List[StatModel]] = [
-            [players_ranking[p_index_tuple[0]] for p_index_tuple in teams[team]] for team in teams
-        ]
-        ts_teams = [[Rating(p.mu, p.sigma) for p in team] for team in team_states]
-        placements = [teams[team][0][1].position for team in teams]
-        if len(placements) <= 1:
+        num_teams = len(set([p.team for p in match.players]))
+        if num_teams <= 1:
+            print(f"Skipping match with less than 2 teams. Validation Msg ID: {match.validation_msg_id}")
             return None, None
+        teams_wo_subs = defaultdict(list)
+        teams_with_sub_ins = defaultdict(list)
+        for i, p in enumerate(match.players):
+            if self.is_sub(p):
+                teams_with_sub_ins[p.team].append((i, p))
+            elif self.is_subbed_out(p):
+                teams_wo_subs[p.team].append((i, p))
+            else:
+                teams_wo_subs[p.team].append((i, p))
+                teams_with_sub_ins[p.team].append((i, p))
+        team_wo_subs_states: List[List[StatModel]] = [
+            [players_ranking[p_index_tuple[0]] for p_index_tuple in teams_wo_subs[team]] for team in teams_wo_subs
+        ]
+        team_with_sub_ins_states: List[List[StatModel]] = [
+            [players_ranking[p_index_tuple[0]] for p_index_tuple in teams_with_sub_ins[team]] for team in teams_with_sub_ins
+        ]
 
-        ts_env = self.make_ts_env()
-        new_ts = ts_env.rate(ts_teams, ranks=placements)
+        ts_teams_wo_subs = [[Rating(p.mu, p.sigma) for p in team] for team in team_wo_subs_states]
+        ts_teams_with_sub_ins = [[Rating(p.mu, p.sigma) for p in team] for team in team_with_sub_ins_states]
         
+        placements_wo_subs = [teams_wo_subs[team][0][1].position for team in teams_wo_subs]
+        placements_with_sub_ins = [teams_with_sub_ins[team][0][1].position for team in teams_with_sub_ins]
+
+        ts_wo_subs_env = self.make_ts_env()
+        ts_with_sub_ins_env = self.make_ts_env()
+        
+        new_ts_wo_subs = ts_wo_subs_env.rate(ts_teams_wo_subs, ranks=placements_wo_subs)
+        new_ts_with_sub_ins = ts_with_sub_ins_env.rate(ts_teams_with_sub_ins, ranks=placements_with_sub_ins)
+
         post: List[StatModel] = list(range(len(match.players)))
-        for team_idx, team in enumerate(team_states):
+        for team_idx, team in enumerate(team_wo_subs_states):
             for player_index, player in enumerate(team):
-                r = new_ts[team_idx][player_index]
+                if self.is_sub(match.players[player.index]):
+                    raise ValueError("This should not happen: player is a sub but being processed in wo_subs team.")
+                r = new_ts_wo_subs[team_idx][player_index]
                 post[player.index] = StatModel(
                     index=player.index,
                     id=player.id,
@@ -148,6 +169,22 @@ class RealtimeTrueSkillCalculator:
                     subbedOut=player.subbedOut,
                     civs=player.civs,
                 )
+        for team_idx, team in enumerate(team_with_sub_ins_states):
+            for player_index, player in enumerate(team):
+                if self.is_sub(match.players[player.index]):
+                    r = new_ts_with_sub_ins[team_idx][player_index]
+                    post[player.index] = StatModel(
+                        index=player.index,
+                        id=player.id,
+                        mu=float(r.mu),
+                        sigma=float(r.sigma),
+                        games=player.games,
+                        wins=player.wins,
+                        first=player.first,
+                        subbedIn=player.subbedIn,
+                        subbedOut=player.subbedOut,
+                        civs=player.civs,
+                    )
         for i, p in enumerate(match.players):
             p_current_ranking = players_ranking[i]
             delta = round(post[i].mu - p_current_ranking.mu) if p.id != None else 0

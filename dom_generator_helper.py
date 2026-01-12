@@ -27,7 +27,7 @@ def add_header(page_type, pages_list):
             with div(cls="row"):
                 with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                     with a(href="/index.html", style="align-content: center;"):
-                        img(src="/images/BBGLogo.webp", style="width:3em; border-radius:10%", alt="#")
+                        img(src="/images/cplLogo.webp", style="width:3em; border-radius:10%", alt="#")
                     div(cls="mobile-nav")
                 with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"), div(cls="main-menu"), nav(cls="navigation"):
                     with ul(cls="nav menu"):
