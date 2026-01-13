@@ -3972,12 +3972,6 @@
   }
  }
 
- .match-teamer .PBC {
-    display: none;
- }
- .match-teamer .PBC-Duel {
-    display: none;
- }
  .match-teamer .FFA {
     display: none;
  }
@@ -3991,12 +3985,6 @@
    display: none;
  }
 
- .match-ffa .PBC-Teamer {
-    display: none;
- }
- .match-ffa .PBC-Duel {
-    display: none;
- }
  .match-ffa .Teamer {
     display: none;
  }
@@ -4010,12 +3998,6 @@
    display: none;
  }
 
- .match-duel .PBC-Teamer {
-    display: none;
- }
- .match-duel .PBC {
-    display: none;
- }
  .match-duel .Teamer {
     display: none;
  }

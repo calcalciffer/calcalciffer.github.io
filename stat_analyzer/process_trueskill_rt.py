@@ -241,28 +241,31 @@ class RealtimeTrueSkillCalculator:
                 for i, player in enumerate(match.players):
                     player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
                     self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
+    
+    def normalize(self, gametype):
+        if gametype == 'FFA' or gametype == 'PBC':
+            return 'FFA'
+        elif gametype == 'Teamer' or gametype == 'PBC-Teamer':
+            return 'Teamer'
+        elif gametype == 'Duel' or gametype == 'PBC-Duel':
+            return 'Duel'
+        else:
+            raise ValueError('not a valid gametype')
 
-    def get_realtime_matches_with_delta(self):
-        file_path = 'stat_analyzer/realtimeMatches.json'
+    def get_realtime_matches_with_delta(self, file_path):
         data = self.read_json_file(file_path)
         match_parse_model = MatchParseModel(**data)
         for m in match_parse_model.matches:
             positions = set()
             for p in m.players:
                 positions.add(p.position)
+            m.gametype = self.normalize(m.gametype)
             if m.gametype == 'FFA':
                 if len(positions) == 2:
                     m.gametype = 'Teamer'
                     if len(m.players) == 2:
                         # 1v1 FFA is actually Duel
                         m.gametype = 'Duel'
-            # else:
-            #     if len(positions) == 1:
-            #         for p in np.arange(int(len(m.players) / 2), len(m.players)):
-            #             m.players[p].position += 1
-            #             m.players[p].team += 1
-                    # print(m)
-                    # raise ValueError(f"Teamer match with all players on the same team found. Validation Msg ID: {m.validation_msg_id}")
 
         self.process_ts(match_parse_model)
         
