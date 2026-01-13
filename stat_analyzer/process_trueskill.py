@@ -10,7 +10,7 @@ import copy
 import sys
 sys.path.append('../')
 
-class RealtimeTrueSkillCalculator:
+class TrueSkillCalculator:
     TS_MU=1250
     TS_SIGMA=150
     TS_BETA=400
