@@ -1,6 +1,5 @@
 from dom_generator_helper import *
-from stat_analyzer.process_trueskill_rt import RealtimeTrueSkillCalculator
-from stat_analyzer.process_trueskill_pbc import PBCTrueSkillCalculator
+from stat_analyzer.process_trueskill import TrueSkillCalculator
 
 def get_player_name(player_id: str, player_id_name_map) -> str:
     if player_id in player_id_name_map:
@@ -10,13 +9,13 @@ def get_player_name(player_id: str, player_id_name_map) -> str:
 
 class RTStats:
     def __init__(self):
-        TSProcessor = RealtimeTrueSkillCalculator()
+        TSProcessor = TrueSkillCalculator()
         self.player_id_name_map = TSProcessor.build_player_id_name_map()
         self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = TSProcessor.get_realtime_matches_with_delta('stat_analyzer/realtimeMatches.json')
 
 class PBCStats:
     def __init__(self):
-        PBCProcessor = RealtimeTrueSkillCalculator()
+        PBCProcessor = TrueSkillCalculator()
         self.player_id_name_map = PBCProcessor.build_player_id_name_map()
         self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = PBCProcessor.get_realtime_matches_with_delta('stat_analyzer/pbcMatches.json')
 
