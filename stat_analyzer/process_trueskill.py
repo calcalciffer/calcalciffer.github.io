@@ -252,7 +252,7 @@ class TrueSkillCalculator:
         else:
             raise ValueError('not a valid gametype')
 
-    def get_realtime_matches_with_delta(self, file_path):
+    def get_matches_with_delta(self, file_path):
         data = self.read_json_file(file_path)
         match_parse_model = MatchParseModel(**data)
         for m in match_parse_model.matches:

@@ -7,17 +7,11 @@ def get_player_name(player_id: str, player_id_name_map) -> str:
     else:
         return player_id
 
-class RTStats:
-    def __init__(self):
+class CPLStats:
+    def __init__(self, file_path):
         TSProcessor = TrueSkillCalculator()
         self.player_id_name_map = TSProcessor.build_player_id_name_map()
-        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = TSProcessor.get_realtime_matches_with_delta('stat_analyzer/realtimeMatches.json')
-
-class PBCStats:
-    def __init__(self):
-        PBCProcessor = TrueSkillCalculator()
-        self.player_id_name_map = PBCProcessor.build_player_id_name_map()
-        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = PBCProcessor.get_realtime_matches_with_delta('stat_analyzer/pbcMatches.json')
+        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = TSProcessor.get_matches_with_delta(file_path)
 
 def generate_leaderboard(ratings):
     for i, player in enumerate(ratings):
@@ -31,5 +25,5 @@ def generate_leaderboard(ratings):
                 name = get_player_name(player, rtstats.player_id_name_map)
                 p(f"#{i + 1} - {rating} +/- {sigma} [{wins} - {loses}] {name}", cls='civ-ability-name')
 
-rtstats = RTStats()
-pbcstats = PBCStats()
+rtstats = CPLStats('stat_analyzer/realtimeMatches.json')
+pbcstats = CPLStats('stat_analyzer/pbcMatches.json')
