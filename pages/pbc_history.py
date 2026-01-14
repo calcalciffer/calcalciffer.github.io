@@ -1,5 +1,5 @@
 from dom_generator_helper import *
-from pages.common import pbcstats
+from pages.common import *
 
 def get_player_name(player_id: str, player_id_name_map) -> str:
     if player_id in player_id_name_map:
@@ -21,10 +21,11 @@ def generate_pbc_history_content():
                   style="text-align:left",
                   cls='civ-ability-desc')
 
-def get_pbc_history_page(pages_list):
+def get_pbc_history_page(pages_list, menu_list):
     return create_page(
         title='Play By Cloud Game History - Civilization Player League',
         header='pbc_games',
         pages_list=pages_list,
+        menu_list=menu_list,
         page_content_func=generate_pbc_history_content
     )

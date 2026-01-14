@@ -152,7 +152,7 @@
 	border-left:3px solid #ff8c33;
 }
 .header .nav li .bbg-version-dropdown {
-	width: 7.7em;
+	width: 10em;
 	left: 0em;
 }
 .header .nav li:hover .dropdown{
@@ -165,7 +165,7 @@
 	margin:0;
 	width: 25%;
 	height: auto;
-  	flex: 0 1 50%;
+  	flex: 0 1 100%;
 	padding: 1px 1px;
 	/* border-bottom:1px dashed #eee; */
 }

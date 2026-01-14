@@ -21,7 +21,7 @@ def add_preloader():
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_header(page_type, pages_list):
+def add_header(page_type, pages_list, menu_list):
     with nav(cls="main-nav--bg"), div(cls="main-nav"):
         with div(cls="header"), div(cls="header-inner"), div(cls="inner"):
             with div(cls="row"):
@@ -31,11 +31,37 @@ def add_header(page_type, pages_list):
                     div(cls="mobile-nav")
                 with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"), div(cls="main-menu"), nav(cls="navigation"):
                     with ul(cls="nav menu"):
-                        for page in pages_list:
-                            page_name = page['title']
-                            t = page['name']
-                            with li(cls="active" if t == page_type else ""):
-                                a(page_name, href=f"/{t}.html", onclick=f'civClicked(null)')
+                        for item in menu_list:
+                            menu_item = menu_list[item]
+                            print(menu_item)
+                            if len(menu_item) == 1:
+                                page_name = item
+                                link = menu_item['Home']['link']
+                                with li(cls="active" if link == f"{page_type}.html" else ""):
+                                    a(page_name, href=f"/{link}", onclick=f'civClicked(null)')
+                            else:
+                                with li():
+                                    with a(item):
+                                        i(cls="icofont-rounded-down")
+                                    with ul(cls="dropdown bbg-version-dropdown"):
+                                        for sub_item in menu_item:
+                                            with li():
+                                                print(menu_item[sub_item])
+                                                a(sub_item, href=f"/{menu_item[sub_item]['link']}")
+                                # with li(cls="menu-item-has-children"):
+                                #     a(item, href="#", onclick=f'civClicked(null)')
+                                #     with ul(cls="sub-menu"):
+                                #         for sub_item in menu_item:
+                                #             sub_menu_item = menu_item[sub_item]
+                                #             page_name = sub_menu_item['name']
+                                #             link = sub_menu_item['link']
+                                #             with li(cls="active" if link == f"{page_type}.html" else ""):
+                                #                 a(page_name, href=f"/{link}", onclick=f'civClicked(null)')
+                        # for page in pages_list:
+                        #     page_name = page['title']
+                        #     t = page['name']
+                        #     with li(cls="active" if t == page_type else ""):
+                        #         a(page_name, href=f"/{t}.html", onclick=f'civClicked(null)')
                 with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"), div(cls='flex row justify-content-around'):
                     with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"), div(cls="theme-switcher-wrapper"):
                         with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
@@ -101,7 +127,7 @@ def add_footer():
                 with a(id="scrollUp", cls="displayNone", href="#top", onclick=f'civClicked(null)'):
                     i(cls='fa-solid fa-up-long')
 
-def create_page(title, header, pages_list, page_content_func, *args, **kwargs):
+def create_page(title, header, pages_list, menu_list, page_content_func, *args, **kwargs):
     doc = dominate.document(title=None)
     add_html_header(doc, title)
 
@@ -109,7 +135,7 @@ def create_page(title, header, pages_list, page_content_func, *args, **kwargs):
         add_preloader()
         div(cls="layer")
         with div(cls="page-flex"), div(cls="main-wrapper"):
-            add_header(header, pages_list)
+            add_header(header, pages_list, menu_list)
             with div(cls=""):
                 with div(cls="leaders-data min-w-full"), main(cls="main users chart-page"), div(cls="container"):
                     h1(title, cls='civ-name')

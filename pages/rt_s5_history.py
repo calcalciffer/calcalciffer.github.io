@@ -20,10 +20,11 @@ def generate_realtime_history_content():
                   style="text-align:left",
                   cls='civ-ability-desc')
 
-def get_realtime_s5_history_page(pages_list):
+def get_realtime_s5_history_page(pages_list, menu_list):
     return create_page(
         title='Season 5 Realtime Game History - Civilization Player League',
         header='realtime_s5_games',
         pages_list=pages_list,
+        menu_list=menu_list,
         page_content_func=generate_realtime_history_content
     )

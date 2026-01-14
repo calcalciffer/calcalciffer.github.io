@@ -1,0 +1,326 @@
+[
+{
+    "index": 0,
+    "id": "619291366010126357",
+    "mu": 1333.0,
+    "sigma": 142.6608481122775,
+    "games": 3,
+    "wins": 3,
+    "first": 3,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PersiaNader": 1,
+        "PolandJadwiga": 1,
+        "FranceCatherineBlackQueen": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.377487Z"
+},
+{
+    "index": 0,
+    "id": "477367473297948673",
+    "mu": 1311.0,
+    "sigma": 144.7256402569856,
+    "games": 2,
+    "wins": 2,
+    "first": 2,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "SumeriaGilgamesh": 1,
+        "KongoMvembaANzinga": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.144386Z"
+},
+{
+    "index": 0,
+    "id": "279614985213313024",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "AmericaTeddyBullMoose": 1
+    },
+    "lastModified": "2026-01-14T22:01:49.914319Z"
+},
+{
+    "index": 0,
+    "id": "270543079793098752",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "BabylonHammurabi": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.232820Z"
+},
+{
+    "index": 0,
+    "id": "148172930356871168",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "ArabiaSultan": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.260296Z"
+},
+{
+    "index": 0,
+    "id": "513861082339737611",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "ZuluShaka": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.403556Z"
+},
+{
+    "index": 0,
+    "id": "815769866274340896",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PersiaCyrus": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.780645Z"
+},
+{
+    "index": 0,
+    "id": "364074357187674113",
+    "mu": 1280.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "RussiaPeterTheGreat": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.909872Z"
+},
+{
+    "index": 0,
+    "id": "283667488539934720",
+    "mu": 1251.0,
+    "sigma": 140.21451472619444,
+    "games": 4,
+    "wins": 2,
+    "first": 2,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "NorwayHaraldHardradaVarangian": 1,
+        "ChinaQinUnifier": 1,
+        "FranceCatherineMagnificent": 1,
+        "PersiaNader": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.144390Z"
+},
+{
+    "index": 0,
+    "id": "529102288099213312",
+    "mu": 1251.0,
+    "sigma": 144.73847320887242,
+    "games": 2,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "ChinaWuZetian": 1,
+        "AztecMontezuma": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.802529Z"
+},
+{
+    "index": 0,
+    "id": "690262791247888422",
+    "mu": 1249.0,
+    "sigma": 144.73847320887242,
+    "games": 2,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "FranceCatherineMagnificent": 1,
+        "HungaryMatthias": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.802533Z"
+},
+{
+    "index": 0,
+    "id": "522958721731657758",
+    "mu": 1222.0,
+    "sigma": 147.4301071241269,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PersiaCyrus": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.377491Z"
+},
+{
+    "index": 0,
+    "id": "202438314509205506",
+    "mu": 1221.0,
+    "sigma": 147.38755735050745,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "AustraliaJohnCurtin": 1
+    },
+    "lastModified": "2026-01-14T22:01:49.961631Z"
+},
+{
+    "index": 0,
+    "id": "295679554196996097",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "SumeriaGilgamesh": 1
+    },
+    "lastModified": "2026-01-14T22:01:49.473966Z"
+},
+{
+    "index": 0,
+    "id": "312373191303757824",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "GreecePericles": 1
+    },
+    "lastModified": "2026-01-14T22:01:49.914323Z"
+},
+{
+    "index": 0,
+    "id": "688507156735328383",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "VietnamBaTrieu": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.232824Z"
+},
+{
+    "index": 0,
+    "id": "1029344590324568134",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "IndiaChandragupta": 1
+    },
+    "lastModified": "2026-01-14T22:01:50.260300Z"
+},
+{
+    "index": 0,
+    "id": "470183984798760961",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PersiaCyrus": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.403560Z"
+},
+{
+    "index": 0,
+    "id": "897169612569989150",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PolandJadwiga": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.780649Z"
+},
+{
+    "index": 0,
+    "id": "752674816078774364",
+    "mu": 1220.0,
+    "sigma": 147.3419113145863,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "SwedenKristina": 1
+    },
+    "lastModified": "2026-01-14T22:01:51.909876Z"
+},
+{
+    "index": 0,
+    "id": "203833632433897472",
+    "mu": 1193.0,
+    "sigma": 144.9343892825937,
+    "games": 2,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "ZuluShaka": 1,
+        "GaulAmbiorix": 1
+    },
+    "lastModified": "2026-01-14T22:01:49.923550Z"
+}
+]

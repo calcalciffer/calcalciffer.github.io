@@ -1,5 +1,7 @@
 from dom_generator_helper import *
 from stat_analyzer.process_trueskill import TrueSkillCalculator
+from stat_analyzer.match import StatModel
+import json
 
 def get_player_name(player_id: str, player_id_name_map) -> str:
     if player_id in player_id_name_map:
@@ -31,3 +33,25 @@ def generate_leaderboard(ratings):
 rtstats = CPLStats('stat_analyzer/realtimeMatches.json')
 rt_season5_stats = CPLStats('stat_analyzer/season5Games.json')
 pbcstats = CPLStats('stat_analyzer/pbcMatches.json')
+
+def dump_stats(file_path, ratings):
+    res = ''
+    sep = ''
+    for player_id in ratings:
+        res = res + sep + ratings[player_id].model_dump_json(indent=4)
+        sep = ',\n'
+    with open(file_path, 'w') as f:
+        f.write('[\n' + res + '\n]')
+
+dump_stats('rtstats_ffa.json', rtstats.ffa_ratings)
+dump_stats('rtstats_teamer.json', rtstats.teamer_ratings)
+dump_stats('rtstats_duel.json', rtstats.duel_ratings)
+
+dump_stats('rt_season5_stats_ffa.json', rt_season5_stats.ffa_ratings)
+dump_stats('rt_season5_stats_teamer.json', rt_season5_stats.teamer_ratings)
+dump_stats('rt_season5_stats_duel.json', rt_season5_stats.duel_ratings)
+
+dump_stats('pbcstats_ffa.json', pbcstats.ffa_ratings)
+dump_stats('pbcstats_teamer.json', pbcstats.teamer_ratings)
+dump_stats('pbcstats_duel.json', pbcstats.duel_ratings)
+

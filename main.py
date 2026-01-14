@@ -26,6 +26,31 @@ from pages.pbc_ffa_leaderboard import *
 from pages.pbc_teamer_leaderboard import *
 from pages.pbc_duel_leaderboard import *
 
+menu_list = {
+    'Home' : {
+        'Home': {'name': 'Home', 'link': 'index.html'}
+    },
+    'Realtime' : {
+        'Game History' : {'name': 'Real time Game History', 'link': 'rt_games.html'},
+        'FFA Leaderboard' : {'name': 'Real time FFA Leaderboard', 'link': 'rt_ffa_leaderboard.html'},
+        'Teamer Leaderboard' : {'name': 'Real time Teamer Leaderboard', 'link': 'rt_teamer_leaderboard.html'},
+        'Duel Leaderboard' : {'name': 'Real time Duel Leaderboard', 'link': 'rt_duel_leaderboard.html'},       
+    },
+    'Season 5 Realtime' : {
+        'Game History' : {'name': 'Season 5 Real time Game History', 'link': 'rt_s5_games.html'},
+        'FFA Leaderboard' : {'name': 'Season 5 Real time FFA Leaderboard', 'link': 'rt_s5_ffa_leaderboard.html'},
+        'Teamer Leaderboard' : {'name': 'Season 5 Real time Teamer Leaderboard', 'link': 'rt_s5_teamer_leaderboard.html'},
+        'Duel Leaderboard' : {'name': 'Season 5 Real time Duel Leaderboard', 'link': 'rt_s5_duel_leaderboard.html'},       
+    },
+    'PBC' : {
+        'Game History' : {'name': 'PBC Game History', 'link': 'pbc_games.html'},
+        'FFA Leaderboard' : {'name': 'PBC FFA Leaderboard', 'link': 'pbc_ffa_leaderboard.html'},
+        'Teamer Leaderboard' : {'name': 'PBC Teamer Leaderboard', 'link': 'pbc_teamer_leaderboard.html'},
+        'Duel Leaderboard' : {'name': 'PBC Duel Leaderboard', 'link': 'pbc_duel_leaderboard.html'},
+        'FFA + Duel Leaderboard' : {'name': 'PBC FFA+Duel Leaderboard', 'link': 'pbc_ffa_duel_leaderboard.html'},
+    }
+}
+
 pages_list = [
     {'name': 'index', 'func': get_home_page, 'title': 'Home'},
     {'name': 'rt_games', 'func': get_realtime_history_page, 'title': 'Real time Game History'},
@@ -48,6 +73,6 @@ for page in pages_list:
     print(f'Creating {page_name}')
     get_page_function = page['func']
     # if page_name == 'pbc_games.html':
-    docStr = get_page_function(pages_list)
+    docStr = get_page_function(pages_list, menu_list)
     with open(page_name, 'w') as f:
         f.write(docStr)
