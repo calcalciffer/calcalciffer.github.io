@@ -219,6 +219,14 @@ class TrueSkillCalculator:
         
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
+            if match.is_cloud is True and match.gametype == "FFA" or match.gametype == "Duel":
+                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, True) for i, p in enumerate(match.players)]
+                match, post = self.update_player_stats(match, player_ratings, "delta")
+                if match is None:
+                    continue
+                for i, player in enumerate(match.players):
+                    player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
+                    self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
             player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
             if match is None:
@@ -235,13 +243,6 @@ class TrueSkillCalculator:
                 else:
                     raise ValueError(f"Unsupported game type. Use 'FFA', 'Teamer' or 'Duel'. {match.gametype} given.")
 
-            if match.gametype == "FFA" or match.gametype == "Duel":
-                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, True) for i, p in enumerate(match.players)]
-                match, post = self.update_player_stats(match, player_ratings, "delta")
-                for i, player in enumerate(match.players):
-                    player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
-                    self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
-    
     def normalize(self, gametype):
         if gametype == 'FFA' or gametype == 'PBC':
             return 'FFA'
@@ -259,6 +260,7 @@ class TrueSkillCalculator:
             positions = set()
             for p in m.players:
                 positions.add(p.position)
+            m.is_cloud = 'PBC' in m.gametype
             m.gametype = self.normalize(m.gametype)
             if m.gametype == 'FFA':
                 if len(positions) == 2:

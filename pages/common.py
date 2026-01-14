@@ -22,7 +22,7 @@ def generate_leaderboard(ratings):
                 loses = games - wins
                 rating = ratings[player].mu
                 sigma = round(ratings[player].sigma, 2)
-                name = get_player_name(player, rtstats.player_id_name_map)
+                name = get_player_name(player, pbcstats.player_id_name_map)
                 p(f"#{i + 1} - {rating} +/- {sigma} [{wins} - {loses}] {name}", cls='civ-ability-name')
 
 rtstats = CPLStats('stat_analyzer/realtimeMatches.json')

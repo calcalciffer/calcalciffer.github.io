@@ -28,6 +28,7 @@ class MatchModel(BaseModel):
     _id: str
     validation_msg_id: Dict[str, str]
     gametype: Optional[str] = None
+    is_cloud: Optional[bool] = False
     players: List[PlayerModel]
     
 class MatchParseModel(BaseModel):

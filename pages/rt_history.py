@@ -1,12 +1,12 @@
 from dom_generator_helper import *
-from pages.common import rtstats
+from pages.common import *
 
 def get_player_name(player_id: str, player_id_name_map) -> str:
     if player_id in player_id_name_map:
         return player_id_name_map[player_id]
     else:
         return player_id
-    
+
 def get_civ_name(player) -> str:
     return player.leader if player.leader else "No Civ"
 
