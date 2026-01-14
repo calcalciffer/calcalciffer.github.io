@@ -14,7 +14,8 @@ class CPLStats:
         self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = TSProcessor.get_matches_with_delta(file_path)
 
 def generate_leaderboard(ratings):
-    for i, player in enumerate(ratings):
+    rank = 1
+    for player in ratings:
         if ratings[player].games >= 3:
             with div(cls="row"), div(cls="chart"):
                 games = ratings[player].games
@@ -23,7 +24,10 @@ def generate_leaderboard(ratings):
                 rating = ratings[player].mu
                 sigma = round(ratings[player].sigma, 2)
                 name = get_player_name(player, pbcstats.player_id_name_map)
-                p(f"#{i + 1} - {rating} [{wins} - {loses}] {name}", cls='civ-ability-name')
+                comment(player)
+                p(f"#{rank} - {rating} [{wins} - {loses}] {name}", cls='civ-ability-name')
+            rank = rank + 1
 
 rtstats = CPLStats('stat_analyzer/realtimeMatches.json')
+rt_season5_stats = CPLStats('stat_analyzer/season5Games.json')
 pbcstats = CPLStats('stat_analyzer/pbcMatches.json')

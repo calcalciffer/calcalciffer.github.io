@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Season 5 Realtime Duel Leaderboard - Civilization Player League</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/cplLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/cplLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/index.html" onclick="civClicked(null)">Home</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_games.html" onclick="civClicked(null)">Real time Game History</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_ffa_leaderboard.html" onclick="civClicked(null)">Real time FFA Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_teamer_leaderboard.html" onclick="civClicked(null)">Real time Teamer Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_duel_leaderboard.html" onclick="civClicked(null)">Real time Duel Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_s5_games.html" onclick="civClicked(null)">Season 5 Real time Game History</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_s5_ffa_leaderboard.html" onclick="civClicked(null)">Season 5 Real time FFA Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_s5_teamer_leaderboard.html" onclick="civClicked(null)">Season 5 Real time Teamer Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/rt_s5_duel_leaderboard.html" onclick="civClicked(null)">Season 5 Real time Duel Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_games.html" onclick="civClicked(null)">PBC Game History</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_ffa_duel_leaderboard.html" onclick="civClicked(null)">PBC FFA+Duel Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_ffa_leaderboard.html" onclick="civClicked(null)">PBC FFA Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_teamer_leaderboard.html" onclick="civClicked(null)">PBC Teamer Leaderboard</a>
+                            </li>
+                            <li class="">
+                              <a href="/pbc_duel_leaderboard.html" onclick="civClicked(null)">PBC Duel Leaderboard</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="match-switcher-wrapper">
+                            <button class="match-switcher gray-circle-btn" title="Switch Gametype" type="button">
+                              <span class="sr-only">Switch Gametype</span><i aria-hidden="true" class="ffa-icon">FFA</i><i aria-hidden="true" class="teamer-icon">Te</i><i aria-hidden="true" class="duel-icon">Du</i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="leaders-data min-w-full">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Season 5 Realtime Duel Leaderboard - Civilization Player League</h1><br>
+                <div class="row">
+                  <div class="chart">
+                    <!--619291366010126357-->
+                    <p class="civ-ability-name">#1 - 1333.0 [3 - 0] _kamielke</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--283667488539934720-->
+                    <p class="civ-ability-name">#2 - 1251.0 [2 - 2] ramphy</p>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>
