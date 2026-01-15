@@ -3972,6 +3972,10 @@
   }
  }
 
+ .duel-icon, .teamer-icon {
+   display: none;
+ }
+
  .match-teamer .FFA {
     display: none;
  }
@@ -3983,6 +3987,9 @@
  }
  .match-teamer .duel-icon {
    display: none;
+ }
+ .match-teamer .teamer-icon {
+   display: initial;
  }
 
  .match-ffa .Teamer {
@@ -3997,6 +4004,9 @@
  .match-ffa .duel-icon {
    display: none;
  }
+ .match-ffa .ffa-icon {
+   display: initial;
+ }
 
  .match-duel .Teamer {
     display: none;
@@ -4009,4 +4019,7 @@
  }
  .match-duel .ffa-icon {
    display: none;
+ }
+ .match-duel .duel-icon {
+   display: initial;
  }
