@@ -11,9 +11,9 @@ def get_player_name(player_id: str, player_id_name_map) -> str:
 
 class CPLStats:
     def __init__(self, file_path):
-        TSProcessor = TrueSkillCalculator()
-        self.player_id_name_map = TSProcessor.build_player_id_name_map()
-        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = TSProcessor.get_matches_with_delta(file_path)
+        self.TSProcessor = TrueSkillCalculator()
+        self.player_id_name_map = self.TSProcessor.build_player_id_name_map()
+        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = self.TSProcessor.get_matches_with_delta(file_path)
 
 def generate_leaderboard(ratings):
     rank = 1
@@ -43,6 +43,15 @@ def dump_stats(file_path, ratings):
     with open(file_path, 'w') as f:
         f.write('[\n' + res + '\n]')
 
+def dump_matches(file_path, matches):
+    res = ''
+    sep = ''
+    for m in matches:
+        res = res + sep + m.model_dump_json(indent=4)
+        sep = ',\n'
+    with open(file_path, 'w') as f:
+        f.write('[\n' + res + '\n]')
+
 dump_stats('rtstats_ffa.json', rtstats.ffa_ratings)
 dump_stats('rtstats_teamer.json', rtstats.teamer_ratings)
 dump_stats('rtstats_duel.json', rtstats.duel_ratings)
@@ -55,3 +64,4 @@ dump_stats('pbcstats_ffa.json', pbcstats.ffa_ratings)
 dump_stats('pbcstats_teamer.json', pbcstats.teamer_ratings)
 dump_stats('pbcstats_duel.json', pbcstats.duel_ratings)
 
+dump_matches('pbc_parsed_matches.json', pbcstats.TSProcessor.parsed_matches_list)

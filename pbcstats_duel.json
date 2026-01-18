@@ -2,7 +2,7 @@
 {
     "index": 0,
     "_id": "806667428284203038",
-    "mu": 1692.0,
+    "mu": 1642.0,
     "sigma": 108.57905670613863,
     "games": 34,
     "wins": 31,
@@ -31,12 +31,12 @@
         "ArabiaSultan": 1,
         "BabylonHammurabi": 1
     },
-    "lastModified": "2026-01-15T19:10:16.629516Z"
+    "lastModified": "2026-01-18T23:16:19.136966Z"
 },
 {
     "index": 0,
     "_id": "187361404783689728",
-    "mu": 1605.0,
+    "mu": 1555.0,
     "sigma": 116.06095062804954,
     "games": 23,
     "wins": 21,
@@ -58,12 +58,12 @@
         "IndonesiaGitarja": 1,
         "GaulAmbiorix": 1
     },
-    "lastModified": "2026-01-15T19:10:16.629521Z"
+    "lastModified": "2026-01-18T23:16:19.136971Z"
 },
 {
     "index": 0,
     "_id": "357803082010329088",
-    "mu": 1442.0,
+    "mu": 1392.0,
     "sigma": 126.04455130798681,
     "games": 13,
     "wins": 11,
@@ -80,12 +80,12 @@
         "MacedonAlexander": 3,
         "MapucheLautaro": 2
     },
-    "lastModified": "2026-01-15T19:10:16.491724Z"
+    "lastModified": "2026-01-18T23:16:19.034557Z"
 },
 {
     "index": 0,
     "_id": "209530550233333770",
-    "mu": 1436.0,
+    "mu": 1386.0,
     "sigma": 130.4698229566021,
     "games": 10,
     "wins": 9,
@@ -103,12 +103,12 @@
         "AustraliaJohnCurtin": 1,
         "BabylonHammurabi": 1
     },
-    "lastModified": "2026-01-15T19:10:16.617767Z"
+    "lastModified": "2026-01-18T23:16:19.125852Z"
 },
 {
     "index": 0,
     "_id": "329314205159260160",
-    "mu": 1377.0,
+    "mu": 1327.0,
     "sigma": 110.1926268274345,
     "games": 28,
     "wins": 18,
@@ -121,12 +121,12 @@
         "JapanHojoTokimune": 1,
         "None": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628194Z"
+    "lastModified": "2026-01-18T23:16:19.135645Z"
 },
 {
     "index": 0,
     "_id": "572129804975997053",
-    "mu": 1375.0,
+    "mu": 1325.0,
     "sigma": 123.74962210985815,
     "games": 14,
     "wins": 10,
@@ -148,12 +148,12 @@
         "JapanHojoTokimune": 1,
         "NubiaAmanitore": 1
     },
-    "lastModified": "2026-01-15T19:10:16.610589Z"
+    "lastModified": "2026-01-18T23:16:19.118946Z"
 },
 {
     "index": 0,
     "_id": "276095547897675776",
-    "mu": 1372.0,
+    "mu": 1322.0,
     "sigma": 138.81992104848376,
     "games": 5,
     "wins": 5,
@@ -165,12 +165,12 @@
         "JapanHojoTokimune": 1,
         "EgyptPtolemaicCleopatra": 2
     },
-    "lastModified": "2026-01-15T19:10:16.618951Z"
+    "lastModified": "2026-01-18T23:16:19.127059Z"
 },
 {
     "index": 0,
     "_id": "687415757675429964",
-    "mu": 1371.0,
+    "mu": 1321.0,
     "sigma": 106.19212659951415,
     "games": 34,
     "wins": 21,
@@ -203,13 +203,13 @@
         "ArabiaSultan": 1,
         "EnglandElizabethI": 1
     },
-    "lastModified": "2026-01-15T19:10:16.609868Z"
+    "lastModified": "2026-01-18T23:16:19.118218Z"
 },
 {
     "index": 0,
     "_id": "807274512952852532",
-    "mu": 1371.0,
-    "sigma": 134.82062614250825,
+    "mu": 1321.0,
+    "sigma": 134.82062614250822,
     "games": 7,
     "wins": 6,
     "first": 6,
@@ -224,12 +224,12 @@
         "MongoliaKublaiKhan": 1,
         "ChinaQinUnifier": 1
     },
-    "lastModified": "2026-01-15T19:10:16.145299Z"
+    "lastModified": "2026-01-18T23:16:18.815500Z"
 },
 {
     "index": 0,
     "_id": "740222275831332917",
-    "mu": 1360.0,
+    "mu": 1310.0,
     "sigma": 140.38982858688814,
     "games": 4,
     "wins": 4,
@@ -241,12 +241,12 @@
         "NubiaAmanitore": 1,
         "SpainPhilipII": 1
     },
-    "lastModified": "2026-01-15T19:10:16.470746Z"
+    "lastModified": "2026-01-18T23:16:19.014894Z"
 },
 {
     "index": 0,
     "_id": "622988954689339402",
-    "mu": 1346.0,
+    "mu": 1296.0,
     "sigma": 133.65131700599386,
     "games": 8,
     "wins": 6,
@@ -261,12 +261,12 @@
         "PersiaNader": 1,
         "IndonesiaGitarja": 1
     },
-    "lastModified": "2026-01-15T19:10:16.618612Z"
+    "lastModified": "2026-01-18T23:16:19.126717Z"
 },
 {
     "index": 0,
     "_id": "373064528948232192",
-    "mu": 1344.0,
+    "mu": 1294.0,
     "sigma": 112.44110465045434,
     "games": 25,
     "wins": 15,
@@ -296,12 +296,12 @@
         "EnglandVictoria": 1,
         "DutchWilhelmina": 1
     },
-    "lastModified": "2026-01-15T19:10:16.617771Z"
+    "lastModified": "2026-01-18T23:16:19.125856Z"
 },
 {
     "index": 0,
     "_id": "611353303531520019",
-    "mu": 1343.0,
+    "mu": 1293.0,
     "sigma": 132.8538675532667,
     "games": 8,
     "wins": 6,
@@ -316,13 +316,13 @@
         "BabylonHammurabi": 2,
         "EgyptPtolemaicCleopatra": 1
     },
-    "lastModified": "2026-01-15T19:10:16.583663Z"
+    "lastModified": "2026-01-18T23:16:19.094585Z"
 },
 {
     "index": 0,
     "_id": "467360142812512267",
-    "mu": 1341.0,
-    "sigma": 132.92076425813408,
+    "mu": 1291.0,
+    "sigma": 132.9207642581341,
     "games": 8,
     "wins": 6,
     "first": 6,
@@ -336,12 +336,12 @@
         "AztecMontezuma": 2,
         "FranceCatherineBlackQueen": 1
     },
-    "lastModified": "2026-01-15T19:10:16.560751Z"
+    "lastModified": "2026-01-18T23:16:19.073545Z"
 },
 {
     "index": 0,
     "_id": "234800234729963520",
-    "mu": 1327.0,
+    "mu": 1277.0,
     "sigma": 138.20379886188212,
     "games": 5,
     "wins": 4,
@@ -355,12 +355,12 @@
         "GeorgiaTamar": 1,
         "PhoeniciaDido": 1
     },
-    "lastModified": "2026-01-15T19:10:16.032446Z"
+    "lastModified": "2026-01-18T23:16:18.766073Z"
 },
 {
     "index": 0,
     "_id": "226283249603837952",
-    "mu": 1307.0,
+    "mu": 1257.0,
     "sigma": 144.9343892825937,
     "games": 2,
     "wins": 2,
@@ -368,12 +368,12 @@
     "subbedIn": 0,
     "subbedOut": 0,
     "civs": {},
-    "lastModified": "2026-01-15T19:10:16.393106Z"
+    "lastModified": "2026-01-18T23:16:18.944111Z"
 },
 {
     "index": 0,
     "_id": "720551198180114442",
-    "mu": 1305.0,
+    "mu": 1255.0,
     "sigma": 140.17936665616963,
     "games": 4,
     "wins": 3,
@@ -385,12 +385,12 @@
         "IndiaChandragupta": 2,
         "CreePoundmaker": 1
     },
-    "lastModified": "2026-01-15T19:10:16.515901Z"
+    "lastModified": "2026-01-18T23:16:19.059126Z"
 },
 {
     "index": 0,
     "_id": "486645633634140173",
-    "mu": 1302.0,
+    "mu": 1252.0,
     "sigma": 140.4950568178119,
     "games": 4,
     "wins": 3,
@@ -403,12 +403,12 @@
         "IndiaChandragupta": 1,
         "PersiaCyrus": 1
     },
-    "lastModified": "2026-01-15T19:10:16.298440Z"
+    "lastModified": "2026-01-18T23:16:18.914056Z"
 },
 {
     "index": 0,
     "_id": "848325655443800104",
-    "mu": 1278.0,
+    "mu": 1228.0,
     "sigma": 142.28348624438084,
     "games": 3,
     "wins": 2,
@@ -420,12 +420,12 @@
         "AmericaTeddyBullMoose": 1,
         "IndiaGandhi": 1
     },
-    "lastModified": "2026-01-15T19:10:15.943947Z"
+    "lastModified": "2026-01-18T23:16:18.681415Z"
 },
 {
     "index": 0,
     "_id": "935611134130655272",
-    "mu": 1278.0,
+    "mu": 1228.0,
     "sigma": 147.4209034430299,
     "games": 1,
     "wins": 1,
@@ -435,13 +435,13 @@
     "civs": {
         "KoreaSeondeok": 1
     },
-    "lastModified": "2026-01-15T19:10:16.611867Z"
+    "lastModified": "2026-01-18T23:16:19.120409Z"
 },
 {
     "index": 0,
     "_id": "397531580123578389",
-    "mu": 1276.0,
-    "sigma": 142.7184760985793,
+    "mu": 1226.0,
+    "sigma": 142.71847609857932,
     "games": 3,
     "wins": 2,
     "first": 2,
@@ -452,12 +452,12 @@
         "GreeceGorgo": 1,
         "OttomanMuhtesem": 1
     },
-    "lastModified": "2026-01-15T19:10:16.611539Z"
+    "lastModified": "2026-01-18T23:16:19.120053Z"
 },
 {
     "index": 0,
     "_id": "581930118381830145",
-    "mu": 1271.0,
+    "mu": 1221.0,
     "sigma": 118.47227826920975,
     "games": 19,
     "wins": 10,
@@ -473,12 +473,12 @@
         "GeorgiaTamar": 1,
         "PolandJadwiga": 1
     },
-    "lastModified": "2026-01-15T19:10:16.627505Z"
+    "lastModified": "2026-01-18T23:16:19.134968Z"
 },
 {
     "index": 0,
     "_id": "407733740740280332",
-    "mu": 1260.0,
+    "mu": 1210.0,
     "sigma": 140.20479240842195,
     "games": 4,
     "wins": 2,
@@ -490,12 +490,12 @@
         "AztecMontezuma": 1,
         "NubiaAmanitore": 2
     },
-    "lastModified": "2026-01-15T19:10:16.425389Z"
+    "lastModified": "2026-01-18T23:16:18.972920Z"
 },
 {
     "index": 0,
     "_id": "293348462513094656",
-    "mu": 1252.0,
+    "mu": 1202.0,
     "sigma": 132.54613488803645,
     "games": 8,
     "wins": 4,
@@ -511,12 +511,12 @@
         "GeorgiaTamar": 1,
         "CanadaWilfrid": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628548Z"
+    "lastModified": "2026-01-18T23:16:19.135996Z"
 },
 {
     "index": 0,
     "_id": "734643688080408598",
-    "mu": 1251.0,
+    "mu": 1201.0,
     "sigma": 120.5756380986251,
     "games": 18,
     "wins": 7,
@@ -534,12 +534,12 @@
         "RomeTrajan": 1,
         "AustraliaJohnCurtin": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628199Z"
+    "lastModified": "2026-01-18T23:16:19.135649Z"
 },
 {
     "index": 0,
     "_id": "669378034175967273",
-    "mu": 1246.0,
+    "mu": 1196.0,
     "sigma": 140.0561649075943,
     "games": 4,
     "wins": 2,
@@ -551,12 +551,12 @@
         "MaoriKupe": 2,
         "DutchWilhelmina": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628552Z"
+    "lastModified": "2026-01-18T23:16:19.136000Z"
 },
 {
     "index": 0,
     "_id": "414089572725686274",
-    "mu": 1227.0,
+    "mu": 1177.0,
     "sigma": 128.0888411009987,
     "games": 11,
     "wins": 5,
@@ -573,12 +573,12 @@
         "NorwayHaraldHardradaVarangian": 1,
         "SpainPhilipII": 1
     },
-    "lastModified": "2026-01-15T19:10:16.599881Z"
+    "lastModified": "2026-01-18T23:16:19.108631Z"
 },
 {
     "index": 0,
     "_id": "688084429251543153",
-    "mu": 1226.0,
+    "mu": 1176.0,
     "sigma": 147.57203438258446,
     "games": 1,
     "wins": 0,
@@ -588,12 +588,12 @@
     "civs": {
         "ChinaWuZetian": 1
     },
-    "lastModified": "2026-01-15T19:10:16.616468Z"
+    "lastModified": "2026-01-18T23:16:19.124474Z"
 },
 {
     "index": 0,
     "_id": "219193980640952320",
-    "mu": 1223.0,
+    "mu": 1173.0,
     "sigma": 147.43275760985824,
     "games": 1,
     "wins": 0,
@@ -603,12 +603,12 @@
     "civs": {
         "CreePoundmaker": 1
     },
-    "lastModified": "2026-01-15T19:10:16.583668Z"
+    "lastModified": "2026-01-18T23:16:19.094589Z"
 },
 {
     "index": 0,
     "_id": "315764252134604801",
-    "mu": 1222.0,
+    "mu": 1172.0,
     "sigma": 147.3946438978987,
     "games": 1,
     "wins": 0,
@@ -618,12 +618,12 @@
     "civs": {
         "EthiopiaMenelik": 1
     },
-    "lastModified": "2026-01-15T19:10:16.577052Z"
+    "lastModified": "2026-01-18T23:16:19.088228Z"
 },
 {
     "index": 0,
     "_id": "749053379434643477",
-    "mu": 1220.0,
+    "mu": 1170.0,
     "sigma": 128.06592602693584,
     "games": 11,
     "wins": 5,
@@ -640,12 +640,12 @@
         "AustraliaJohnCurtin": 1,
         "OttomanSuleiman": 1
     },
-    "lastModified": "2026-01-15T19:10:16.618616Z"
+    "lastModified": "2026-01-18T23:16:19.126722Z"
 },
 {
     "index": 0,
     "_id": "612766696968814647",
-    "mu": 1216.0,
+    "mu": 1166.0,
     "sigma": 138.26261460199143,
     "games": 5,
     "wins": 2,
@@ -658,12 +658,12 @@
         "CreePoundmaker": 1,
         "GeorgiaTamar": 1
     },
-    "lastModified": "2026-01-15T19:10:16.434634Z"
+    "lastModified": "2026-01-18T23:16:18.980661Z"
 },
 {
     "index": 0,
     "_id": "884230614092484658",
-    "mu": 1207.0,
+    "mu": 1157.0,
     "sigma": 129.00705682253948,
     "games": 10,
     "wins": 4,
@@ -678,12 +678,12 @@
         "GreecePericles": 1,
         "GaulAmbiorix": 1
     },
-    "lastModified": "2026-01-15T19:10:16.032450Z"
+    "lastModified": "2026-01-18T23:16:18.766078Z"
 },
 {
     "index": 0,
     "_id": "755198015597183046",
-    "mu": 1198.0,
+    "mu": 1148.0,
     "sigma": 145.10114639262963,
     "games": 2,
     "wins": 0,
@@ -694,12 +694,12 @@
         "RomeCaesar": 1,
         "SumeriaGilgamesh": 1
     },
-    "lastModified": "2026-01-15T19:10:16.214164Z"
+    "lastModified": "2026-01-18T23:16:18.880442Z"
 },
 {
     "index": 0,
     "_id": "373756372476755971",
-    "mu": 1196.0,
+    "mu": 1146.0,
     "sigma": 145.02427876706832,
     "games": 2,
     "wins": 0,
@@ -709,12 +709,12 @@
     "civs": {
         "PhoeniciaDido": 2
     },
-    "lastModified": "2026-01-15T19:10:16.547609Z"
+    "lastModified": "2026-01-18T23:16:19.064376Z"
 },
 {
     "index": 0,
     "_id": "1174027850786025484",
-    "mu": 1195.0,
+    "mu": 1145.0,
     "sigma": 140.30286149874047,
     "games": 4,
     "wins": 1,
@@ -725,12 +725,12 @@
         "GreeceGorgo": 2,
         "GaulAmbiorix": 2
     },
-    "lastModified": "2026-01-15T19:10:16.511654Z"
+    "lastModified": "2026-01-18T23:16:19.054866Z"
 },
 {
     "index": 0,
     "_id": "522982692908957697",
-    "mu": 1195.0,
+    "mu": 1145.0,
     "sigma": 145.00142950170755,
     "games": 2,
     "wins": 0,
@@ -740,12 +740,12 @@
     "civs": {
         "FranceCatherineBlackQueen": 2
     },
-    "lastModified": "2026-01-15T19:10:16.502463Z"
+    "lastModified": "2026-01-18T23:16:19.045598Z"
 },
 {
     "index": 0,
     "_id": "595266528245579790",
-    "mu": 1193.0,
+    "mu": 1143.0,
     "sigma": 144.9343892825937,
     "games": 2,
     "wins": 0,
@@ -753,12 +753,12 @@
     "subbedIn": 0,
     "subbedOut": 0,
     "civs": {},
-    "lastModified": "2026-01-15T19:10:16.393135Z"
+    "lastModified": "2026-01-18T23:16:18.944114Z"
 },
 {
     "index": 0,
     "_id": "731137184895336539",
-    "mu": 1193.0,
+    "mu": 1143.0,
     "sigma": 144.9343892825937,
     "games": 2,
     "wins": 0,
@@ -769,12 +769,12 @@
         "GermanyLudwigII": 1,
         "GreeceGorgo": 1
     },
-    "lastModified": "2026-01-15T19:10:16.470046Z"
+    "lastModified": "2026-01-18T23:16:19.014291Z"
 },
 {
     "index": 0,
     "_id": "525676251499724810",
-    "mu": 1190.0,
+    "mu": 1140.0,
     "sigma": 108.04201495464318,
     "games": 31,
     "wins": 13,
@@ -791,12 +791,12 @@
         "OttomanSuleiman": 2,
         "AustraliaJohnCurtin": 1
     },
-    "lastModified": "2026-01-15T19:10:16.619558Z"
+    "lastModified": "2026-01-18T23:16:19.127717Z"
 },
 {
     "index": 0,
     "_id": "659039412755103750",
-    "mu": 1169.0,
+    "mu": 1119.0,
     "sigma": 142.71004751997003,
     "games": 3,
     "wins": 0,
@@ -808,12 +808,12 @@
         "RomeTrajan": 1,
         "GaulAmbiorix": 1
     },
-    "lastModified": "2026-01-15T19:10:16.291586Z"
+    "lastModified": "2026-01-18T23:16:18.909215Z"
 },
 {
     "index": 0,
     "_id": "264447297423671296",
-    "mu": 1168.0,
+    "mu": 1118.0,
     "sigma": 138.05492543039804,
     "games": 5,
     "wins": 1,
@@ -826,12 +826,12 @@
         "KoreaSeondeok": 1,
         "VietnamBaTrieu": 1
     },
-    "lastModified": "2026-01-15T19:10:16.611871Z"
+    "lastModified": "2026-01-18T23:16:19.120413Z"
 },
 {
     "index": 0,
     "_id": "140307283249856512",
-    "mu": 1167.0,
+    "mu": 1117.0,
     "sigma": 142.63833986906675,
     "games": 3,
     "wins": 0,
@@ -843,12 +843,12 @@
         "MongoliaGenghisKhan": 1,
         "GaulAmbiorix": 1
     },
-    "lastModified": "2026-01-15T19:10:16.509927Z"
+    "lastModified": "2026-01-18T23:16:19.053037Z"
 },
 {
     "index": 0,
     "_id": "292716471547854848",
-    "mu": 1166.0,
+    "mu": 1116.0,
     "sigma": 142.6201178391147,
     "games": 3,
     "wins": 0,
@@ -859,13 +859,13 @@
         "BabylonHammurabi": 2,
         "GaulAmbiorix": 1
     },
-    "lastModified": "2026-01-15T19:10:16.218468Z"
+    "lastModified": "2026-01-18T23:16:18.884605Z"
 },
 {
     "index": 0,
     "_id": "426075384476336128",
-    "mu": 1160.0,
-    "sigma": 142.3224153124768,
+    "mu": 1110.0,
+    "sigma": 142.3224153124769,
     "games": 3,
     "wins": 0,
     "first": 0,
@@ -874,12 +874,12 @@
     "civs": {
         "NorwayHaraldHardrada": 3
     },
-    "lastModified": "2026-01-15T19:10:16.190826Z"
+    "lastModified": "2026-01-18T23:16:18.858251Z"
 },
 {
     "index": 0,
     "_id": "601088586887987252",
-    "mu": 1151.0,
+    "mu": 1101.0,
     "sigma": 115.79969655778282,
     "games": 22,
     "wins": 7,
@@ -906,12 +906,12 @@
         "ArabiaSultan": 1,
         "AmericaTeddyRoughRider": 1
     },
-    "lastModified": "2026-01-15T19:10:16.594793Z"
+    "lastModified": "2026-01-18T23:16:19.103693Z"
 },
 {
     "index": 0,
     "_id": "685144196532797462",
-    "mu": 1123.0,
+    "mu": 1073.0,
     "sigma": 138.6163333032227,
     "games": 5,
     "wins": 0,
@@ -924,12 +924,12 @@
         "AmericaTeddyRoughRider": 1,
         "NorwayHaraldHardradaVarangian": 1
     },
-    "lastModified": "2026-01-15T19:10:16.160583Z"
+    "lastModified": "2026-01-18T23:16:18.830017Z"
 },
 {
     "index": 0,
     "_id": "153623540405370880",
-    "mu": 1115.0,
+    "mu": 1065.0,
     "sigma": 132.87251329854365,
     "games": 8,
     "wins": 1,
@@ -946,12 +946,12 @@
         "HungaryMatthias": 1,
         "ByzantiumBasil": 1
     },
-    "lastModified": "2026-01-15T19:10:16.619562Z"
+    "lastModified": "2026-01-18T23:16:19.127722Z"
 },
 {
     "index": 0,
     "_id": "661528210432983067",
-    "mu": 1108.0,
+    "mu": 1058.0,
     "sigma": 115.13347350598568,
     "games": 22,
     "wins": 7,
@@ -969,12 +969,12 @@
         "JapanHojoTokimune": 1,
         "PersiaNader": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628900Z"
+    "lastModified": "2026-01-18T23:16:19.136333Z"
 },
 {
     "index": 0,
     "_id": "654128102019956795",
-    "mu": 1105.0,
+    "mu": 1055.0,
     "sigma": 128.50679550747873,
     "games": 11,
     "wins": 2,
@@ -992,12 +992,12 @@
         "NorwayHaraldHardrada": 1,
         "VietnamBaTrieu": 1
     },
-    "lastModified": "2026-01-15T19:10:16.550585Z"
+    "lastModified": "2026-01-18T23:16:19.066100Z"
 },
 {
     "index": 0,
     "_id": "1188480827517042809",
-    "mu": 1097.0,
+    "mu": 1047.0,
     "sigma": 126.16645370757311,
     "games": 12,
     "wins": 3,
@@ -1011,12 +1011,12 @@
         "EnglandVictoria": 1,
         "GranColombiaSimonBolivar": 2
     },
-    "lastModified": "2026-01-15T19:10:16.614460Z"
+    "lastModified": "2026-01-18T23:16:19.122607Z"
 },
 {
     "index": 0,
     "_id": "412787591373651980",
-    "mu": 1088.0,
+    "mu": 1038.0,
     "sigma": 126.82761778255828,
     "games": 12,
     "wins": 2,
@@ -1035,12 +1035,12 @@
         "KoreaSeondeok": 1,
         "CreePoundmaker": 1
     },
-    "lastModified": "2026-01-15T19:10:16.604481Z"
+    "lastModified": "2026-01-18T23:16:19.113116Z"
 },
 {
     "index": 0,
     "_id": "546738505079062576",
-    "mu": 1081.0,
+    "mu": 1031.0,
     "sigma": 135.92514258025378,
     "games": 6,
     "wins": 0,
@@ -1053,12 +1053,12 @@
         "EnglandVictoria": 1,
         "ByzantiumBasil": 1
     },
-    "lastModified": "2026-01-15T19:10:16.628904Z"
+    "lastModified": "2026-01-18T23:16:19.136338Z"
 },
 {
     "index": 0,
     "_id": "215476939274584067",
-    "mu": 1020.0,
+    "mu": 970.0,
     "sigma": 126.91121656543064,
     "games": 12,
     "wins": 1,
@@ -1066,12 +1066,12 @@
     "subbedIn": 0,
     "subbedOut": 0,
     "civs": {},
-    "lastModified": "2026-01-15T19:10:16.555205Z"
+    "lastModified": "2026-01-18T23:16:19.069422Z"
 },
 {
     "index": 0,
     "_id": "526029031561363476",
-    "mu": 963.0,
+    "mu": 913.0,
     "sigma": 114.78189916252889,
     "games": 25,
     "wins": 3,
@@ -1101,6 +1101,6 @@
         "BrazilPedroII": 1,
         "VietnamBaTrieu": 1
     },
-    "lastModified": "2026-01-15T19:10:16.560755Z"
+    "lastModified": "2026-01-18T23:16:19.073550Z"
 }
 ]

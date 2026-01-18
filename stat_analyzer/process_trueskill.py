@@ -1,6 +1,5 @@
 import numpy as np
-from stat_analyzer.match import MatchParseModel, MatchModel, PlayerModel, StatModel
-from pydantic import BaseModel
+from stat_analyzer.match import *
 import json
 from collections import defaultdict
 from typing import Any, Dict, List
@@ -11,7 +10,7 @@ import sys
 sys.path.append('../')
 
 class TrueSkillCalculator:
-    TS_MU=1250
+    TS_MU=1200
     TS_SIGMA=150
     TS_BETA=400
     TS_TAU=10
@@ -25,6 +24,7 @@ class TrueSkillCalculator:
     duel_ratings = {}
     ffa_duel_ratings = {}
     matches_list = []
+    parsed_matches_list = []
 
     def __init__(self):
         self.ffa_ratings = {}
@@ -32,6 +32,7 @@ class TrueSkillCalculator:
         self.duel_ratings = {}
         self.ffa_duel_ratings = {}
         self.matches_list = []
+        self.parsed_matches_list = []
 
     def is_sub(self, player: PlayerModel) -> bool:
         for flag in player.flags:
@@ -277,12 +278,46 @@ class TrueSkillCalculator:
                 reset_stats_ids.append(line.strip())
         for id in reset_stats_ids:
             self.reset_ratings(id)
+            
+        for m in self.matches_list:
+            parsed_match = self.get_parsed_model(m[0])
+            self.parsed_matches_list.append(parsed_match)
 
         sorted_ffa_ratings = dict(sorted(self.ffa_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_teamer_ratings = dict(sorted(self.teamer_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_duel_ratings = dict(sorted(self.duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_ffa_duel_ratings = dict(sorted(self.ffa_duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, sorted_ffa_duel_ratings, self.matches_list
+    
+    def get_parsed_model(self, match: MatchModel) -> ParsedMatchModel:
+        parsed_players = []
+        for p in match.players:
+            parsed_player = ParsedPlayerModel(
+                steam_id=None,
+                user_name=None,
+                civ=p.leader if p.leader else "Unknown",
+                team=p.team if p.team is not None else 0,
+                placement=p.position if p.position is not None else 0,
+                leader=p.leader,
+                discord_id=p.id['$numberLong'],
+                delta=p.delta if p.delta is not None else 0.0,
+                season_delta=None
+            )
+            parsed_players.append(parsed_player)
+        
+        parsed_match = ParsedMatchModel(
+            game='civ6',  # Assuming civ6 for this example
+            turn=0,  # Placeholder value
+            map_type='Unknown',  # Placeholder value
+            game_mode=self.normalize(match.gametype),
+            is_cloud=True,
+            players=parsed_players,
+            parser_version='1.0',
+            discord_messages_id_list=[],
+            save_file_hash='',
+            reporter_discord_id='system'
+        )
+        return parsed_match
 
     def build_player_id_name_map(self) -> Dict[str, str]:
         file_path = 'stat_analyzer/players.players.json'
