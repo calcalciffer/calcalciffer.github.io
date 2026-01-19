@@ -23,6 +23,7 @@ class PlayerModel(BaseModel):
     position: Optional[int] = None
     flags: List[str] = []
     delta: Optional[float] = 0
+    combined_delta: Optional[float] = 0
 
 class MatchModel(BaseModel):
     _id: str

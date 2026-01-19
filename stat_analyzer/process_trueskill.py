@@ -237,11 +237,11 @@ class TrueSkillCalculator:
                     self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
             if match.is_cloud is True:
                 player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False, True) for i, p in enumerate(match.players)]
-                match, post = self.update_player_stats(match, player_ratings, "delta")
+                match, post = self.update_player_stats(match, player_ratings, "combined_delta")
                 if match is None:
                     continue
                 for i, player in enumerate(match.players):
-                    player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
+                    player_stats_db = self.get_player_stats_db(match, player, post[i], "combined_delta")
                     self.combined_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
             player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")

@@ -3972,8 +3972,20 @@
   }
  }
 
- .duel-icon, .teamer-icon {
+ .ffa-icon, .duel-icon, .teamer-icon {
    display: none;
+ }
+ .match-all .all-icon {
+    display: initial;
+  }
+ .match-all .FFA {
+    display: initial;
+ }
+ .match-all .Duel {
+    display: initial;
+ }
+ .match-all .Teamer {
+    display: initial;
  }
 
  .match-teamer .FFA {
@@ -3990,7 +4002,10 @@
  }
  .match-teamer .teamer-icon {
    display: initial;
- }
+  }
+  .match-teamer .all-icon {
+    display: none;
+  }
 
  .match-ffa .Teamer {
     display: none;
@@ -4007,6 +4022,9 @@
  .match-ffa .ffa-icon {
    display: initial;
  }
+ .match-ffa .all-icon {
+   display: none;
+ }
 
  .match-duel .Teamer {
     display: none;
@@ -4022,4 +4040,7 @@
  }
  .match-duel .duel-icon {
    display: initial;
+ }
+ .match-duel .all-icon {
+   display: none;
  }

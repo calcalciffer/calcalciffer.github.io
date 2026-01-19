@@ -71,6 +71,7 @@ def add_header(page_type, pages_list, menu_list):
                     with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"), div(cls="match-switcher-wrapper"):
                         with button(cls="match-switcher gray-circle-btn", type="button", title="Switch Gametype"):
                             span("Switch Gametype", cls="sr-only")
+                            i('All', cls="all-icon", aria_hidden="true")
                             i('FFA', cls="ffa-icon", aria_hidden="true")
                             i('Te', cls="teamer-icon", aria_hidden="true")
                             i('Du', cls="duel-icon", aria_hidden="true")

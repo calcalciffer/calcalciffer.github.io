@@ -236,8 +236,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('match-teamer');
         document.body.classList.add('match-duel');
         localStorage.setItem('matchMode', 'Duel');
-      } else {
+      } else if (matchMode == 'Duel') {
         document.body.classList.remove('match-duel');
+        document.body.classList.add('match-all');
+        localStorage.setItem('matchMode', 'All');
+      } else if (matchMode == 'All') {
+        document.body.classList.remove('match-all');
         document.body.classList.add('match-ffa');
         localStorage.setItem('matchMode', 'FFA');
       }
@@ -680,7 +684,8 @@ function initGameTypeSwitch() {
   document.body.classList.remove('match-teamer');
   document.body.classList.remove('match-ffa');
   document.body.classList.remove('match-duel');
-  document.body.classList.add('match-ffa');
-  localStorage.setItem('matchMode', 'FFA');
+  document.body.classList.remove('match-all');
+  document.body.classList.add('match-all');
+  localStorage.setItem('matchMode', 'All');
 }
 initGameTypeSwitch();
