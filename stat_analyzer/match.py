@@ -48,6 +48,7 @@ class ParsedPlayerModel(BaseModel):
     quit: bool = False
     delta: float = 0.0
     season_delta: Optional[float] = None
+    combined_delta: Optional[float] = None
     is_sub: bool = False
     subbed_out: bool = False
 

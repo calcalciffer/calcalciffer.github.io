@@ -38,7 +38,7 @@ def dump_stats(file_path, ratings):
     res = ''
     sep = ''
     for player_id in ratings:
-        res = res + sep + ratings[player_id].model_dump_json(indent=4)
+        res = res + sep + ratings[player_id].model_dump_json(indent=4).replace("\"id\": ", "\"_id\": ")
         sep = ',\n'
     with open(file_path, 'w') as f:
         f.write('[\n' + res + '\n]')

@@ -217,7 +217,7 @@ class TrueSkillCalculator:
         player_stats_db[f"first"] = player_new_stats.first + (1 if player.position == 1 else 0)
         player_stats_db[f"subbedIn"] = player_new_stats.subbedIn + (1 if self.is_sub(player) else 0)
         player_stats_db[f"subbedOut"] = player_new_stats.subbedOut + (1 if self.is_subbed_out(player) else 0)
-        player_stats_db[f"lastModified"] = datetime.now(UTC)
+        player_stats_db[f"lastModified"] = datetime(2026, 1, 1, 0, 0, 0, tzinfo=UTC)
         if player.leader:
             civs = player_new_stats.civs
             player_civ_leader = player.leader
@@ -317,7 +317,8 @@ class TrueSkillCalculator:
                 leader=p.leader,
                 discord_id=p.id['$numberLong'],
                 delta=p.delta if p.delta is not None else 0.0,
-                season_delta=None
+                season_delta=None,
+                combined_delta=p.combined_delta if p.combined_delta is not None else 0.0,
             )
             parsed_players.append(parsed_player)
         
