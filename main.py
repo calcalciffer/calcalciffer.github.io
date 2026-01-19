@@ -45,6 +45,7 @@ menu_list = {
     },
     'PBC' : {
         'Game History' : {'name': 'PBC Game History', 'link': 'pbc_games.html'},
+        'Combined Game History' : {'name': 'Combined PBC Game History', 'link': 'pbc_games_combined.html'},
         'FFA Leaderboard' : {'name': 'PBC FFA Leaderboard', 'link': 'pbc_ffa_leaderboard.html'},
         'Teamer Leaderboard' : {'name': 'PBC Teamer Leaderboard', 'link': 'pbc_teamer_leaderboard.html'},
         'Duel Leaderboard' : {'name': 'PBC Duel Leaderboard', 'link': 'pbc_duel_leaderboard.html'},
