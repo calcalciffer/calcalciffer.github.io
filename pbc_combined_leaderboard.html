@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Play By Cloud Combined Leaderboard - Civilization Players League</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/cplLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/cplLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/index.html" onclick="civClicked(null)">Home</a>
+                            </li>
+                            <li>
+                              <a>Realtime<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/rt_games.html">Game History</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_ffa_leaderboard.html">FFA Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_teamer_leaderboard.html">Teamer Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_duel_leaderboard.html">Duel Leaderboard</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a>Season 5 Realtime<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/rt_s5_games.html">Game History</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_s5_ffa_leaderboard.html">FFA Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_s5_teamer_leaderboard.html">Teamer Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/rt_s5_duel_leaderboard.html">Duel Leaderboard</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a>PBC<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/pbc_games.html">Game History</a>
+                                </li>
+                                <li>
+                                  <a href="/pbc_ffa_leaderboard.html">FFA Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/pbc_teamer_leaderboard.html">Teamer Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/pbc_duel_leaderboard.html">Duel Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/pbc_ffa_duel_leaderboard.html">FFA + Duel Leaderboard</a>
+                                </li>
+                                <li>
+                                  <a href="/pbc_combined_leaderboard.html">Combined Leaderboard</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="match-switcher-wrapper">
+                            <button class="match-switcher gray-circle-btn" title="Switch Gametype" type="button">
+                              <span class="sr-only">Switch Gametype</span><i aria-hidden="true" class="ffa-icon">FFA</i><i aria-hidden="true" class="teamer-icon">Te</i><i aria-hidden="true" class="duel-icon">Du</i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="leaders-data min-w-full">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Play By Cloud Combined Leaderboard - Civilization Players League</h1><br>
+                <div class="row">
+                  <div class="chart">
+                    <!--806667428284203038-->
+                    <p class="civ-ability-name">#1 - 1934.0 [71 - 9] platypus</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--187361404783689728-->
+                    <p class="civ-ability-name">#2 - 1758.0 [48 - 2] Somnax</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--374661539380199426-->
+                    <p class="civ-ability-name">#3 - 1693.0 [17 - 8] Gerrymander</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--687415757675429964-->
+                    <p class="civ-ability-name">#4 - 1603.0 [91 - 52] Calcifer</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--467360142812512267-->
+                    <p class="civ-ability-name">#5 - 1539.0 [16 - 7] KoboldHT</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--357803082010329088-->
+                    <p class="civ-ability-name">#6 - 1499.0 [28 - 15] adi</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--308126037257093121-->
+                    <p class="civ-ability-name">#7 - 1480.0 [11 - 1] Hot CoCo</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--209530550233333770-->
+                    <p class="civ-ability-name">#8 - 1472.0 [13 - 1] papertorp</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--572129804975997053-->
+                    <p class="civ-ability-name">#9 - 1470.0 [23 - 10] Smokestack Lightning</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--168030353368416257-->
+                    <p class="civ-ability-name">#10 - 1457.0 [7 - 1] Dragon</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--180035144411774976-->
+                    <p class="civ-ability-name">#11 - 1457.0 [6 - 0] Gibs</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--329314205159260160-->
+                    <p class="civ-ability-name">#12 - 1445.0 [43 - 21] Daethern</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--444325687034380288-->
+                    <p class="civ-ability-name">#13 - 1418.0 [10 - 2] Max Warren</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--740222275831332917-->
+                    <p class="civ-ability-name">#14 - 1406.0 [8 - 2] yastoff</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--311525469243703298-->
+                    <p class="civ-ability-name">#15 - 1380.0 [12 - 1] Nomad</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--611353303531520019-->
+                    <p class="civ-ability-name">#16 - 1352.0 [10 - 2] Grog Hyunk</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--188455260912615424-->
+                    <p class="civ-ability-name">#17 - 1332.0 [5 - 2] TaskForceFish</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--365167089985650690-->
+                    <p class="civ-ability-name">#18 - 1328.0 [5 - 1] Jendass28</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--486645633634140173-->
+                    <p class="civ-ability-name">#19 - 1324.0 [24 - 14] Zamalekite</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--373064528948232192-->
+                    <p class="civ-ability-name">#20 - 1319.0 [48 - 43] shinjosky [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--234800234729963520-->
+                    <p class="civ-ability-name">#21 - 1311.0 [16 - 9] Brunel</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--665314203187281940-->
+                    <p class="civ-ability-name">#22 - 1308.0 [10 - 3] OutsideTheBox</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--807274512952852532-->
+                    <p class="civ-ability-name">#23 - 1304.0 [6 - 3] datapkr</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--654449316907188243-->
+                    <p class="civ-ability-name">#24 - 1304.0 [16 - 6] TheBrick</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--848325655443800104-->
+                    <p class="civ-ability-name">#25 - 1296.0 [12 - 6] mondala [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--276095547897675776-->
+                    <p class="civ-ability-name">#26 - 1296.0 [5 - 2] cassandratic</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--754588753473044590-->
+                    <p class="civ-ability-name">#27 - 1289.0 [9 - 6] Coppercloud</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--503978704293199883-->
+                    <p class="civ-ability-name">#28 - 1286.0 [2 - 2] Fagos</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--139008085686484993-->
+                    <p class="civ-ability-name">#29 - 1283.0 [7 - 4] CEO of Spearfighting</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--807919485964124220-->
+                    <p class="civ-ability-name">#30 - 1282.0 [8 - 1] Sav60</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--535165778454904843-->
+                    <p class="civ-ability-name">#31 - 1265.0 [3 - 1] StefanosG</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--693854519624466524-->
+                    <p class="civ-ability-name">#32 - 1265.0 [3 - 0] Manwe_Sulimo</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--426075384476336128-->
+                    <p class="civ-ability-name">#33 - 1260.0 [49 - 48] Concave</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--926835070923337790-->
+                    <p class="civ-ability-name">#34 - 1253.0 [7 - 6] guelleschleppschlauch</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--693471212143247391-->
+                    <p class="civ-ability-name">#35 - 1253.0 [7 - 6] Alligatorjack</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--720551198180114442-->
+                    <p class="civ-ability-name">#36 - 1252.0 [3 - 2] 3nasty</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--140259614909267968-->
+                    <p class="civ-ability-name">#37 - 1251.0 [9 - 6] GxSlim</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--824049906477170688-->
+                    <p class="civ-ability-name">#38 - 1250.0 [8 - 6] victormaia86</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--307877744606314496-->
+                    <p class="civ-ability-name">#39 - 1246.0 [3 - 0] Swervin007</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--630127248111960064-->
+                    <p class="civ-ability-name">#40 - 1244.0 [4 - 1] Noda</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--407733740740280332-->
+                    <p class="civ-ability-name">#41 - 1234.0 [12 - 9] Ant</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--286321890782609409-->
+                    <p class="civ-ability-name">#42 - 1232.0 [8 - 6] Jeebles</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--734643688080408598-->
+                    <p class="civ-ability-name">#43 - 1215.0 [41 - 45] Stephen</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--662020899524050974-->
+                    <p class="civ-ability-name">#44 - 1210.0 [10 - 9] danmartins</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--404703262546067466-->
+                    <p class="civ-ability-name">#45 - 1210.0 [1 - 8] Jellyfish</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--731137184895336539-->
+                    <p class="civ-ability-name">#46 - 1205.0 [1 - 2] sky_potatoes21</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--521302883568844801-->
+                    <p class="civ-ability-name">#47 - 1204.0 [1 - 2] AAmatveev</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--315764252134604801-->
+                    <p class="civ-ability-name">#48 - 1204.0 [2 - 3] Takashio</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--219193980640952320-->
+                    <p class="civ-ability-name">#49 - 1202.0 [2 - 1] Gimpy</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--849539678394646528-->
+                    <p class="civ-ability-name">#50 - 1195.0 [2 - 3] KillerMike</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--654128102019956795-->
+                    <p class="civ-ability-name">#51 - 1193.0 [28 - 36] BriGuy</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--1174027850786025484-->
+                    <p class="civ-ability-name">#52 - 1186.0 [4 - 4] kamui</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--674889286801162240-->
+                    <p class="civ-ability-name">#53 - 1185.0 [7 - 3] Ceryn</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--755198015597183046-->
+                    <p class="civ-ability-name">#54 - 1178.0 [29 - 39] Mengiac</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--180763668663894016-->
+                    <p class="civ-ability-name">#55 - 1168.0 [1 - 3] Michael</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--622988954689339402-->
+                    <p class="civ-ability-name">#56 - 1168.0 [11 - 16] Vonteegoway</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--366607011141386241-->
+                    <p class="civ-ability-name">#57 - 1166.0 [1 - 3] Goteta1</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--431441341415817217-->
+                    <p class="civ-ability-name">#58 - 1164.0 [1 - 2] Laurentiu</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--601088586887987252-->
+                    <p class="civ-ability-name">#59 - 1162.0 [55 - 71] Yaroslav</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--599966580998275083-->
+                    <p class="civ-ability-name">#60 - 1162.0 [8 - 6] cowhead</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--944907987154255882-->
+                    <p class="civ-ability-name">#61 - 1158.0 [1 - 2] menczero12</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--525676251499724810-->
+                    <p class="civ-ability-name">#62 - 1149.0 [27 - 29] kanga777</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--1068152440404324372-->
+                    <p class="civ-ability-name">#63 - 1142.0 [0 - 3] Oscar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--193892730026328064-->
+                    <p class="civ-ability-name">#64 - 1139.0 [2 - 4] MinorSeventh</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--581930118381830145-->
+                    <p class="civ-ability-name">#65 - 1139.0 [41 - 50] in-drew</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--514651499691900940-->
+                    <p class="civ-ability-name">#66 - 1135.0 [6 - 12] Catalpa</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--397531580123578389-->
+                    <p class="civ-ability-name">#67 - 1132.0 [6 - 11] nbttbn</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--391147311369027585-->
+                    <p class="civ-ability-name">#68 - 1127.0 [0 - 4] valamas</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--705374289406328863-->
+                    <p class="civ-ability-name">#69 - 1127.0 [0 - 4] elvirus85</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--293348462513094656-->
+                    <p class="civ-ability-name">#70 - 1125.0 [4 - 5] Busysnail [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--553326715129298980-->
+                    <p class="civ-ability-name">#71 - 1124.0 [0 - 3] josgalo</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--884230614092484658-->
+                    <p class="civ-ability-name">#72 - 1121.0 [13 - 25] Linda7</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--153623540405370880-->
+                    <p class="civ-ability-name">#73 - 1115.0 [21 - 30] goldfire</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--240709061169905664-->
+                    <p class="civ-ability-name">#74 - 1115.0 [1 - 8] p53</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--304592210953895946-->
+                    <p class="civ-ability-name">#75 - 1112.0 [0 - 5] Adytum</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--109858966158192640-->
+                    <p class="civ-ability-name">#76 - 1112.0 [0 - 5] Intari</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--749053379434643477-->
+                    <p class="civ-ability-name">#77 - 1112.0 [15 - 16] lizzyz</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--533912924863856643-->
+                    <p class="civ-ability-name">#78 - 1109.0 [0 - 3] illusion</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--659039412755103750-->
+                    <p class="civ-ability-name">#79 - 1105.0 [1 - 4] Fensterbos</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--956730484803665931-->
+                    <p class="civ-ability-name">#80 - 1102.0 [0 - 6] Volks</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--703284872940093530-->
+                    <p class="civ-ability-name">#81 - 1083.0 [1 - 2] LoneStar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--292716471547854848-->
+                    <p class="civ-ability-name">#82 - 1082.0 [31 - 36] MisterT800</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--273568715595841540-->
+                    <p class="civ-ability-name">#83 - 1079.0 [0 - 4] Felipe</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--685144196532797462-->
+                    <p class="civ-ability-name">#84 - 1077.0 [12 - 17] simon848</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--193607511327244288-->
+                    <p class="civ-ability-name">#85 - 1077.0 [0 - 3] Jonathicc</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--416849533860052992-->
+                    <p class="civ-ability-name">#86 - 1076.0 [2 - 7] matmer</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--420313327839870976-->
+                    <p class="civ-ability-name">#87 - 1076.0 [0 - 3] Markelix</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--669378034175967273-->
+                    <p class="civ-ability-name">#88 - 1074.0 [10 - 15] Ciscö</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--317344080059301889-->
+                    <p class="civ-ability-name">#89 - 1063.0 [0 - 3] Jacleon</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--526029031561363476-->
+                    <p class="civ-ability-name">#90 - 1059.0 [39 - 48] Lacus</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--373756372476755971-->
+                    <p class="civ-ability-name">#91 - 1055.0 [0 - 7] adyyc</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--140307283249856512-->
+                    <p class="civ-ability-name">#92 - 1051.0 [7 - 14] firelord</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--595310616663687193-->
+                    <p class="civ-ability-name">#93 - 1043.0 [6 - 13] petrojbl</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--412787591373651980-->
+                    <p class="civ-ability-name">#94 - 1040.0 [3 - 13] J-Dog [UNREGISTERED]</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--414089572725686274-->
+                    <p class="civ-ability-name">#95 - 1039.0 [11 - 16] TropicalChaos</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--612766696968814647-->
+                    <p class="civ-ability-name">#96 - 1017.0 [2 - 10] Randomouse</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--938956930536337449-->
+                    <p class="civ-ability-name">#97 - 1016.0 [5 - 11] OtherRealisms</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--546738505079062576-->
+                    <p class="civ-ability-name">#98 - 1014.0 [0 - 6] gubisoul</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--189165178745651200-->
+                    <p class="civ-ability-name">#99 - 977.0 [0 - 4] Troo</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--264447297423671296-->
+                    <p class="civ-ability-name">#100 - 975.0 [1 - 11] kapshul</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--155973993923346432-->
+                    <p class="civ-ability-name">#101 - 971.0 [5 - 17] ign8</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--401196386458271755-->
+                    <p class="civ-ability-name">#102 - 970.0 [0 - 5] Psychohistorian</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--462256430070759447-->
+                    <p class="civ-ability-name">#103 - 960.0 [4 - 14] ClassicsInPencil</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--661528210432983067-->
+                    <p class="civ-ability-name">#104 - 952.0 [9 - 22] Osprey</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--215476939274584067-->
+                    <p class="civ-ability-name">#105 - 923.0 [2 - 13] PelicaNAV</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--600059343030714399-->
+                    <p class="civ-ability-name">#106 - 893.0 [0 - 6] Donlooky</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="chart">
+                    <!--1188480827517042809-->
+                    <p class="civ-ability-name">#107 - 867.0 [5 - 22] AllainDL</p>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

@@ -22,6 +22,7 @@ from pages.rt_s5_teamer_leaderboard import *
 from pages.rt_s5_duel_leaderboard import *
 from pages.pbc_history import *
 from pages.pbc_ffa_duel_leaderboard import *
+from pages.pbc_combined_leaderboard import *
 from pages.pbc_ffa_leaderboard import *
 from pages.pbc_teamer_leaderboard import *
 from pages.pbc_duel_leaderboard import *
@@ -48,6 +49,7 @@ menu_list = {
         'Teamer Leaderboard' : {'name': 'PBC Teamer Leaderboard', 'link': 'pbc_teamer_leaderboard.html'},
         'Duel Leaderboard' : {'name': 'PBC Duel Leaderboard', 'link': 'pbc_duel_leaderboard.html'},
         'FFA + Duel Leaderboard' : {'name': 'PBC FFA+Duel Leaderboard', 'link': 'pbc_ffa_duel_leaderboard.html'},
+        'Combined Leaderboard' : {'name': 'PBC Combined Leaderboard', 'link': 'pbc_combined_leaderboard.html'},
     }
 }
 
@@ -63,6 +65,7 @@ pages_list = [
     {'name': 'rt_s5_duel_leaderboard', 'func': get_rt_s5_duel_leaderboard_page, 'title': 'Season 5 Real time Duel Leaderboard'},
     {'name': 'pbc_games', 'func': get_pbc_history_page, 'title': 'PBC Game History'},
     {'name': 'pbc_ffa_duel_leaderboard', 'func': get_pbc_ffa_duel_leaderboard_page, 'title': 'PBC FFA+Duel Leaderboard'},
+    {'name': 'pbc_combined_leaderboard', 'func': get_pbc_combined_leaderboard_page, 'title': 'PBC FFA+Duel Leaderboard'},
     {'name': 'pbc_ffa_leaderboard', 'func': get_pbc_ffa_leaderboard_page, 'title': 'PBC FFA Leaderboard'},
     {'name': 'pbc_teamer_leaderboard', 'func': get_pbc_teamer_leaderboard_page, 'title': 'PBC Teamer Leaderboard'},
     {'name': 'pbc_duel_leaderboard', 'func': get_pbc_duel_leaderboard_page, 'title': 'PBC Duel Leaderboard'},

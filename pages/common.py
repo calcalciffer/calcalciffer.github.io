@@ -13,7 +13,7 @@ class CPLStats:
     def __init__(self, file_path):
         self.TSProcessor = TrueSkillCalculator()
         self.player_id_name_map = self.TSProcessor.build_player_id_name_map()
-        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.matches_list = self.TSProcessor.get_matches_with_delta(file_path)
+        self.ffa_ratings, self.teamer_ratings, self.duel_ratings, self.ffa_duel_ratings, self.combined_ratings, self.matches_list = self.TSProcessor.get_matches_with_delta(file_path)
 
 def generate_leaderboard(ratings):
     rank = 1

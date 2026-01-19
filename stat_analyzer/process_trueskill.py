@@ -23,6 +23,7 @@ class TrueSkillCalculator:
     teamer_ratings = {}
     duel_ratings = {}
     ffa_duel_ratings = {}
+    combined_ratings = {}
     matches_list = []
     parsed_matches_list = []
 
@@ -31,6 +32,7 @@ class TrueSkillCalculator:
         self.teamer_ratings = {}
         self.duel_ratings = {}
         self.ffa_duel_ratings = {}
+        self.combined_ratings = {}
         self.matches_list = []
         self.parsed_matches_list = []
 
@@ -64,23 +66,28 @@ class TrueSkillCalculator:
             del self.duel_ratings[id]
         if id in self.ffa_duel_ratings:
             del self.ffa_duel_ratings[id]
+        if id in self.combined_ratings:
+            del self.combined_ratings[id]
 
-    def get_rating(self, game_type: str, id: str, player_index: int, combine_ffa_duel: bool) -> StatModel:
+    def get_rating(self, game_type: str, id: str, player_index: int, combine_ffa_duel: bool, combine_all: bool) -> StatModel:
         ratings = {}
-        if game_type == "FFA":
-            if combine_ffa_duel:
-                ratings = self.ffa_duel_ratings
-            else:
-                ratings = self.ffa_ratings
-        elif game_type == "Teamer":
-            ratings = self.teamer_ratings
-        elif game_type == "Duel":
-            if combine_ffa_duel:
-                ratings = self.ffa_duel_ratings
-            else:
-                ratings = self.duel_ratings
+        if combine_all:
+            ratings = self.combined_ratings
         else:
-            raise ValueError(f"Unsupported game type. Use 'FFA', 'Teamer' or 'Duel'. {game_type} given.")
+            if game_type == "FFA":
+                if combine_ffa_duel:
+                    ratings = self.ffa_duel_ratings
+                else:
+                    ratings = self.ffa_ratings
+            elif game_type == "Teamer":
+                ratings = self.teamer_ratings
+            elif game_type == "Duel":
+                if combine_ffa_duel:
+                    ratings = self.ffa_duel_ratings
+                else:
+                    ratings = self.duel_ratings
+            else:
+                raise ValueError(f"Unsupported game type. Use 'FFA', 'Teamer' or 'Duel'. {game_type} given.")
         if id in ratings:
             rating = copy.copy(ratings[id])
             rating.index = player_index
@@ -221,14 +228,22 @@ class TrueSkillCalculator:
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
             if match.is_cloud is True and match.gametype == "FFA" or match.gametype == "Duel":
-                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, True) for i, p in enumerate(match.players)]
+                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, True, False) for i, p in enumerate(match.players)]
                 match, post = self.update_player_stats(match, player_ratings, "delta")
                 if match is None:
                     continue
                 for i, player in enumerate(match.players):
                     player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
                     self.ffa_duel_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
-            player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False) for i, p in enumerate(match.players)]
+            if match.is_cloud is True:
+                player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False, True) for i, p in enumerate(match.players)]
+                match, post = self.update_player_stats(match, player_ratings, "delta")
+                if match is None:
+                    continue
+                for i, player in enumerate(match.players):
+                    player_stats_db = self.get_player_stats_db(match, player, post[i], "delta")
+                    self.combined_ratings[player.id['$numberLong']] = self.create_stat_model(player.id['$numberLong'], player_stats_db)
+            player_ratings = [self.get_rating(match.gametype, p.id['$numberLong'], i, False, False) for i, p in enumerate(match.players)]
             match, post = self.update_player_stats(match, player_ratings, "delta")
             if match is None:
                 continue
@@ -287,7 +302,8 @@ class TrueSkillCalculator:
         sorted_teamer_ratings = dict(sorted(self.teamer_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_duel_ratings = dict(sorted(self.duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
         sorted_ffa_duel_ratings = dict(sorted(self.ffa_duel_ratings.items(), key=lambda x: x[1].mu, reverse=True))
-        return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, sorted_ffa_duel_ratings, self.matches_list
+        sorted_combined_ratings = dict(sorted(self.combined_ratings.items(), key=lambda x: x[1].mu, reverse=True))
+        return sorted_ffa_ratings, sorted_teamer_ratings, sorted_duel_ratings, sorted_ffa_duel_ratings, sorted_combined_ratings, self.matches_list
     
     def get_parsed_model(self, match: MatchModel) -> ParsedMatchModel:
         parsed_players = []
