@@ -63,5 +63,6 @@ dump_stats('rt_season5_stats_duel.json', rt_season5_stats.duel_ratings)
 dump_stats('pbcstats_ffa.json', pbcstats.ffa_ratings)
 dump_stats('pbcstats_teamer.json', pbcstats.teamer_ratings)
 dump_stats('pbcstats_duel.json', pbcstats.duel_ratings)
+dump_stats('pbcstats_combined.json', pbcstats.combined_ratings)
 
 dump_matches('pbc_parsed_matches.json', pbcstats.TSProcessor.parsed_matches_list)

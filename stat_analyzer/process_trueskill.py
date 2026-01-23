@@ -94,7 +94,7 @@ class TrueSkillCalculator:
             return rating
         return StatModel(
             index=player_index,
-            id=id,
+            id={'$numberLong': id},
             mu=self.TS_MU,
             sigma=self.TS_SIGMA,
             games=0,
@@ -109,7 +109,7 @@ class TrueSkillCalculator:
     def create_stat_model(self, player_id, player_stats_db: Dict[str, Any]) -> StatModel:
         return StatModel(
             index=0,
-            id=player_id,
+            id={'$numberLong': player_id},
             mu=player_stats_db.get("mu", self.TS_MU),
             sigma=player_stats_db.get("sigma", self.TS_SIGMA),
             games=player_stats_db.get("games", 0),

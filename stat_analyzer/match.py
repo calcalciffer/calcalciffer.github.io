@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field, BeforeValidator, PlainSerializer
 
 class StatModel(BaseModel):
     index: int
-    id: str  # discord_id
+    id: Dict[str, str] # discord_id
     mu: float
     sigma: float
     games: int
