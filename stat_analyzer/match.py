@@ -23,7 +23,8 @@ class PlayerModel(BaseModel):
     position: Optional[int] = None
     flags: List[str] = []
     delta: Optional[float] = 0
-    combined_delta: Optional[float] = 0
+    season_delta: Optional[float] = None
+    combined_delta: Optional[float] = None
 
 class MatchModel(BaseModel):
     _id: str
@@ -62,7 +63,7 @@ class ParsedMatchModel(BaseModel):
     players: List[ParsedPlayerModel]
     parser_version: str
     discord_messages_id_list: List[str]
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = None
     approved_at: Optional[datetime] = None
     approver_discord_id: Optional[str] = None
     flagged: bool = False

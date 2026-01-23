@@ -327,7 +327,7 @@ class TrueSkillCalculator:
             turn=0,  # Placeholder value
             map_type='Unknown',  # Placeholder value
             game_mode=self.normalize(match.gametype),
-            is_cloud=True,
+            is_cloud=match.is_cloud,
             players=parsed_players,
             parser_version='1.0',
             discord_messages_id_list=[],

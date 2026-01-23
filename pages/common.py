@@ -56,6 +56,8 @@ dump_stats('rtstats_ffa.json', rtstats.ffa_ratings)
 dump_stats('rtstats_teamer.json', rtstats.teamer_ratings)
 dump_stats('rtstats_duel.json', rtstats.duel_ratings)
 
+dump_matches('rt_parsed_matches.json', rtstats.TSProcessor.parsed_matches_list)
+
 dump_stats('rt_season5_stats_ffa.json', rt_season5_stats.ffa_ratings)
 dump_stats('rt_season5_stats_teamer.json', rt_season5_stats.teamer_ratings)
 dump_stats('rt_season5_stats_duel.json', rt_season5_stats.duel_ratings)

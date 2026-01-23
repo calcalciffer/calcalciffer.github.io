@@ -1,0 +1,12 @@
+rt_parsed_matches.json filter=lfs diff=lfs merge=lfs -text
+rt_season5_stats_ffa.json filter=lfs diff=lfs merge=lfs -text
+rtstats_duel.json filter=lfs diff=lfs merge=lfs -text
+rtstats_ffa.json filter=lfs diff=lfs merge=lfs -text
+rt_season5_stats_duel.json filter=lfs diff=lfs merge=lfs -text
+rt_season5_stats_teamer.json filter=lfs diff=lfs merge=lfs -text
+rtstats_teamer.json filter=lfs diff=lfs merge=lfs -text
+pbc_parsed_matches.json filter=lfs diff=lfs merge=lfs -text
+pbcstats_combined.json filter=lfs diff=lfs merge=lfs -text
+pbcstats_duel.json filter=lfs diff=lfs merge=lfs -text
+pbcstats_ffa.json filter=lfs diff=lfs merge=lfs -text
+pbcstats_teamer.json filter=lfs diff=lfs merge=lfs -text
