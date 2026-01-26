@@ -103,7 +103,7 @@ class TrueSkillCalculator:
             subbedIn=0,
             subbedOut=0,
             civs={},
-            lastModified=None
+            lastModified={}
         )
 
     def create_stat_model(self, player_id, player_stats_db: Dict[str, Any]) -> StatModel:
@@ -118,7 +118,7 @@ class TrueSkillCalculator:
             subbedIn=player_stats_db.get("subbedIn", 0),
             subbedOut=player_stats_db.get("subbedOut", 0),
             civs=player_stats_db.get("civs", {}),
-            lastModified=player_stats_db.get("lastModified", None)
+            lastModified=player_stats_db.get("lastModified", {})
         )
 
     def read_json_file(self, file_path: str) -> MatchParseModel:
@@ -176,6 +176,7 @@ class TrueSkillCalculator:
                     subbedIn=player.subbedIn,
                     subbedOut=player.subbedOut,
                     civs=player.civs,
+                    lastModified=player.lastModified
                 )
         for team_idx, team in enumerate(team_with_sub_ins_states):
             for player_index, player in enumerate(team):
@@ -192,6 +193,7 @@ class TrueSkillCalculator:
                         subbedIn=player.subbedIn,
                         subbedOut=player.subbedOut,
                         civs=player.civs,
+                        lastModified=player.lastModified
                     )
         for i, p in enumerate(match.players):
             p_current_ranking = players_ranking[i]
@@ -217,14 +219,15 @@ class TrueSkillCalculator:
         player_stats_db[f"first"] = player_new_stats.first + (1 if player.position == 1 else 0)
         player_stats_db[f"subbedIn"] = player_new_stats.subbedIn + (1 if self.is_sub(player) else 0)
         player_stats_db[f"subbedOut"] = player_new_stats.subbedOut + (1 if self.is_subbed_out(player) else 0)
-        player_stats_db[f"lastModified"] = datetime(2026, 1, 1, 0, 0, 0, tzinfo=UTC)
+        player_stats_db[f"lastModified"] = {}
+        player_stats_db[f"lastModified"]["$date"] = str(datetime(2026, 1, 26, 0, 0, 0, tzinfo=UTC))
         if player.leader:
             civs = player_new_stats.civs
             player_civ_leader = player.leader
             civs[player_civ_leader] = civs.get(player_civ_leader, 0) + 1
             player_stats_db[f"civs"] = civs
         return player_stats_db
-        
+
     def process_ts(self, match_parse_model: MatchParseModel):
         for match in match_parse_model.matches:
             if match.is_cloud is True and match.gametype == "FFA" or match.gametype == "Duel":

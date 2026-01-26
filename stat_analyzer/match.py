@@ -14,7 +14,7 @@ class StatModel(BaseModel):
     subbedIn: int
     subbedOut: int
     civs: Dict[str, int] = {}
-    lastModified: Optional[datetime] = datetime(2026, 1, 1, 0, 0, 0)
+    lastModified: Dict[str, str]
 
 class PlayerModel(BaseModel):
     id: Dict[str, str] | int

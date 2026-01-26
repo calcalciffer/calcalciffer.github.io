@@ -46,17 +46,15 @@ def dump_stats(file_path, ratings):
 def dump_matches(file_path, matches):
     res = ''
     sep = ''
-    for m in matches:
-        res = res + sep + m.model_dump_json(indent=4)
-        sep = ',\n'
+    res = ',\n'.join([m.model_dump_json(indent=4) for m in matches])
     with open(file_path, 'w') as f:
-        f.write('[\n' + res + '\n]')
+        f.write('[\n')
+        f.write(res)
+        f.write('\n]')
 
 dump_stats('rtstats_ffa.json', rtstats.ffa_ratings)
 dump_stats('rtstats_teamer.json', rtstats.teamer_ratings)
 dump_stats('rtstats_duel.json', rtstats.duel_ratings)
-
-dump_matches('rt_parsed_matches.json', rtstats.TSProcessor.parsed_matches_list)
 
 dump_stats('rt_season5_stats_ffa.json', rt_season5_stats.ffa_ratings)
 dump_stats('rt_season5_stats_teamer.json', rt_season5_stats.teamer_ratings)
@@ -67,4 +65,5 @@ dump_stats('pbcstats_teamer.json', pbcstats.teamer_ratings)
 dump_stats('pbcstats_duel.json', pbcstats.duel_ratings)
 dump_stats('pbcstats_combined.json', pbcstats.combined_ratings)
 
+dump_matches('rt_parsed_matches.json', rtstats.TSProcessor.parsed_matches_list)
 dump_matches('pbc_parsed_matches.json', pbcstats.TSProcessor.parsed_matches_list)
