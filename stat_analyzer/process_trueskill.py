@@ -220,7 +220,7 @@ class TrueSkillCalculator:
         player_stats_db[f"subbedIn"] = player_new_stats.subbedIn + (1 if self.is_sub(player) else 0)
         player_stats_db[f"subbedOut"] = player_new_stats.subbedOut + (1 if self.is_subbed_out(player) else 0)
         player_stats_db[f"lastModified"] = {}
-        player_stats_db[f"lastModified"]["$date"] = str(datetime(2026, 2, 13, 0, 0, 0, tzinfo=UTC))
+        player_stats_db[f"lastModified"]["$date"] = str(datetime(2026, 2, 15, 0, 0, 0, tzinfo=UTC))
         if player.leader:
             civs = player_new_stats.civs
             player_civ_leader = player.leader
