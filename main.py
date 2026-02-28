@@ -20,6 +20,10 @@ from pages.rt_s5_history import *
 from pages.rt_s5_ffa_leaderboard import *
 from pages.rt_s5_teamer_leaderboard import *
 from pages.rt_s5_duel_leaderboard import *
+from pages.rt_s6_history import *
+from pages.rt_s6_ffa_leaderboard import *
+from pages.rt_s6_teamer_leaderboard import *
+from pages.rt_s6_duel_leaderboard import *
 from pages.pbc_history import *
 from pages.pbc_combined_history import *
 from pages.pbc_ffa_duel_leaderboard import *
@@ -44,6 +48,12 @@ menu_list = {
         'Teamer Leaderboard' : {'name': 'Season 5 Real time Teamer Leaderboard', 'link': 'rt_s5_teamer_leaderboard.html'},
         'Duel Leaderboard' : {'name': 'Season 5 Real time Duel Leaderboard', 'link': 'rt_s5_duel_leaderboard.html'},       
     },
+    'Season 6 Realtime' : {
+        'Game History' : {'name': 'Season 6 Real time Game History', 'link': 'rt_s6_games.html'},
+        'FFA Leaderboard' : {'name': 'Season 6 Real time FFA Leaderboard', 'link': 'rt_s6_ffa_leaderboard.html'},
+        'Teamer Leaderboard' : {'name': 'Season 6 Real time Teamer Leaderboard', 'link': 'rt_s6_teamer_leaderboard.html'},
+        'Duel Leaderboard' : {'name': 'Season 6 Real time Duel Leaderboard', 'link': 'rt_s6_duel_leaderboard.html'},       
+    },
     'PBC' : {
         'Game History' : {'name': 'PBC Game History', 'link': 'pbc_games.html'},
         'Combined Game History' : {'name': 'Combined PBC Game History', 'link': 'pbc_games_combined.html'},
@@ -65,6 +75,10 @@ pages_list = [
     {'name': 'rt_s5_ffa_leaderboard', 'func': get_rt_s5_ffa_leaderboard_page, 'title': 'Season 5 Real time FFA Leaderboard'},
     {'name': 'rt_s5_teamer_leaderboard', 'func': get_rt_s5_teamer_leaderboard_page, 'title': 'Season 5 Real time Teamer Leaderboard'},
     {'name': 'rt_s5_duel_leaderboard', 'func': get_rt_s5_duel_leaderboard_page, 'title': 'Season 5 Real time Duel Leaderboard'},
+    {'name': 'rt_s6_games', 'func': get_realtime_s6_history_page, 'title': 'Season 6 Real time Game History'},
+    {'name': 'rt_s6_ffa_leaderboard', 'func': get_rt_s6_ffa_leaderboard_page, 'title': 'Season 6 Real time FFA Leaderboard'},
+    {'name': 'rt_s6_teamer_leaderboard', 'func': get_rt_s6_teamer_leaderboard_page, 'title': 'Season 6 Real time Teamer Leaderboard'},
+    {'name': 'rt_s6_duel_leaderboard', 'func': get_rt_s6_duel_leaderboard_page, 'title': 'Season 6 Real time Duel Leaderboard'},
     {'name': 'pbc_games', 'func': get_pbc_history_page, 'title': 'PBC Game History'},
     {'name': 'pbc_games_combined', 'func': get_combined_pbc_history_page, 'title': 'Combined PBC Game History'},
     {'name': 'pbc_ffa_duel_leaderboard', 'func': get_pbc_ffa_duel_leaderboard_page, 'title': 'PBC FFA+Duel Leaderboard'},

@@ -32,6 +32,7 @@ def generate_leaderboard(ratings):
 
 rtstats = CPLStats('stat_analyzer/realtimeMatches.json')
 rt_season5_stats = CPLStats('stat_analyzer/season5Games.json')
+rt_season6_stats = CPLStats('stat_analyzer/season6Games.json')
 pbcstats = CPLStats('stat_analyzer/pbcMatches.json')
 
 def dump_stats(file_path, ratings):
@@ -59,6 +60,10 @@ dump_stats('rtstats_duel.json', rtstats.duel_ratings)
 dump_stats('rt_season5_stats_ffa.json', rt_season5_stats.ffa_ratings)
 dump_stats('rt_season5_stats_teamer.json', rt_season5_stats.teamer_ratings)
 dump_stats('rt_season5_stats_duel.json', rt_season5_stats.duel_ratings)
+
+dump_stats('rt_season6_stats_ffa.json', rt_season6_stats.ffa_ratings)
+dump_stats('rt_season6_stats_teamer.json', rt_season6_stats.teamer_ratings)
+dump_stats('rt_season6_stats_duel.json', rt_season6_stats.duel_ratings)
 
 dump_stats('pbcstats_ffa.json', pbcstats.ffa_ratings)
 dump_stats('pbcstats_teamer.json', pbcstats.teamer_ratings)
