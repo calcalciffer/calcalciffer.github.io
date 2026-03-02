@@ -16039,6 +16039,7564 @@
           "delta": 0.0
         }
       ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "817813844470005781"
+          },
+          "team": 1,
+          "leader": "NubiaAmanitore",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "435586628002512908"
+          },
+          "team": 2,
+          "leader": "MaoriKupe",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 3,
+          "leader": "DutchWilhelmina",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "763501592917311488"
+          },
+          "team": 4,
+          "leader": "SumeriaGilgamesh",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1259198944836325399"
+          },
+          "team": 5,
+          "leader": "EnglandEleanor",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 6,
+          "leader": "AztecMontezuma",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "611927200236830733"
+          },
+          "team": 7,
+          "leader": "RussiaPeterTheGreat",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1143986912059723776"
+          },
+          "team": 8,
+          "leader": "AmericaTeddyBullMoose",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "625068280805326859"
+          },
+          "team": 1,
+          "leader": "AlHasan",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 2,
+          "leader": "SpainPhilipII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "431582428495347732"
+          },
+          "team": 3,
+          "leader": "ChinaWuZetian",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "182291850583867394"
+          },
+          "team": 4,
+          "leader": "BrazilPedroII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 5,
+          "leader": "MongoliaKublaiKhan",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "709209182309711942"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "776648698238861312"
+          },
+          "team": 7,
+          "leader": "KhmerJayavarmanVII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 8,
+          "leader": "ScythiaTomyris",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1300989969837326431"
+          },
+          "team": 9,
+          "leader": "MaliSundiataKeita",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "417179741649371137"
+          },
+          "team": 10,
+          "leader": "AmericaTeddyRoughRider",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "Teamer",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "371828178542395393"
+          },
+          "team": 1,
+          "leader": "CanadaWilfrid",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228308766167138304"
+          },
+          "team": 1,
+          "leader": "PolandJadwiga",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "590550043212251185"
+          },
+          "team": 1,
+          "leader": "FranceEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "750562297923108965"
+          },
+          "team": 1,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "987939655850815549"
+          },
+          "team": 1,
+          "leader": "AustraliaJohnCurtin",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "317523066043236355"
+          },
+          "team": 2,
+          "leader": "None",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "297946670551793666"
+          },
+          "team": 2,
+          "leader": "RussiaPeterTheGreat",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "548322988626542652"
+          },
+          "team": 2,
+          "leader": "ChinaYongle",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1002274300436414545"
+          },
+          "team": 2,
+          "leader": "None",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "474116429466042371"
+          },
+          "team": 2,
+          "leader": "VietnamBaTrieu",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "185085767654178817"
+          },
+          "team": 1,
+          "leader": "SwedenKristina",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "297369148424716288"
+          },
+          "team": 2,
+          "leader": "IndiaChandragupta",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 3,
+          "leader": "PolandJadwiga",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "274278880305741825"
+          },
+          "team": 4,
+          "leader": "NubiaAmanitore",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "267746544126656513"
+          },
+          "team": 5,
+          "leader": "AmericaTeddyRoughRider",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 6,
+          "leader": "ChinaQinShiHuang",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "284652449745338368"
+          },
+          "team": 7,
+          "leader": "DutchWilhelmina",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1302242713512444024"
+          },
+          "team": 8,
+          "leader": "AztecMontezuma",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "269868776684519424"
+          },
+          "team": 9,
+          "leader": "Kiviuq",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "381864121907281921"
+          },
+          "team": 10,
+          "leader": "Ahiram",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "724378389418344530"
+          },
+          "team": 1,
+          "leader": "KoreaSejong",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "398226260179943424"
+          },
+          "team": 2,
+          "leader": "PolandJadwiga",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "259958170825261057"
+          },
+          "team": 3,
+          "leader": "AztecMontezuma",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "210848237978910730"
+          },
+          "team": 4,
+          "leader": "RussiaPeterTheGreat",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "410743357577363457"
+          },
+          "team": 5,
+          "leader": "None",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "717714634777559042"
+          },
+          "team": 6,
+          "leader": "EnglandVictoria",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "364803472261906442"
+          },
+          "team": 7,
+          "leader": "ArabiaSaladin",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "212683780731830283"
+          },
+          "team": 8,
+          "leader": "GermanyLudwigII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "164694776686313472"
+          },
+          "team": 9,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "286582615681662976"
+          },
+          "team": 10,
+          "leader": "Ahiram",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "397151281367744512"
+          },
+          "team": 1,
+          "leader": "EnglandElizabethI",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "295562997710192641"
+          },
+          "team": 2,
+          "leader": "Kiviuq",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 3,
+          "leader": "GaulAmbiorix",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "332872498863407114"
+          },
+          "team": 4,
+          "leader": "EgyptCleopatra",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "290004683328847893"
+          },
+          "team": 5,
+          "leader": "RomeCaesar",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 6,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1203336792812560525"
+          },
+          "team": 7,
+          "leader": "KongoMvembaANzinga",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "627135410115575814"
+          },
+          "team": 8,
+          "leader": "FranceEleanor",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 1,
+          "leader": "None",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "795029465667076166"
+          },
+          "team": 2,
+          "leader": "MaliMansa",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "672860459359141908"
+          },
+          "team": 3,
+          "leader": "JapanHojoTokimune",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "139409908188708864"
+          },
+          "team": 4,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "811058113972011029"
+          },
+          "team": 5,
+          "leader": "RussiaPeterTheGreat",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "269868776684519424"
+          },
+          "team": 6,
+          "leader": "Kiviuq",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "280763090705055744"
+          },
+          "team": 7,
+          "leader": "FranceCatherineMagnificent",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "212683780731830283"
+          },
+          "team": 8,
+          "leader": "Vercingetorix",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1302242713512444024"
+          },
+          "team": 9,
+          "leader": "AztecMontezuma",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "286582615681662976"
+          },
+          "team": 10,
+          "leader": "BabylonHammurabi",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "216693756479406080"
+          },
+          "team": 1,
+          "leader": "EnglandVictoria",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "717714634777559042"
+          },
+          "team": 2,
+          "leader": "AustraliaJohnCurtin",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "259958170825261057"
+          },
+          "team": 3,
+          "leader": "JapanTokugawa",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "811058113972011029"
+          },
+          "team": 4,
+          "leader": "CreePoundmaker",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 5,
+          "leader": "SpainPhilipII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1023288002329452595"
+          },
+          "team": 6,
+          "leader": "EgyptPtolemaicCleopatra",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1221394058648223805"
+          },
+          "team": 7,
+          "leader": "RussiaPeterTheGreat",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1325568438772437023"
+          },
+          "team": 8,
+          "leader": "EthiopiaMenelik",
+          "position": 8,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "795029465667076166"
+          },
+          "team": 9,
+          "leader": "Spearthrower",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "833263578038927381"
+          },
+          "team": 10,
+          "leader": "PersiaNader",
+          "position": 10,
+          "flags": [
+            "QUIT"
+          ],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "1433147718955696343"
+          },
+          "team": 1,
+          "leader": "PortugalJoaoIII",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "211178652065464322"
+          },
+          "team": 2,
+          "leader": "RomeTrajan",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "690546045750607882"
+          },
+          "team": 3,
+          "leader": "NorwayHaraldHardradaVarangian",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "380048928097435649"
+          },
+          "team": 4,
+          "leader": "RussiaPeterTheGreat",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "265927182457503745"
+          },
+          "team": 5,
+          "leader": "SumeriaGilgamesh",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "420629701221154816"
+          },
+          "team": 6,
+          "leader": "ArabiaSaladin",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "283986429753688064"
+          },
+          "team": 7,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 8,
+          "leader": "PhoeniciaDido",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "632030795619368980"
+          },
+          "team": 1,
+          "leader": "EnglandEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "989507569200537600"
+          },
+          "team": 2,
+          "leader": "PolandJadwiga",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315530540277039105"
+          },
+          "team": 3,
+          "leader": "GermanyLudwigII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "440848234529947649"
+          },
+          "team": 4,
+          "leader": "DutchWilhelmina",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1079574076244381697"
+          },
+          "team": 5,
+          "leader": "BrazilPedroII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "288049036194217984"
+          },
+          "team": 6,
+          "leader": "CanadaWilfrid",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1071849242886426724"
+          },
+          "team": 7,
+          "leader": "EthiopiaMenelik",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "860044950531604510"
+          },
+          "team": 8,
+          "leader": "FranceCatherineMagnificent",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "909161684457885736"
+          },
+          "team": 1,
+          "leader": "PersiaNader",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 2,
+          "leader": "RussiaPeterTheGreat",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "321049453744357376"
+          },
+          "team": 3,
+          "leader": "Trisong",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "717714634777559042"
+          },
+          "team": 4,
+          "leader": "None",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "998970012154994728"
+          },
+          "team": 5,
+          "leader": "KoreaSejong",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 6,
+          "leader": "VietnamBaTrieu",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "455740692048904213"
+          },
+          "team": 7,
+          "leader": "None",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312628441587646464"
+          },
+          "team": 8,
+          "leader": "GermanyLudwigII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1023288002329452595"
+          },
+          "team": 9,
+          "leader": "KongoMbande",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "244555342208303108"
+          },
+          "team": 10,
+          "leader": "AustraliaJohnCurtin",
+          "position": 10,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "348173168629776384"
+          },
+          "team": 1,
+          "leader": "SpainPhilipII",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1395900773426135261"
+          },
+          "team": 2,
+          "leader": "JapanTokugawa",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "828690073506938950"
+          },
+          "team": 3,
+          "leader": "RussiaPeterTheGreat",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689641190538346553"
+          },
+          "team": 4,
+          "leader": "GreeceGorgo",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "446472020390182933"
+          },
+          "team": 5,
+          "leader": "KongoMbande",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "256117467779170306"
+          },
+          "team": 6,
+          "leader": "IndonesiaGitarja",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 7,
+          "leader": "None",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "300330207091490847"
+          },
+          "team": 8,
+          "leader": "None",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "551763170172338188"
+          },
+          "team": 9,
+          "leader": "EnglandEleanor",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "340893482778361856"
+          },
+          "team": 10,
+          "leader": "PersiaCyrus",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "811058113972011029"
+          },
+          "team": 11,
+          "leader": "Kiviuq",
+          "position": 11,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "632030795619368980"
+          },
+          "team": 1,
+          "leader": "ChinaYongle",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 2,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "866997795993944084"
+          },
+          "team": 3,
+          "leader": "RomeTrajan",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "200006034507563009"
+          },
+          "team": 4,
+          "leader": "PortugalJoaoIII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "244555342208303108"
+          },
+          "team": 5,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "420629701221154816"
+          },
+          "team": 6,
+          "leader": "AustraliaJohnCurtin",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "408976470170533888"
+          },
+          "team": 7,
+          "leader": "EthiopiaMenelik",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "423252198831423499"
+          },
+          "team": 8,
+          "leader": "KongoMbande",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 1,
+          "leader": "GaulAmbiorix",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "794801232195223552"
+          },
+          "team": 2,
+          "leader": "KongoMbande",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "270543079793098752"
+          },
+          "team": 3,
+          "leader": "MacedonAlexander",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "541615428473192459"
+          },
+          "team": 4,
+          "leader": "PersiaCyrus",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "540390802078302208"
+          },
+          "team": 5,
+          "leader": "KhmerJayavarmanVII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "193094667154227201"
+          },
+          "team": 6,
+          "leader": "KongoMvembaANzinga",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 7,
+          "leader": "ZuluShaka",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 8,
+          "leader": "ScythiaTomyris",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399309883654275082"
+          },
+          "team": 9,
+          "leader": "MongoliaKublaiKhan",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "432788704235618314"
+          },
+          "team": 10,
+          "leader": "MayaLadySixSky",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "632030795619368980"
+          },
+          "team": 1,
+          "leader": "KongoMbande",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1397073762909683934"
+          },
+          "team": 2,
+          "leader": "GermanyLudwigII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "131292755677806593"
+          },
+          "team": 3,
+          "leader": "PortugalJoaoIII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "346289729316192256"
+          },
+          "team": 4,
+          "leader": "EnglandVictoria",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 5,
+          "leader": "RomeTrajan",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "513861082339737611"
+          },
+          "team": 6,
+          "leader": "VietnamBaTrieu",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "369519899556708352"
+          },
+          "team": 7,
+          "leader": "None",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "269998586068992003"
+          },
+          "team": 8,
+          "leader": "KoreaSeondeok",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "192601496536350720"
+          },
+          "team": 1,
+          "leader": "Kiviuq",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1380564005705220301"
+          },
+          "team": 2,
+          "leader": "EnglandVictoria",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "353502622331699211"
+          },
+          "team": 3,
+          "leader": "BabylonHammurabi",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1175517922081382531"
+          },
+          "team": 4,
+          "leader": "AustraliaJohnCurtin",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1405576802386317332"
+          },
+          "team": 5,
+          "leader": "BrazilPedroII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1072462859205869608"
+          },
+          "team": 6,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "788733495857512480"
+          },
+          "team": 7,
+          "leader": "JapanTokugawa",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1158877561573613689"
+          },
+          "team": 8,
+          "leader": "PersiaCyrus",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "282155509497200640"
+          },
+          "team": 1,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1276819473197961264"
+          },
+          "team": 2,
+          "leader": "None",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "908164524396400700"
+          },
+          "team": 3,
+          "leader": "GermanyLudwigII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "646152099511533568"
+          },
+          "team": 4,
+          "leader": "CreePoundmaker",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "398226260179943424"
+          },
+          "team": 5,
+          "leader": "KhmerJayavarmanVII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "410743357577363457"
+          },
+          "team": 6,
+          "leader": "MongoliaKublaiKhan",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "234105053382705153"
+          },
+          "team": 7,
+          "leader": "None",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216693756479406080"
+          },
+          "team": 8,
+          "leader": "PolandJadwiga",
+          "position": 8,
+          "flags": [
+            "SUB"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1211042069179535382"
+          },
+          "team": 8,
+          "leader": "PolandJadwiga",
+          "position": 8,
+          "flags": [
+            "SUBBED"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "210848237978910730"
+          },
+          "team": 9,
+          "leader": "RussiaPeterTheGreat",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 10,
+          "leader": "ScythiaTomyris",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "653689190684426260"
+          },
+          "team": 1,
+          "leader": "Ahiram",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "828690073506938950"
+          },
+          "team": 2,
+          "leader": "RussiaPeterTheGreat",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "794801232195223552"
+          },
+          "team": 3,
+          "leader": "CreePoundmaker",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "642376466285199391"
+          },
+          "team": 4,
+          "leader": "JapanTokugawa",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "249410454298820608"
+          },
+          "team": 5,
+          "leader": "GreeceGorgo",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "582013668590354463"
+          },
+          "team": 6,
+          "leader": "Trisong",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "194364006000099328"
+          },
+          "team": 7,
+          "leader": "FranceCatherineMagnificent",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399127561310830592"
+          },
+          "team": 8,
+          "leader": "None",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "340893482778361856"
+          },
+          "team": 9,
+          "leader": "GermanyLudwigII",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "454400869824331787"
+          },
+          "team": 10,
+          "leader": "Vercingetorix",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "244555342208303108"
+          },
+          "team": 1,
+          "leader": "KhmerJayavarmanVII",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "337984854522200068"
+          },
+          "team": 2,
+          "leader": "DutchWilhelmina",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 3,
+          "leader": "BrazilPedroII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "294233320701558785"
+          },
+          "team": 4,
+          "leader": "ChinaYongle",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399935963142291456"
+          },
+          "team": 5,
+          "leader": "GreecePericles",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1455622353861214291"
+          },
+          "team": 6,
+          "leader": "AmericaTeddyBullMoose",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "294217561086754816"
+          },
+          "team": 7,
+          "leader": "CreePoundmaker",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "400298717170761729"
+          },
+          "team": 8,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "430821068761071616"
+          },
+          "team": 1,
+          "leader": "PolandJadwiga",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "989507569200537600"
+          },
+          "team": 2,
+          "leader": "MongoliaKublaiKhan",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "406834906145095683"
+          },
+          "team": 3,
+          "leader": "ArabiaSaladin",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "265927182457503745"
+          },
+          "team": 4,
+          "leader": "JapanHojoTokimune",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1143986912059723776"
+          },
+          "team": 5,
+          "leader": "EnglandElizabethI",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1023288002329452595"
+          },
+          "team": 6,
+          "leader": "FranceCatherineMagnificent",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "982310029782839387"
+          },
+          "team": 7,
+          "leader": "None",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "818087800767250452"
+          },
+          "team": 8,
+          "leader": "PersiaCyrus",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "468776264833040395"
+          },
+          "team": 9,
+          "leader": "HungaryMatthias",
+          "position": 9,
+          "flags": [
+            "QUIT"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "827248113718788167"
+          },
+          "team": 10,
+          "leader": "Trisong",
+          "position": 10,
+          "flags": [
+            "QUIT"
+          ],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "473677371615084545"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1199394797719388311"
+          },
+          "team": 2,
+          "leader": "GreecePericles",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "890480283617484830"
+          },
+          "team": 3,
+          "leader": "Trisong",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "239470064636657664"
+          },
+          "team": 4,
+          "leader": "AustraliaJohnCurtin",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1079574076244381697"
+          },
+          "team": 5,
+          "leader": "PolandJadwiga",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "236559629578928128"
+          },
+          "team": 6,
+          "leader": "OttomanMuhtesem",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "200006034507563009"
+          },
+          "team": 7,
+          "leader": "IndonesiaGitarja",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1259198944836325399"
+          },
+          "team": 8,
+          "leader": "MaoriKupe",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 1,
+          "leader": "JapanTokugawa",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 2,
+          "leader": "None",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 3,
+          "leader": "ArabiaSaladin",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "139409908188708864"
+          },
+          "team": 4,
+          "leader": "IncaPachacuti",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1042400178814066739"
+          },
+          "team": 5,
+          "leader": "Kiviuq",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "360019540215857152"
+          },
+          "team": 6,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1302242713512444024"
+          },
+          "team": 7,
+          "leader": "ChinaQinShiHuang",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 8,
+          "leader": "GermanyLudwigII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "551763170172338188"
+          },
+          "team": 9,
+          "leader": "Trisong",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "212683780731830283"
+          },
+          "team": 10,
+          "leader": "CreePoundmaker",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 1,
+          "leader": "OttomanSuleiman",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 2,
+          "leader": "EnglandEleanor",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "295562997710192641"
+          },
+          "team": 3,
+          "leader": "JapanTokugawa",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "755939567453863946"
+          },
+          "team": 4,
+          "leader": "ZuluShaka",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "831459147601674251"
+          },
+          "team": 5,
+          "leader": "RussiaPeterTheGreat",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "827248113718788167"
+          },
+          "team": 6,
+          "leader": "KoreaSeondeok",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "250955868944859136"
+          },
+          "team": 7,
+          "leader": "IndiaChandragupta",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "408976470170533888"
+          },
+          "team": 8,
+          "leader": "None",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "227153276322316288"
+          },
+          "team": 1,
+          "leader": "ChinaYongle",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "909161684457885736"
+          },
+          "team": 2,
+          "leader": "VietnamBaTrieu",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "794801232195223552"
+          },
+          "team": 3,
+          "leader": "ArabiaSaladin",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399999258004291595"
+          },
+          "team": 4,
+          "leader": "MayaLadySixSky",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "625068280805326859"
+          },
+          "team": 5,
+          "leader": "AustraliaJohnCurtin",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "880550786684309565"
+          },
+          "team": 6,
+          "leader": "GeorgiaTamar",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "235959966177951745"
+          },
+          "team": 7,
+          "leader": "ChinaQinUnifier",
+          "position": 7,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "249410454298820608"
+          },
+          "team": 8,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "672860459359141908"
+          },
+          "team": 9,
+          "leader": "JapanHojoTokimune",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1300989969837326431"
+          },
+          "team": 10,
+          "leader": "DutchWilhelmina",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 1,
+          "leader": "Vercingetorix",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "348173168629776384"
+          },
+          "team": 2,
+          "leader": "MongoliaKublaiKhan",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "326858034859212800"
+          },
+          "team": 3,
+          "leader": "SpainPhilipII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1256676988521812078"
+          },
+          "team": 4,
+          "leader": "VietnamBaTrieu",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "776648698238861312"
+          },
+          "team": 5,
+          "leader": "Trisong",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "582013668590354463"
+          },
+          "team": 6,
+          "leader": "AustraliaJohnCurtin",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "244555342208303108"
+          },
+          "team": 7,
+          "leader": "KhmerJayavarmanVII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 8,
+          "leader": "ChinaKublaiKhan",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 9,
+          "leader": "EnglandEleanor",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 10,
+          "leader": "EgyptRamses",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "270543079793098752"
+          },
+          "team": 1,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "714022473691299851"
+          },
+          "team": 2,
+          "leader": "AustraliaJohnCurtin",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "326858034859212800"
+          },
+          "team": 3,
+          "leader": "BrazilPedroII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "446472020390182933"
+          },
+          "team": 4,
+          "leader": "Ahiram",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "345994381414891530"
+          },
+          "team": 5,
+          "leader": "EgyptRamses",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "274991943665319936"
+          },
+          "team": 7,
+          "leader": "DutchWilhelmina",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216045712469655553"
+          },
+          "team": 8,
+          "leader": "EthiopiaMenelik",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1300989969837326431"
+          },
+          "team": 9,
+          "leader": "MaoriKupe",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 10,
+          "leader": "VietnamBaTrieu",
+          "position": 10,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "642376466285199391"
+          },
+          "team": 1,
+          "leader": "SwedenKristina",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "250955868944859136"
+          },
+          "team": 2,
+          "leader": "AztecMontezuma",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "525294834139791390"
+          },
+          "team": 3,
+          "leader": "AmericaTeddyRoughRider",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1199394797719388311"
+          },
+          "team": 4,
+          "leader": "AustraliaJohnCurtin",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "464776579369926656"
+          },
+          "team": 5,
+          "leader": "EgyptRamses",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1020459145687744603"
+          },
+          "team": 6,
+          "leader": "RussiaPeterTheGreat",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "265927182457503745"
+          },
+          "team": 7,
+          "leader": "ArabiaSaladin",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315928089802702850"
+          },
+          "team": 8,
+          "leader": "EnglandEleanor",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 9,
+          "leader": "Vercingetorix",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "528762656673366019"
+          },
+          "team": 10,
+          "leader": "RomeTrajan",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "908164524396400700"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 2,
+          "leader": "KhmerJayavarmanVII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "855214520757780552"
+          },
+          "team": 3,
+          "leader": "ChinaQinUnifier",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "177761942176399360"
+          },
+          "team": 4,
+          "leader": "OttomanMuhtesem",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "210848237978910730"
+          },
+          "team": 5,
+          "leader": "VietnamBaTrieu",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "755939567453863946"
+          },
+          "team": 6,
+          "leader": "NorwayHaraldHardrada",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "521663351542251522"
+          },
+          "team": 7,
+          "leader": "Vercingetorix",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "131292755677806593"
+          },
+          "team": 8,
+          "leader": "CreePoundmaker",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "632030795619368980"
+          },
+          "team": 9,
+          "leader": "EnglandEleanor",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "637760735820382251"
+          },
+          "team": 10,
+          "leader": "JapanTokugawa",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 1,
+          "leader": "SpainPhilipII",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "123915173273534464"
+          },
+          "team": 2,
+          "leader": "RussiaPeterTheGreat",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "274278880305741825"
+          },
+          "team": 3,
+          "leader": "Trisong",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "211178652065464322"
+          },
+          "team": 4,
+          "leader": "CreePoundmaker",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "185077660018278400"
+          },
+          "team": 5,
+          "leader": "KongoMvembaANzinga",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "646152099511533568"
+          },
+          "team": 6,
+          "leader": "KhmerJayavarmanVII",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430691300266737665"
+          },
+          "team": 7,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 7,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "133575303095123968"
+          },
+          "team": 8,
+          "leader": "JapanTokugawa",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "203213543334477824"
+          },
+          "team": 9,
+          "leader": "Vercingetorix",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "256117467779170306"
+          },
+          "team": 10,
+          "leader": "BabylonHammurabi",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "890480283617484830"
+          },
+          "team": 1,
+          "leader": "MaoriKupe",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "763501592917311488"
+          },
+          "team": 2,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "588072006529056768"
+          },
+          "team": 3,
+          "leader": "KoreaSejong",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "690506568436940860"
+          },
+          "team": 4,
+          "leader": "MaliMansa",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "302644984635588608"
+          },
+          "team": 5,
+          "leader": "VietnamBaTrieu",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "909729516442763314"
+          },
+          "team": 6,
+          "leader": "GreecePericles",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 7,
+          "leader": "SwedenKristina",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1380564005705220301"
+          },
+          "team": 8,
+          "leader": "IndonesiaGitarja",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "469638738184634368"
+          },
+          "team": 1,
+          "leader": "EnglandEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "710107901510942760"
+          },
+          "team": 2,
+          "leader": "MaoriKupe",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "557598327026221059"
+          },
+          "team": 3,
+          "leader": "ChinaYongle",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "185085767654178817"
+          },
+          "team": 4,
+          "leader": "Vercingetorix",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "393842487816486925"
+          },
+          "team": 5,
+          "leader": "BrazilPedroII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399999258004291595"
+          },
+          "team": 6,
+          "leader": "VietnamBaTrieu",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "139409908188708864"
+          },
+          "team": 7,
+          "leader": "MaliMansa",
+          "position": 7,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "177761942176399360"
+          },
+          "team": 8,
+          "leader": "CreePoundmaker",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1221394058648223805"
+          },
+          "team": 9,
+          "leader": "RussiaPeterTheGreat",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "325335781180702740"
+          },
+          "team": 10,
+          "leader": "BabylonHammurabi",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "908164524396400700"
+          },
+          "team": 1,
+          "leader": "KoreaSejong",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216693756479406080"
+          },
+          "team": 2,
+          "leader": "AztecMontezuma",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430821068761071616"
+          },
+          "team": 3,
+          "leader": "KongoMbande",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "690546045750607882"
+          },
+          "team": 4,
+          "leader": "VietnamBaTrieu",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1182866078729261116"
+          },
+          "team": 5,
+          "leader": "EnglandVictoria",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "529607502246182912"
+          },
+          "team": 6,
+          "leader": "EnglandElizabethI",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "475967377943691265"
+          },
+          "team": 7,
+          "leader": "CreePoundmaker",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 8,
+          "leader": "IndiaChandragupta",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "379971109828689922"
+          },
+          "team": 9,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 9,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "272376820727414785"
+          },
+          "team": 10,
+          "leader": "JapanHojoTokimune",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "709099895830872094"
+          },
+          "team": 1,
+          "leader": "AlHasan",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "464776579369926656"
+          },
+          "team": 2,
+          "leader": "SwedenKristina",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "471104627752828958"
+          },
+          "team": 3,
+          "leader": "KhmerJayavarmanVII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "353502622331699211"
+          },
+          "team": 4,
+          "leader": "MaoriKupe",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315928089802702850"
+          },
+          "team": 5,
+          "leader": "ChinaYongle",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1020459145687744603"
+          },
+          "team": 6,
+          "leader": "PersiaCyrus",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "270932968380432388"
+          },
+          "team": 7,
+          "leader": "ChinaQinShiHuang",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "369519899556708352"
+          },
+          "team": 8,
+          "leader": "ArabiaSultan",
+          "position": 8,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "639155832428167178"
+          },
+          "team": 9,
+          "leader": "AmericaTeddyBullMoose",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "200006034507563009"
+          },
+          "team": 10,
+          "leader": "SumeriaGilgamesh",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "632030795619368980"
+          },
+          "team": 1,
+          "leader": "EnglandEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1305145829987844187"
+          },
+          "team": 2,
+          "leader": "Vercingetorix",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "291934783322193921"
+          },
+          "team": 3,
+          "leader": "BabylonHammurabi",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "440848234529947649"
+          },
+          "team": 4,
+          "leader": "IndonesiaGitarja",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315530540277039105"
+          },
+          "team": 5,
+          "leader": "CanadaWilfrid",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "486935313235705856"
+          },
+          "team": 6,
+          "leader": "AustraliaJohnCurtin",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "860044950531604510"
+          },
+          "team": 7,
+          "leader": "AztecMontezuma",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "471104627752828958"
+          },
+          "team": 8,
+          "leader": "GaulAmbiorix",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "625068280805326859"
+          },
+          "team": 1,
+          "leader": "MaoriKupe",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430691300266737665"
+          },
+          "team": 2,
+          "leader": "Trisong",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "372435077843386381"
+          },
+          "team": 3,
+          "leader": "VietnamBaTrieu",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 4,
+          "leader": "GermanyLudwigII",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "590877322199040011"
+          },
+          "team": 5,
+          "leader": "EgyptCleopatra",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "709209182309711942"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1258974288690806867"
+          },
+          "team": 7,
+          "leader": "EnglandVictoria",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "811058113972011029"
+          },
+          "team": 8,
+          "leader": "ArabiaSaladin",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "551763170172338188"
+          },
+          "team": 9,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "274991943665319936"
+          },
+          "team": 10,
+          "leader": "PersiaCyrus",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "490506627078815774"
+          },
+          "team": 1,
+          "leader": "KoreaSejong",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "890480283617484830"
+          },
+          "team": 2,
+          "leader": "BrazilPedroII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1433147718955696343"
+          },
+          "team": 3,
+          "leader": "MaliMansa",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1305145829987844187"
+          },
+          "team": 4,
+          "leader": "Vercingetorix",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "486935313235705856"
+          },
+          "team": 5,
+          "leader": "GreecePericles",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "203824996395646976"
+          },
+          "team": 6,
+          "leader": "JapanTokugawa",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1071849242886426724"
+          },
+          "team": 7,
+          "leader": "KongoMbande",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "408976470170533888"
+          },
+          "team": 8,
+          "leader": "ArabiaSaladin",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 9,
+          "leader": "EnglandVictoria",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "1199394797719388311"
+          },
+          "team": 1,
+          "leader": "NorwayHaraldHardrada",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "332872498863407114"
+          },
+          "team": 2,
+          "leader": "EnglandElizabethI",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "200006034507563009"
+          },
+          "team": 3,
+          "leader": "GeorgiaTamar",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1476227431240040479"
+          },
+          "team": 4,
+          "leader": "EnglandEleanor",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1079574076244381697"
+          },
+          "team": 5,
+          "leader": "PhoeniciaDido",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228420623053881355"
+          },
+          "team": 6,
+          "leader": "DutchWilhelmina",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "350439342705082381"
+          },
+          "team": 7,
+          "leader": "PolandJadwiga",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "878411857864572949"
+          },
+          "team": 8,
+          "leader": "FranceCatherineBlackQueen",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "871028720662626346"
+          },
+          "team": 1,
+          "leader": "JapanTokugawa",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216045712469655553"
+          },
+          "team": 2,
+          "leader": "Vercingetorix",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "424263633623580694"
+          },
+          "team": 3,
+          "leader": "EthiopiaMenelik",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "380048928097435649"
+          },
+          "team": 4,
+          "leader": "GreecePericles",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1259198944836325399"
+          },
+          "team": 5,
+          "leader": "OttomanSuleiman",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "818087800767250452"
+          },
+          "team": 6,
+          "leader": "RussiaPeterTheGreat",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "831360247633018910"
+          },
+          "team": 7,
+          "leader": "KhmerJayavarmanVII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 8,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "280763090705055744"
+          },
+          "team": 1,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "672860459359141908"
+          },
+          "team": 2,
+          "leader": "JapanHojoTokimune",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "272376820727414785"
+          },
+          "team": 3,
+          "leader": "NorwayHaraldHardradaVarangian",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 4,
+          "leader": "GermanyLudwigII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 5,
+          "leader": "Trisong",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "379971109828689922"
+          },
+          "team": 6,
+          "leader": "KhmerJayavarmanVII",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "508554751114215442"
+          },
+          "team": 7,
+          "leader": "FranceCatherineMagnificent",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "302644984635588608"
+          },
+          "team": 8,
+          "leader": "Vercingetorix",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1023288002329452595"
+          },
+          "team": 9,
+          "leader": "IncaPachacuti",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1302242713512444024"
+          },
+          "team": 10,
+          "leader": "SwedenKristina",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "690546045750607882"
+          },
+          "team": 1,
+          "leader": "AztecMontezuma",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "203213543334477824"
+          },
+          "team": 2,
+          "leader": "ChinaKublaiKhan",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "440848234529947649"
+          },
+          "team": 3,
+          "leader": "IndonesiaGitarja",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "834846875916042248"
+          },
+          "team": 4,
+          "leader": "RussiaPeterTheGreat",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "186498084795187201"
+          },
+          "team": 5,
+          "leader": "KoreaSeondeok",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "346289729316192256"
+          },
+          "team": 6,
+          "leader": "AustraliaJohnCurtin",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 7,
+          "leader": "JapanHojoTokimune",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "174861126012502016"
+          },
+          "team": 8,
+          "leader": "Trisong",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "665627679252545556"
+          },
+          "team": 9,
+          "leader": "AmericaTeddyBullMoose",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 10,
+          "leader": "Vercingetorix",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "137645419952865280"
+          },
+          "team": 1,
+          "leader": "AlHasan",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "377035061146550284"
+          },
+          "team": 2,
+          "leader": "PhoeniciaDido",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 3,
+          "leader": "GreeceGorgo",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "194364006000099328"
+          },
+          "team": 4,
+          "leader": "AmericaTeddyRoughRider",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 5,
+          "leader": "IndiaChandragupta",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 6,
+          "leader": "MaoriKupe",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "326858034859212800"
+          },
+          "team": 7,
+          "leader": "AztecMontezuma",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "256117467779170306"
+          },
+          "team": 8,
+          "leader": "Trisong",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "273450829325795329"
+          },
+          "team": 9,
+          "leader": "CanadaWilfrid",
+          "position": 9,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 10,
+          "leader": "EgyptCleopatra",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "485771205383815171"
+          },
+          "team": 1,
+          "leader": "FranceEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1411174015527030864"
+          },
+          "team": 2,
+          "leader": "OttomanMuhtesem",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "860044950531604510"
+          },
+          "team": 3,
+          "leader": "EthiopiaMenelik",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "525294834139791390"
+          },
+          "team": 4,
+          "leader": "Spearthrower",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "513861082339737611"
+          },
+          "team": 5,
+          "leader": "JapanTokugawa",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389043636517470209"
+          },
+          "team": 6,
+          "leader": "EnglandVictoria",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "244555342208303108"
+          },
+          "team": 7,
+          "leader": "BrazilPedroII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "579489163104092198"
+          },
+          "team": 8,
+          "leader": "AustraliaJohnCurtin",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "485771205383815171"
+          },
+          "team": 1,
+          "leader": "Ahiram",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "982310029782839387"
+          },
+          "team": 2,
+          "leader": "IncaPachacuti",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "174861126012502016"
+          },
+          "team": 3,
+          "leader": "AztecMontezuma",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "303128067092774922"
+          },
+          "team": 4,
+          "leader": "MaliSundiataKeita",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "335779783772340224"
+          },
+          "team": 5,
+          "leader": "GreeceGorgo",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "424670415588425729"
+          },
+          "team": 6,
+          "leader": "NubiaAmanitore",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "895381964662644857"
+          },
+          "team": 7,
+          "leader": "FranceCatherineBlackQueen",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "348787773786030080"
+          },
+          "team": 8,
+          "leader": "SwedenKristina",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "788733495857512480"
+          },
+          "team": 9,
+          "leader": "HungaryMatthias",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1158877561573613689"
+          },
+          "team": 10,
+          "leader": "PersiaCyrus",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "430821068761071616"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "435586628002512908"
+          },
+          "team": 2,
+          "leader": "KongoMvembaANzinga",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "152775519916654592"
+          },
+          "team": 3,
+          "leader": "GermanyLudwigII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 4,
+          "leader": "ZuluShaka",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "551445208664113177"
+          },
+          "team": 5,
+          "leader": "JapanTokugawa",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1455622353861214291"
+          },
+          "team": 6,
+          "leader": "BabylonHammurabi",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1079574076244381697"
+          },
+          "team": 7,
+          "leader": "ByzantiumTheodora",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1164339820236116089"
+          },
+          "team": 8,
+          "leader": "MacedonAlexander",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "270543079793098752"
+          },
+          "team": 1,
+          "leader": "IndonesiaGitarja",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "768097014977134592"
+          },
+          "team": 2,
+          "leader": "EthiopiaMenelik",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "348173168629776384"
+          },
+          "team": 3,
+          "leader": "GeorgiaTamar",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399999258004291595"
+          },
+          "team": 4,
+          "leader": "EnglandElizabethI",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "590877322199040011"
+          },
+          "team": 5,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "628249472299827212"
+          },
+          "team": 7,
+          "leader": "AmericaTeddyRoughRider",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "205696172692733953"
+          },
+          "team": 8,
+          "leader": "ScythiaTomyris",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689650725826985984"
+          },
+          "team": 9,
+          "leader": "MayaLadySixSky",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1256676988521812078"
+          },
+          "team": 10,
+          "leader": "ArabiaSultan",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "186417692960358401"
+          },
+          "team": 1,
+          "leader": "JapanHojoTokimune",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 2,
+          "leader": "KhmerJayavarmanVII",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216693756479406080"
+          },
+          "team": 3,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "794801232195223552"
+          },
+          "team": 4,
+          "leader": "EgyptCleopatra",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1182866078729261116"
+          },
+          "team": 5,
+          "leader": "None",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "625068280805326859"
+          },
+          "team": 6,
+          "leader": "AztecMontezuma",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "235959966177951745"
+          },
+          "team": 7,
+          "leader": "ChinaYongle",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689641190538346553"
+          },
+          "team": 8,
+          "leader": "HungaryMatthias",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "582013668590354463"
+          },
+          "team": 9,
+          "leader": "MaoriKupe",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "762297997018005505"
+          },
+          "team": 10,
+          "leader": "AustraliaJohnCurtin",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "192601496536350720"
+          },
+          "team": 1,
+          "leader": "KongoMvembaANzinga",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "290004683328847893"
+          },
+          "team": 2,
+          "leader": "AztecMontezuma",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430821068761071616"
+          },
+          "team": 3,
+          "leader": "FranceEleanor",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315530540277039105"
+          },
+          "team": 4,
+          "leader": "HungaryMatthias",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "576370721434107920"
+          },
+          "team": 5,
+          "leader": "PortugalJoaoIII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "186498084795187201"
+          },
+          "team": 6,
+          "leader": "GreecePericles",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "403919557787385858"
+          },
+          "team": 7,
+          "leader": "EgyptCleopatra",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "627135410115575814"
+          },
+          "team": 8,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "227153276322316288"
+          },
+          "team": 1,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 2,
+          "leader": "AztecMontezuma",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "345994381414891530"
+          },
+          "team": 3,
+          "leader": "JapanHojoTokimune",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 4,
+          "leader": "GermanyLudwigII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "811058113972011029"
+          },
+          "team": 5,
+          "leader": "MaoriKupe",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "379971109828689922"
+          },
+          "team": 6,
+          "leader": "PolandJadwiga",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "280763090705055744"
+          },
+          "team": 7,
+          "leader": "FranceCatherineMagnificent",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 8,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1023288002329452595"
+          },
+          "team": 9,
+          "leader": "EgyptCleopatra",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "446472020390182933"
+          },
+          "team": 10,
+          "leader": "OttomanSuleiman",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "332872498863407114"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "513861082339737611"
+          },
+          "team": 2,
+          "leader": "TeKinich",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1175517922081382531"
+          },
+          "team": 3,
+          "leader": "PersiaCyrus",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "337984854522200068"
+          },
+          "team": 4,
+          "leader": "GermanyLudwigII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1397073762909683934"
+          },
+          "team": 5,
+          "leader": "ChinaYongle",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1384971167546216500"
+          },
+          "team": 6,
+          "leader": "DutchWilhelmina",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "574188760938446849"
+          },
+          "team": 7,
+          "leader": "BrazilPedroII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "982310029782839387"
+          },
+          "team": 8,
+          "leader": "IncaPachacuti",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "177761942176399360"
+          },
+          "team": 1,
+          "leader": "Spearthrower",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "297369148424716288"
+          },
+          "team": 2,
+          "leader": "IndiaChandragupta",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 3,
+          "leader": "None",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "855214520757780552"
+          },
+          "team": 4,
+          "leader": "MacedonAlexander",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "259958170825261057"
+          },
+          "team": 5,
+          "leader": "FranceEleanor",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 6,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "642376466285199391"
+          },
+          "team": 7,
+          "leader": "BrazilPedroII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1314378454820716637"
+          },
+          "team": 8,
+          "leader": "BabylonHammurabi",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "290004683328847893"
+          },
+          "team": 9,
+          "leader": "None",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 10,
+          "leader": "MaliMansa",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "270543079793098752"
+          },
+          "team": 1,
+          "leader": "ChinaWuZetian",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "205696172692733953"
+          },
+          "team": 2,
+          "leader": "MaoriKupe",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 3,
+          "leader": "SpainPhilipII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 4,
+          "leader": "MongoliaKublaiKhan",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "590877322199040011"
+          },
+          "team": 5,
+          "leader": "RomeCaesar",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "249410454298820608"
+          },
+          "team": 6,
+          "leader": "Trisong",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "776648698238861312"
+          },
+          "team": 7,
+          "leader": "RomeTrajan",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1300989969837326431"
+          },
+          "team": 8,
+          "leader": "Vercingetorix",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "508554751114215442"
+          },
+          "team": 9,
+          "leader": "NorwayHaraldHardradaVarangian",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "880550786684309565"
+          },
+          "team": 10,
+          "leader": "EthiopiaMenelik",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "229691587251142656"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "464776579369926656"
+          },
+          "team": 2,
+          "leader": "PersiaCyrus",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "295562997710192641"
+          },
+          "team": 3,
+          "leader": "Trisong",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "833263578038927381"
+          },
+          "team": 4,
+          "leader": "Olympias",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "871028720662626346"
+          },
+          "team": 5,
+          "leader": "GreecePericles",
+          "position": 5,
+          "flags": [
+            "SUB"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1476227431240040479"
+          },
+          "team": 5,
+          "leader": "GreecePericles",
+          "position": 5,
+          "flags": [
+            "SUBBED"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "755939567453863946"
+          },
+          "team": 6,
+          "leader": "None",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "424670415588425729"
+          },
+          "team": 7,
+          "leader": "KhmerJayavarmanVII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "457584851000754176"
+          },
+          "team": 8,
+          "leader": "KoreaSejong",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "1020459145687744603"
+          },
+          "team": 1,
+          "leader": "ChinaKublaiKhan",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "687677194688004228"
+          },
+          "team": 2,
+          "leader": "EnglandElizabethI",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1158877561573613689"
+          },
+          "team": 3,
+          "leader": "GreecePericles",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "288049036194217984"
+          },
+          "team": 4,
+          "leader": "FranceEleanor",
+          "position": 4,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "788733495857512480"
+          },
+          "team": 5,
+          "leader": "GreeceGorgo",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216597964863307777"
+          },
+          "team": 6,
+          "leader": "ChinaQinShiHuang",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "416536798525784087"
+          },
+          "team": 7,
+          "leader": "KhmerJayavarmanVII",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "834846875916042248"
+          },
+          "team": 8,
+          "leader": "DutchWilhelmina",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "190294376826667009"
+          },
+          "team": 1,
+          "leader": "VietnamBaTrieu",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "274278880305741825"
+          },
+          "team": 2,
+          "leader": "Vercingetorix",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "646152099511533568"
+          },
+          "team": 3,
+          "leader": "EnglandVictoria",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "343697746701844480"
+          },
+          "team": 4,
+          "leader": "AustraliaJohnCurtin",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "393842487816486925"
+          },
+          "team": 5,
+          "leader": "MaoriKupe",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "235959966177951745"
+          },
+          "team": 6,
+          "leader": "NubiaAmanitore",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "521663351542251522"
+          },
+          "team": 7,
+          "leader": "EthiopiaMenelik",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1317863526752321628"
+          },
+          "team": 8,
+          "leader": "Spearthrower",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "412078010406141952"
+          },
+          "team": 9,
+          "leader": "EgyptRamses",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "123915173273534464"
+          },
+          "team": 10,
+          "leader": "RussiaPeterTheGreat",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "137645419952865280"
+          },
+          "team": 1,
+          "leader": "GermanyLudwigII",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "297369148424716288"
+          },
+          "team": 2,
+          "leader": "IndiaChandragupta",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "478709714713313280"
+          },
+          "team": 3,
+          "leader": "FranceCatherineMagnificent",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "133575303095123968"
+          },
+          "team": 4,
+          "leader": "KhmerJayavarmanVII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "542037274318077953"
+          },
+          "team": 5,
+          "leader": "EnglandVictoria",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216693756479406080"
+          },
+          "team": 6,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "177761942176399360"
+          },
+          "team": 7,
+          "leader": "KongoMvembaANzinga",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 8,
+          "leader": "ByzantiumTheodora",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1182866078729261116"
+          },
+          "team": 9,
+          "leader": "SpainPhilipII",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 10,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "335779783772340224"
+          },
+          "team": 1,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "871028720662626346"
+          },
+          "team": 2,
+          "leader": "BabylonHammurabi",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "860044950531604510"
+          },
+          "team": 3,
+          "leader": "CanadaWilfrid",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "294233320701558785"
+          },
+          "team": 4,
+          "leader": "IndonesiaGitarja",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1259198944836325399"
+          },
+          "team": 5,
+          "leader": "Vercingetorix",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "763501592917311488"
+          },
+          "team": 6,
+          "leader": "EgyptCleopatra",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1476227431240040479"
+          },
+          "team": 7,
+          "leader": "FranceEleanor",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "792740395389288458"
+          },
+          "team": 8,
+          "leader": "BrazilPedroII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "730088289159348306"
+          },
+          "team": 1,
+          "leader": "PersiaCyrus",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "282155509497200640"
+          },
+          "team": 2,
+          "leader": "Vercingetorix",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689641190538346553"
+          },
+          "team": 3,
+          "leader": "ChinaQinUnifier",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "360019540215857152"
+          },
+          "team": 4,
+          "leader": "Kiviuq",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 5,
+          "leader": "OttomanSuleiman",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "123915173273534464"
+          },
+          "team": 6,
+          "leader": "EnglandVictoria",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "364074357187674113"
+          },
+          "team": 7,
+          "leader": "GreecePericles",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "148411754337140736"
+          },
+          "team": 8,
+          "leader": "CreePoundmaker",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "755374246548602912"
+          },
+          "team": 9,
+          "leader": "None",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "580650694772523019"
+          },
+          "team": 10,
+          "leader": "EgyptCleopatra",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "440848234529947649"
+          },
+          "team": 1,
+          "leader": "PortugalJoaoIII",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "525294834139791390"
+          },
+          "team": 2,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "788733495857512480"
+          },
+          "team": 3,
+          "leader": "CreePoundmaker",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "464776579369926656"
+          },
+          "team": 4,
+          "leader": "ArabiaSaladin",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1115718984948518933"
+          },
+          "team": 5,
+          "leader": "DutchWilhelmina",
+          "position": 5,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1071849242886426724"
+          },
+          "team": 6,
+          "leader": "BrazilPedroII",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "878411857864572949"
+          },
+          "team": 7,
+          "leader": "IncaPachacuti",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1002962273918259302"
+          },
+          "team": 8,
+          "leader": "GreecePericles",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "1258974288690806867"
+          },
+          "team": 1,
+          "leader": "MongoliaKublaiKhan",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "398226260179943424"
+          },
+          "team": 2,
+          "leader": "PersiaNader",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 3,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "210848237978910730"
+          },
+          "team": 4,
+          "leader": "MaoriKupe",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "272376820727414785"
+          },
+          "team": 5,
+          "leader": "NorwayHaraldHardradaVarangian",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1132761424716898347"
+          },
+          "team": 6,
+          "leader": "CanadaWilfrid",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "256117467779170306"
+          },
+          "team": 7,
+          "leader": "KoreaSejong",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "239379760512237568"
+          },
+          "team": 8,
+          "leader": "ChinaYongle",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1182866078729261116"
+          },
+          "team": 9,
+          "leader": "EnglandVictoria",
+          "position": 9,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 10,
+          "leader": "GermanyLudwigII",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "557598327026221059"
+          },
+          "team": 1,
+          "leader": "IndiaGandhi",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "277107529236873216"
+          },
+          "team": 2,
+          "leader": "Ahiram",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "399999258004291595"
+          },
+          "team": 3,
+          "leader": "HungaryMatthias",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1314378454820716637"
+          },
+          "team": 4,
+          "leader": "GreeceGorgo",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "628249472299827212"
+          },
+          "team": 5,
+          "leader": "AlHasan",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "410743357577363457"
+          },
+          "team": 6,
+          "leader": "MongoliaKublaiKhan",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "235959966177951745"
+          },
+          "team": 7,
+          "leader": "VietnamBaTrieu",
+          "position": 7,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "357326910864228352"
+          },
+          "team": 8,
+          "leader": "Trisong",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "364803472261906442"
+          },
+          "team": 9,
+          "leader": "PolandJadwiga",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "661973449119367191"
+          },
+          "team": 10,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "451329189832818709"
+          },
+          "team": 1,
+          "leader": "FranceEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1002962273918259302"
+          },
+          "team": 2,
+          "leader": "HungaryMatthias",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1199394797719388311"
+          },
+          "team": 3,
+          "leader": "NorwayHaraldHardradaVarangian",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "908013832566374420"
+          },
+          "team": 4,
+          "leader": "Vercingetorix",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "762297997018005505"
+          },
+          "team": 5,
+          "leader": "MaoriKupe",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "267675653669650434"
+          },
+          "team": 6,
+          "leader": "JapanTokugawa",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1476227431240040479"
+          },
+          "team": 7,
+          "leader": "PersiaCyrus",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "551895170367356996"
+          },
+          "team": 8,
+          "leader": "PolandJadwiga",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "831459147601674251"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "793990802636144741"
+          },
+          "team": 2,
+          "leader": "BabylonHammurabi",
+          "position": 2,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430821068761071616"
+          },
+          "team": 3,
+          "leader": "AustraliaJohnCurtin",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "313751159280107531"
+          },
+          "team": 4,
+          "leader": "KhmerJayavarmanVII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 5,
+          "leader": "MaoriKupe",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "423252198831423499"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "860044950531604510"
+          },
+          "team": 7,
+          "leader": "FranceEleanor",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "899709639720058911"
+          },
+          "team": 8,
+          "leader": "MapucheLautaro",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 1,
+          "leader": "Vercingetorix",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 2,
+          "leader": "EnglandEleanor",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "431582428495347732"
+          },
+          "team": 3,
+          "leader": "AlHasan",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "205696172692733953"
+          },
+          "team": 4,
+          "leader": "PortugalJoaoIII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "541615428473192459"
+          },
+          "team": 5,
+          "leader": "ByzantiumBasil",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 6,
+          "leader": "KongoMvembaANzinga",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689650725826985984"
+          },
+          "team": 7,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "326858034859212800"
+          },
+          "team": 8,
+          "leader": "GeorgiaTamar",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "909161684457885736"
+          },
+          "team": 9,
+          "leader": "PolandJadwiga",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "257163159465361409"
+          },
+          "team": 10,
+          "leader": "AustraliaJohnCurtin",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "321049453744357376"
+          },
+          "team": 11,
+          "leader": "GermanyLudwigII",
+          "position": 11,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "161566832652713984"
+          },
+          "team": 1,
+          "leader": "MaliMansa",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "305091165559062528"
+          },
+          "team": 2,
+          "leader": "Kiviuq",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "763501592917311488"
+          },
+          "team": 3,
+          "leader": "ChinaKublaiKhan",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "528762656673366019"
+          },
+          "team": 4,
+          "leader": "BabylonHammurabi",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1411174015527030864"
+          },
+          "team": 5,
+          "leader": "EnglandElizabethI",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "485771205383815171"
+          },
+          "team": 6,
+          "leader": "FranceCatherineMagnificent",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 7,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "523214884062887936"
+          },
+          "team": 8,
+          "leader": "NubiaAmanitore",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "347247495115440140"
+          },
+          "team": 9,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "398226260179943424"
+          },
+          "team": 1,
+          "leader": "RussiaPeterTheGreat",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "646152099511533568"
+          },
+          "team": 2,
+          "leader": "PhoeniciaDido",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "724378389418344530"
+          },
+          "team": 3,
+          "leader": "IndonesiaGitarja",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 4,
+          "leader": "MaoriKupe",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1002274300436414545"
+          },
+          "team": 5,
+          "leader": "ChinaYongle",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "625068280805326859"
+          },
+          "team": 6,
+          "leader": "SpainPhilipII",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "228190740788936704"
+          },
+          "team": 7,
+          "leader": "AustraliaJohnCurtin",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "360019540215857152"
+          },
+          "team": 8,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 8,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "249896184498487296"
+          },
+          "team": 9,
+          "leader": "EnglandEleanor",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "414772772795842560"
+          },
+          "team": 10,
+          "leader": "Vercingetorix",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "583147043346972672"
+          },
+          "team": 1,
+          "leader": "JapanHojoTokimune",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "431582428495347732"
+          },
+          "team": 2,
+          "leader": "ChinaQinUnifier",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "348173168629776384"
+          },
+          "team": 3,
+          "leader": "PolandJadwiga",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "312373191303757824"
+          },
+          "team": 4,
+          "leader": "KhmerJayavarmanVII",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "249410454298820608"
+          },
+          "team": 5,
+          "leader": "Vercingetorix",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "794801232195223552"
+          },
+          "team": 6,
+          "leader": "CreePoundmaker",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "280763090705055744"
+          },
+          "team": 7,
+          "leader": "FranceCatherineMagnificent",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "326858034859212800"
+          },
+          "team": 8,
+          "leader": "EnglandVictoria",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "449248865988902932"
+          },
+          "team": 9,
+          "leader": "IndiaChandragupta",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "194364006000099328"
+          },
+          "team": 10,
+          "leader": "KongoMvembaANzinga",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "270543079793098752"
+          },
+          "team": 1,
+          "leader": "BabylonHammurabi",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "412078010406141952"
+          },
+          "team": 2,
+          "leader": "DutchWilhelmina",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "305091165559062528"
+          },
+          "team": 3,
+          "leader": "EthiopiaMenelik",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1002274300436414545"
+          },
+          "team": 4,
+          "leader": "IndiaChandragupta",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "357326910864228352"
+          },
+          "team": 5,
+          "leader": "EnglandEleanor",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1182866078729261116"
+          },
+          "team": 6,
+          "leader": "EnglandVictoria",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "499007371910316032"
+          },
+          "team": 7,
+          "leader": "ChinaYongle",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "402602202260045824"
+          },
+          "team": 8,
+          "leader": "Vercingetorix",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689641190538346553"
+          },
+          "team": 9,
+          "leader": "PersiaCyrus",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "417179741649371137"
+          },
+          "team": 10,
+          "leader": "GreeceGorgo",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "908164524396400700"
+          },
+          "team": 1,
+          "leader": "AmericaAbrahamLincoln",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "798623447986470974"
+          },
+          "team": 2,
+          "leader": "NorwayHaraldHardrada",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "297369148424716288"
+          },
+          "team": 3,
+          "leader": "IndiaChandragupta",
+          "position": 3,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "248124761714982913"
+          },
+          "team": 4,
+          "leader": "PolandJadwiga",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "389349267350880266"
+          },
+          "team": 5,
+          "leader": "ArabiaSaladin",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "541615428473192459"
+          },
+          "team": 6,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "710107901510942760"
+          },
+          "team": 7,
+          "leader": "KongoMbande",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "855214520757780552"
+          },
+          "team": 8,
+          "leader": "SpainPhilipII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "689159105499234328"
+          },
+          "team": 9,
+          "leader": "AustraliaJohnCurtin",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1042400178814066739"
+          },
+          "team": 10,
+          "leader": "IndonesiaGitarja",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "256117467779170306"
+          },
+          "team": 1,
+          "leader": "KoreaSejong",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "430691300266737665"
+          },
+          "team": 2,
+          "leader": "EnglandVictoria",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "908164524396400700"
+          },
+          "team": 3,
+          "leader": "KoreaSeondeok",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "243212589503479828"
+          },
+          "team": 4,
+          "leader": "ScotlandRobertTheBruce",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "247731928906727424"
+          },
+          "team": 5,
+          "leader": "AustraliaJohnCurtin",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 6,
+          "leader": "JapanHojoTokimune",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "343419054419214348"
+          },
+          "team": 7,
+          "leader": "JapanTokugawa",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "269868776684519424"
+          },
+          "team": 8,
+          "leader": "FranceCatherineMagnificent",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "303286414873985024"
+          },
+          "team": 9,
+          "leader": "RomeTrajan",
+          "position": 9,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "123915173273534464"
+          },
+          "team": 10,
+          "leader": "RussiaPeterTheGreat",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "192601496536350720"
+          },
+          "team": 1,
+          "leader": "None",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "186498084795187201"
+          },
+          "team": 2,
+          "leader": "BabylonHammurabi",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "303128067092774922"
+          },
+          "team": 3,
+          "leader": "SpainPhilipII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "131292755677806593"
+          },
+          "team": 4,
+          "leader": "EgyptCleopatra",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "315889161796321281"
+          },
+          "team": 5,
+          "leader": "RussiaPeterTheGreat",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "295562997710192641"
+          },
+          "team": 6,
+          "leader": "ChinaYongle",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "473677371615084545"
+          },
+          "team": 7,
+          "leader": "GranColombiaSimonBolivar",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "346289729316192256"
+          },
+          "team": 8,
+          "leader": "FranceCatherineMagnificent",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "724378389418344530"
+          },
+          "team": 1,
+          "leader": "SpainPhilipII",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "646152099511533568"
+          },
+          "team": 2,
+          "leader": "JapanHojoTokimune",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "413320326080888842"
+          },
+          "team": 3,
+          "leader": "GermanyLudwigII",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "373961404056731649"
+          },
+          "team": 4,
+          "leader": "Trisong",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "382641540381540353"
+          },
+          "team": 5,
+          "leader": "PolandJadwiga",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "489391878962413569"
+          },
+          "team": 6,
+          "leader": "MapucheLautaro",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "210848237978910730"
+          },
+          "team": 7,
+          "leader": "AztecMontezuma",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "269868776684519424"
+          },
+          "team": 8,
+          "leader": "FranceCatherineMagnificent",
+          "position": 8,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "279614985213313024"
+          },
+          "team": 9,
+          "leader": "VietnamBaTrieu",
+          "position": 9,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1042400178814066739"
+          },
+          "team": 10,
+          "leader": "CreePoundmaker",
+          "position": 10,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "267675653669650434"
+          },
+          "team": 1,
+          "leader": "Vercingetorix",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "871028720662626346"
+          },
+          "team": 2,
+          "leader": "PolandJadwiga",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1476227431240040479"
+          },
+          "team": 3,
+          "leader": "NorwayHaraldHardrada",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "909729516442763314"
+          },
+          "team": 4,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "339840662880911360"
+          },
+          "team": 5,
+          "leader": "EgyptCleopatra",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "904260625428000780"
+          },
+          "team": 6,
+          "leader": "BrazilPedroII",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "288049036194217984"
+          },
+          "team": 7,
+          "leader": "PersiaCyrus",
+          "position": 7,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "464776579369926656"
+          },
+          "team": 8,
+          "leader": "KhmerJayavarmanVII",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "257550571832082432"
+          },
+          "team": 1,
+          "leader": "PersiaNader",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1397073762909683934"
+          },
+          "team": 2,
+          "leader": "GermanyLudwigII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "492848519183466527"
+          },
+          "team": 3,
+          "leader": "EthiopiaMenelik",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "346289729316192256"
+          },
+          "team": 4,
+          "leader": "None",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1020459145687744603"
+          },
+          "team": 5,
+          "leader": "OttomanMuhtesem",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "131292755677806593"
+          },
+          "team": 6,
+          "leader": "ChinaWuZetian",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "408976470170533888"
+          },
+          "team": 7,
+          "leader": "ArabiaSultan",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "461583698408767512"
+          },
+          "team": 8,
+          "leader": "FranceCatherineMagnificent",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "332872498863407114"
+          },
+          "team": 1,
+          "leader": "BrazilPedroII",
+          "position": 1,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "330012393872818178"
+          },
+          "team": 2,
+          "leader": "EnglandEleanor",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "203213543334477824"
+          },
+          "team": 3,
+          "leader": "RomeTrajan",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "353502622331699211"
+          },
+          "team": 4,
+          "leader": "DutchWilhelmina",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "424670415588425729"
+          },
+          "team": 5,
+          "leader": "KhmerJayavarmanVII",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "627135410115575814"
+          },
+          "team": 6,
+          "leader": "GreeceGorgo",
+          "position": 6,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1385313949695738038"
+          },
+          "team": 7,
+          "leader": "BabylonHammurabi",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "286390181378916352"
+          },
+          "team": 8,
+          "leader": "KoreaSeondeok",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "validation_msg_id": {},
+      "gametype": "FFA",
+      "players": [
+        {
+          "id": {
+            "$numberLong": "170681962837704704"
+          },
+          "team": 1,
+          "leader": "FranceEleanor",
+          "position": 1,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "490506627078815774"
+          },
+          "team": 2,
+          "leader": "SpainPhilipII",
+          "position": 2,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "290004683328847893"
+          },
+          "team": 3,
+          "leader": "RussiaPeterTheGreat",
+          "position": 3,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1053380385104474162"
+          },
+          "team": 4,
+          "leader": "EthiopiaMenelik",
+          "position": 4,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "963136116389728367"
+          },
+          "team": 5,
+          "leader": "GermanyFrederickBarbarossa",
+          "position": 5,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "216045712469655553"
+          },
+          "team": 6,
+          "leader": "BabylonHammurabi",
+          "position": 6,
+          "flags": [
+            "HOST"
+          ],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "1386108572949286983"
+          },
+          "team": 7,
+          "leader": "AmericaTeddyBullMoose",
+          "position": 7,
+          "flags": [],
+          "delta": 0.0
+        },
+        {
+          "id": {
+            "$numberLong": "523214884062887936"
+          },
+          "team": 8,
+          "leader": "None",
+          "position": 8,
+          "flags": [],
+          "delta": 0.0
+        }
+      ]
     }
   ]
 }

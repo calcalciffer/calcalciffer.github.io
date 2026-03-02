@@ -1,3 +1,192 @@
 [
-
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "371828178542395393"
+    },
+    "mu": 1213.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "CanadaWilfrid": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "228308766167138304"
+    },
+    "mu": 1213.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "PolandJadwiga": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "590550043212251185"
+    },
+    "mu": 1213.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "FranceEleanor": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "750562297923108965"
+    },
+    "mu": 1213.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "GranColombiaSimonBolivar": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "987939655850815549"
+    },
+    "mu": 1213.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 1,
+    "first": 1,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "AustraliaJohnCurtin": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "317523066043236355"
+    },
+    "mu": 1187.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "None": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "297946670551793666"
+    },
+    "mu": 1187.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "RussiaPeterTheGreat": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "548322988626542652"
+    },
+    "mu": 1187.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "ChinaYongle": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "1002274300436414545"
+    },
+    "mu": 1187.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "None": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+},
+{
+    "index": 0,
+    "_id": {
+        "$numberLong": "474116429466042371"
+    },
+    "mu": 1187.0,
+    "sigma": 149.73953307649612,
+    "games": 1,
+    "wins": 0,
+    "first": 0,
+    "subbedIn": 0,
+    "subbedOut": 0,
+    "civs": {
+        "VietnamBaTrieu": 1
+    },
+    "lastModified": {
+        "$date": "2026-03-02 00:00:00+00:00"
+    }
+}
 ]
