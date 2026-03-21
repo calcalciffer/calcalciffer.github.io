@@ -16,10 +16,12 @@ from pages.rt_history import *
 from pages.rt_ffa_leaderboard import *
 from pages.rt_teamer_leaderboard import *
 from pages.rt_duel_leaderboard import *
+from pages.rt_combined_leaderboard import *
 from pages.rt_s5_history import *
 from pages.rt_s5_ffa_leaderboard import *
 from pages.rt_s5_teamer_leaderboard import *
 from pages.rt_s5_duel_leaderboard import *
+from pages.rt_s5_combined_leaderboard import *
 from pages.rt_s6_history import *
 from pages.rt_s6_ffa_leaderboard import *
 from pages.rt_s6_teamer_leaderboard import *
@@ -71,10 +73,12 @@ pages_list = [
     {'name': 'rt_ffa_leaderboard', 'func': get_rt_ffa_leaderboard_page, 'title': 'Real time FFA Leaderboard'},
     {'name': 'rt_teamer_leaderboard', 'func': get_rt_teamer_leaderboard_page, 'title': 'Real time Teamer Leaderboard'},
     {'name': 'rt_duel_leaderboard', 'func': get_rt_duel_leaderboard_page, 'title': 'Real time Duel Leaderboard'},
+    {'name': 'rt_combined_leaderboard', 'func': get_rt_combined_leaderboard_page, 'title': 'Real time Combined Leaderboard'},
     {'name': 'rt_s5_games', 'func': get_realtime_s5_history_page, 'title': 'Season 5 Real time Game History'},
     {'name': 'rt_s5_ffa_leaderboard', 'func': get_rt_s5_ffa_leaderboard_page, 'title': 'Season 5 Real time FFA Leaderboard'},
     {'name': 'rt_s5_teamer_leaderboard', 'func': get_rt_s5_teamer_leaderboard_page, 'title': 'Season 5 Real time Teamer Leaderboard'},
     {'name': 'rt_s5_duel_leaderboard', 'func': get_rt_s5_duel_leaderboard_page, 'title': 'Season 5 Real time Duel Leaderboard'},
+    {'name': 'rt_s5_combined_leaderboard', 'func': get_rt_s5_combined_leaderboard_page, 'title': 'Season 5 Real time Combined Leaderboard'},
     {'name': 'rt_s6_games', 'func': get_realtime_s6_history_page, 'title': 'Season 6 Real time Game History'},
     {'name': 'rt_s6_ffa_leaderboard', 'func': get_rt_s6_ffa_leaderboard_page, 'title': 'Season 6 Real time FFA Leaderboard'},
     {'name': 'rt_s6_teamer_leaderboard', 'func': get_rt_s6_teamer_leaderboard_page, 'title': 'Season 6 Real time Teamer Leaderboard'},
