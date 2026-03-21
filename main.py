@@ -42,13 +42,15 @@ menu_list = {
         'Game History' : {'name': 'Real time Game History', 'link': 'rt_games.html'},
         'FFA Leaderboard' : {'name': 'Real time FFA Leaderboard', 'link': 'rt_ffa_leaderboard.html'},
         'Teamer Leaderboard' : {'name': 'Real time Teamer Leaderboard', 'link': 'rt_teamer_leaderboard.html'},
-        'Duel Leaderboard' : {'name': 'Real time Duel Leaderboard', 'link': 'rt_duel_leaderboard.html'},       
+        'Duel Leaderboard' : {'name': 'Real time Duel Leaderboard', 'link': 'rt_duel_leaderboard.html'},
+        'Combined Leaderboard' : {'name': 'Real time Combined Leaderboard', 'link': 'rt_combined_leaderboard.html'},       
     },
     'Season 5 Realtime' : {
         'Game History' : {'name': 'Season 5 Real time Game History', 'link': 'rt_s5_games.html'},
         'FFA Leaderboard' : {'name': 'Season 5 Real time FFA Leaderboard', 'link': 'rt_s5_ffa_leaderboard.html'},
         'Teamer Leaderboard' : {'name': 'Season 5 Real time Teamer Leaderboard', 'link': 'rt_s5_teamer_leaderboard.html'},
         'Duel Leaderboard' : {'name': 'Season 5 Real time Duel Leaderboard', 'link': 'rt_s5_duel_leaderboard.html'},       
+        'Combined Leaderboard' : {'name': 'Season 5 Real time Combined Leaderboard', 'link': 'rt_s5_combined_leaderboard.html'},       
     },
     'Season 6 Realtime' : {
         'Game History' : {'name': 'Season 6 Real time Game History', 'link': 'rt_s6_games.html'},
